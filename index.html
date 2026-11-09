@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Rutas Moteras España</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1c1f23">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* Layout: mapa a pantalla completa con panel lateral (tablet horizontal) o inferior (vertical/móvil). Botones grandes para usar con guantes. */
+:root{
+  --bg:#f3f1ec; --panel:#ffffff; --fg:#1d1f22; --muted:#6b6f75; --line:#e2dfd8;
+  --accent:#e2581d; --accent-fg:#ffffff; --done:#3d8b5a; --saved:#c99a12; --chip:#efece6;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#141619; --panel:#1c1f23; --fg:#eceae6; --muted:#9aa0a6; --line:#2c3036;
+  --accent:#f26a2e; --accent-fg:#141619; --done:#5fb57f; --saved:#e5b83a; --chip:#262a30; color-scheme:dark;
+}}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--fg);font:16px/1.45 var(--body);display:flex;flex-direction:column}
+#app{flex:1;display:grid;grid-template-rows:52vh 1fr;min-height:0}
+#map{min-height:0;background:var(--chip)}
+#panel{background:var(--panel);overflow-y:auto;min-height:0;border-top:1px solid var(--line);
+  padding:14px max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+@media (min-width:860px){
+  #app{grid-template-rows:none;grid-template-columns:400px 1fr}
+  #panel{order:-1;border-top:0;border-right:1px solid var(--line)}
+}
+h1{font:700 1.7rem/1 var(--display);letter-spacing:.01em;margin:0;text-transform:uppercase}
+h2{font:700 1.45rem/1.1 var(--display);margin:0;text-wrap:balance}
+h3{font:600 .78rem/1 var(--body);text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:18px 0 8px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.progress{margin-top:10px}
+.bar{height:8px;background:var(--chip);border-radius:4px;overflow:hidden}
+.bar>i{display:block;height:100%;background:var(--done);width:0;transition:width .4s}
+.progress small{color:var(--muted);font-variant-numeric:tabular-nums}
+.loc{margin-top:12px;font-size:.9rem;color:var(--muted);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--muted);flex:none}
+.dot.on{background:#2f80ed;box-shadow:0 0 0 4px rgba(47,128,237,.25)}
+button,.btn{font:600 1rem var(--body);border:0;border-radius:10px;padding:14px 16px;cursor:pointer;min-height:52px;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;color:var(--fg);background:var(--chip)}
+button:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.btn.go{background:var(--accent);color:var(--accent-fg);width:100%;font-size:1.1rem}
+.small{min-height:40px;padding:8px 12px;font-size:.9rem}
+.next{margin-top:14px;border:2px solid var(--accent);border-radius:14px;padding:14px;display:grid;gap:10px}
+.next .eyebrow{font:600 .75rem var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.meta{color:var(--muted);font-size:.92rem;font-variant-numeric:tabular-nums}
+.tabs{display:flex;gap:6px;margin-top:18px}
+.tabs button{flex:1;min-height:44px;padding:8px;font-size:.92rem}
+.tabs button[aria-selected=true]{background:var(--fg);color:var(--panel)}
+ul{list-style:none;margin:0;padding:0}
+.list li{border-bottom:1px solid var(--line)}
+.list button{width:100%;background:none;justify-content:space-between;text-align:left;border-radius:0;padding:12px 2px}
+.list .nm{font-weight:600;display:block}
+.list .rg{font-size:.85rem;color:var(--muted)}
+.km{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.9rem;white-space:nowrap}
+.badge{font-size:.72rem;font-weight:600;padding:3px 7px;border-radius:6px;margin-left:6px;vertical-align:2px}
+.b-done{background:var(--done);color:#fff}.b-saved{background:var(--saved);color:#1d1f22}
+.detail{display:grid;gap:12px}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.actions .on-done{background:var(--done);color:#fff}
+.actions .on-saved{background:var(--saved);color:#1d1f22}
+.back{background:none;padding:6px 0;min-height:40px;color:var(--muted)}
+.desc{margin:0;max-width:65ch}
+.wp{font-size:.9rem;color:var(--muted)}
+.poi li{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}
+.poi a{color:var(--fg);font-weight:500}
+.poi .km{flex:none}
+.note{font-size:.85rem;color:var(--muted)}
+.empty{color:var(--muted);padding:14px 0}
+.pin{width:26px;height:26px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35);background:var(--accent)}
+.pin.done{background:var(--done)}.pin.saved{background:var(--saved)}
+.pin.sel{width:34px;height:34px}
+.me{width:18px;height:18px;border-radius:50%;background:#2f80ed;border:3px solid #fff;box-shadow:0 0 0 6px rgba(47,128,237,.25)}
+.poiDot{width:12px;height:12px;border-radius:50%;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.4)}
+.leaflet-container{font:inherit}
+.tiles-dark{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+/* ---- Modo ruta ---- */
+body.nav #app{grid-template-columns:1fr;grid-template-rows:1fr}
+body.nav #panel{display:none}
+#nav{position:fixed;inset:0;pointer-events:none;z-index:1000;display:flex;flex-direction:column;justify-content:space-between;
+  padding:calc(10px + env(safe-area-inset-top,0px)) max(10px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(10px,env(safe-area-inset-left,0px))}
+#nav>*{pointer-events:auto}
+.nav-top{display:flex;gap:14px;align-items:center;background:var(--fg);color:var(--panel);border-radius:16px;padding:14px 18px;box-shadow:0 4px 16px rgba(0,0,0,.3)}
+.nav-arrow{font:700 3.2rem/1 var(--display);width:64px;text-align:center;flex:none}
+.nav-dist{font:700 2.2rem/1 var(--display);font-variant-numeric:tabular-nums}
+.nav-text{font-size:1.15rem;font-weight:500;line-height:1.25}
+.nav-bottom{background:var(--panel);border-radius:16px;padding:12px;box-shadow:0 4px 16px rgba(0,0,0,.3);display:grid;gap:10px}
+.nav-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}
+.nav-stats b{display:block;font:700 1.9rem/1 var(--display);font-variant-numeric:tabular-nums}
+.nav-stats small{color:var(--muted);font-size:.8rem;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.nav-btns{display:flex;gap:8px}
+.nav-btns button{flex:1}
+.nav-btns .exit{background:#c0392b;color:#fff}
+.nav-btns .ok{background:var(--done);color:#fff}
+.nav-msg{background:var(--saved);color:#1d1f22;border-radius:10px;padding:10px 12px;font-weight:600;text-align:center}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="map" role="region" aria-label="Mapa de rutas"></div>
+  <aside id="panel"></aside>
+</div>
+<div id="nav" hidden>
+  <div class="nav-top"><div class="nav-arrow" id="navArrow">↑</div>
+    <div><div class="nav-dist" id="navDist"></div><div class="nav-text" id="navText">Esperando señal GPS…</div></div></div>
+  <div class="nav-bottom">
+    <div class="nav-msg" id="navMsg" hidden></div>
+    <div class="nav-stats">
+      <div><b id="navLeft">–</b><small>km restantes</small></div>
+      <div><b id="navNext">–</b><small id="navNextName">siguiente parada</small></div>
+      <div><b id="navCov">0%</b><small>de la ruta hecho</small></div>
+    </div>
+    <div class="nav-btns">
+      <button id="navCenter" hidden>Centrar</button>
+      <button id="navDone" class="ok" hidden>Marcar como hecha</button>
+      <button id="navVoice">Voz: sí</button>
+      <button id="navExit" class="exit">Salir</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+// Cada ruta: [nombre que entiende Google Maps, lat, lon]. El trazado real se calcula por carretera al abrirla.
+var ROUTES = [
+ {id:"grazalema",name:"Sierra de Grazalema y Puerto de las Palomas",region:"Cádiz / Málaga",
+  desc:"Pueblos blancos y uno de los puertos con más curvas de Andalucía. Subida desde Grazalema y bajada con vistas al embalse de Zahara.",
+  pts:[["Ronda, Málaga",36.742,-5.166],["Grazalema, Cádiz",36.759,-5.368],["Puerto de las Palomas, Cádiz",36.7975,-5.3826],["Zahara de la Sierra, Cádiz",36.840,-5.391]]},
+ {id:"a397",name:"Ronda – San Pedro (A-397)",region:"Málaga",
+  desc:"Carretera ancha y bien asfaltada, curvas enlazadas y vistas a la costa. Muy concurrida los fines de semana.",
+  pts:[["Ronda, Málaga",36.742,-5.166],["Puerto de Alijar, Málaga",36.66,-5.10],["San Pedro de Alcántara, Málaga",36.483,-4.990]]},
+ {id:"alpujarras",name:"La Alpujarra granadina",region:"Granada",
+  desc:"Carretera estrecha de montaña por los pueblos de la cara sur de Sierra Nevada, hasta Trevélez.",
+  pts:[["Lanjarón, Granada",36.920,-3.480],["Órgiva, Granada",36.894,-3.424,0],["Pampaneira, Granada",36.940,-3.361],["Trevélez, Granada",37.000,-3.265]]},
+ {id:"cazorla",name:"Sierra de Cazorla",region:"Jaén",
+  desc:"Parque natural con bosque cerrado, el río Guadalquivir y el embalse del Tranco. Ojo con fauna en la calzada.",
+  pts:[["Cazorla, Jaén",37.914,-3.003],["Arroyo Frío, Jaén",37.948,-2.920,0],["Coto Ríos, Jaén",38.044,-2.857],["Hornos, Jaén",38.218,-2.719]]},
+ {id:"guadalest",name:"Guadalest y Puerto de Confrides (CV-70)",region:"Alicante",
+  desc:"Clásico motero alicantino: del mar a la montaña por el valle de Guadalest hasta Alcoy.",
+  pts:[["Callosa d'en Sarrià, Alicante",38.651,-0.124],["Guadalest, Alicante",38.678,-0.199],["Confrides, Alicante",38.684,-0.268],["Alcoy, Alicante",38.698,-0.474]]},
+ {id:"maestrazgo",name:"Ruta del Maestrazgo",region:"Castellón / Teruel",
+  desc:"Carreteras solitarias entre pueblos medievales y paisajes de roca. Poca gasolinera: sal con depósito lleno.",
+  pts:[["Morella, Castellón",40.619,-0.101],["Cantavieja, Teruel",40.526,-0.405],["Villarluengo, Teruel",40.656,-0.523],["Aliaga, Teruel",40.672,-0.703]]},
+ {id:"albarracin",name:"Sierra de Albarracín",region:"Teruel",
+  desc:"Desde Teruel por el cañón del Guadalaviar hasta Albarracín y los pinares de la sierra.",
+  pts:[["Teruel",40.345,-1.106],["Albarracín, Teruel",40.408,-1.444],["Bronchales, Teruel",40.509,-1.588],["Orihuela del Tremedal, Teruel",40.555,-1.652]]},
+ {id:"cuenca",name:"Serranía de Cuenca",region:"Cuenca",
+  desc:"Hoz del Júcar, la Ciudad Encantada y el embalse de La Toba hasta Tragacete.",
+  pts:[["Cuenca",40.070,-2.137],["Villalba de la Sierra, Cuenca",40.235,-2.087],["Ciudad Encantada, Cuenca",40.208,-1.997],["Uña, Cuenca",40.221,-1.979],["Tragacete, Cuenca",40.345,-1.848]]},
+ {id:"madrid",name:"Puertos de la Sierra de Madrid",region:"Madrid / Segovia",
+  desc:"Navacerrada, Cotos y Morcuera en una mañana. Muy popular y con mucho control de velocidad.",
+  pts:[["Navacerrada, Madrid",40.729,-4.012],["Puerto de Navacerrada",40.7889,-4.0036],["Puerto de Cotos",40.823,-3.962],["Rascafría, Madrid",40.903,-3.880],["Puerto de la Morcuera",40.836,-3.832],["Miraflores de la Sierra, Madrid",40.813,-3.763]]},
+ {id:"gredos",name:"Puerto del Pico (Gredos)",region:"Ávila",
+  desc:"Subida junto a la calzada romana con vistas al valle del Tiétar y la cara norte de Gredos.",
+  pts:[["Arenas de San Pedro, Ávila",40.210,-5.087],["Mombeltrán, Ávila",40.260,-5.017],["Puerto del Pico, Ávila",40.323,-5.012],["Navarredonda de Gredos, Ávila",40.358,-5.130]]},
+ {id:"jerte",name:"Valle del Jerte y Puerto de Honduras",region:"Cáceres",
+  desc:"Valle de los cerezos y un puerto estrecho y revirado que baja hasta Hervás.",
+  pts:[["Plasencia, Cáceres",40.030,-6.088],["Cabezuela del Valle, Cáceres",40.193,-5.807],["Puerto de Honduras, Cáceres",40.220,-5.866],["Hervás, Cáceres",40.272,-5.860]]},
+ {id:"ribeirasacra",name:"Ribeira Sacra",region:"Lugo / Ourense",
+  desc:"Cañones del Sil, viñedos en terrazas y miradores sobre el río.",
+  pts:[["Monforte de Lemos, Lugo",42.522,-7.514],["Castro Caldelas, Ourense",42.374,-7.416],["Parada de Sil, Ourense",42.383,-7.567],["Ourense",42.336,-7.864]]},
+ {id:"somiedo",name:"Puerto de Somiedo",region:"Asturias / León",
+  desc:"Valle verde, osos en la zona y un puerto largo que cruza a León.",
+  pts:[["Belmonte de Miranda, Asturias",43.2831,-6.2176],["Pola de Somiedo, Asturias",43.092,-6.255,0],["Puerto de Somiedo",43.0304,-6.2312],["Villablino, León",42.939,-6.320]]},
+ {id:"covadonga",name:"Cangas de Onís y Lagos de Covadonga",region:"Asturias",
+  desc:"Subida mítica a los lagos. En temporada alta el acceso a los lagos se restringe: consulta horarios antes de ir.",
+  pts:[["Arriondas, Asturias",43.389,-5.185],["Cangas de Onís, Asturias",43.351,-5.129],["Covadonga, Asturias",43.309,-5.056],["Lagos de Covadonga, Asturias",43.272,-4.985]]},
+ {id:"beyos",name:"Desfiladero de los Beyos",region:"Asturias / León",
+  desc:"Carretera encajada entre paredes de roca siguiendo el río Sella, y subida al Puerto del Pontón.",
+  pts:[["Cangas de Onís, Asturias",43.351,-5.129],["Oseja de Sajambre, León",43.137,-5.034],["Puerto del Pontón, León",43.0999,-5.0189],["Riaño, León",42.977,-5.006]]},
+ {id:"hermida",name:"Desfiladero de La Hermida y San Glorio",region:"Cantabria / León",
+  desc:"21 km de desfiladero hasta Potes y luego uno de los puertos más bonitos de Picos de Europa.",
+  pts:[["Panes, Asturias",43.322,-4.586],["La Hermida, Cantabria",43.252,-4.613,0],["Potes, Cantabria",43.154,-4.623],["Puerto de San Glorio",43.067,-4.763],["Riaño, León",42.977,-5.006]]},
+ {id:"orbaneja",name:"Cañones del Ebro",region:"Burgos",
+  desc:"Carretera junto al Ebro entre cañones y la cascada de Orbaneja del Castillo.",
+  pts:[["Orbaneja del Castillo, Burgos",42.836,-3.794],["Valdelateja, Burgos",42.814,-3.758],["Pesquera de Ebro, Burgos",42.8013,-3.7206]]},
+ {id:"costavasca",name:"Costa vasca: Getaria – Lekeitio",region:"Gipuzkoa / Bizkaia",
+  desc:"Carretera costera con acantilados, flysch de Zumaia y pueblos pesqueros.",
+  pts:[["Getaria, Gipuzkoa",43.303,-2.204],["Zumaia, Gipuzkoa",43.296,-2.257,0],["Deba, Gipuzkoa",43.295,-2.352,0],["Mutriku, Gipuzkoa",43.307,-2.385],["Lekeitio, Bizkaia",43.363,-2.505]]},
+ {id:"tena",name:"Valle de Tena y Portalet",region:"Huesca",
+  desc:"Pirineo aragonés hasta la frontera francesa por embalses y alta montaña.",
+  pts:[["Sabiñánigo, Huesca",42.519,-0.364],["Biescas, Huesca",42.627,-0.320],["Sallent de Gállego, Huesca",42.771,-0.333],["Col du Portalet",42.802,-0.416]]},
+ {id:"cotefablo",name:"Puerto de Cotefablo a Ordesa",region:"Huesca",
+  desc:"Puerto corto y revirado que lleva a Broto y Torla, la puerta de Ordesa.",
+  pts:[["Biescas, Huesca",42.627,-0.320],["Puerto de Cotefablo, Huesca",42.6163,-0.2100],["Broto, Huesca",42.603,-0.123],["Torla-Ordesa, Huesca",42.627,-0.112]]},
+ {id:"canto",name:"Port del Cantó",region:"Lleida",
+  desc:"Uno de los puertos más largos del Pirineo catalán, entre el Pallars y el Alt Urgell.",
+  pts:[["Sort, Lleida",42.413,1.131],["Port del Cantó, Lleida",42.381,1.244],["La Seu d'Urgell, Lleida",42.358,1.461]]},
+ {id:"toses",name:"Collada de Toses",region:"Girona",
+  desc:"Puerto con curvas amplias y buen asfalto hacia la Cerdanya.",
+  pts:[["Ripoll, Girona",42.200,2.191],["Ribes de Freser, Girona",42.304,2.168],["Collada de Toses, Girona",42.322,2.012],["Puigcerdà, Girona",42.432,1.928]]},
+ {id:"montseny",name:"Montseny",region:"Barcelona / Girona",
+  desc:"Bosque de hayas y curvas enlazadas a una hora de Barcelona. Muy concurrida el domingo por la mañana.",
+  pts:[["Sant Celoni, Barcelona",41.689,2.494],["Santa Fe del Montseny, Barcelona",41.775,2.463],["Viladrau, Girona",41.848,2.390],["Seva, Barcelona",41.838,2.281]]},
+ {id:"sacalobra",name:"Serra de Tramuntana y Sa Calobra",region:"Mallorca",
+  desc:"La serpiente de Sa Calobra y la carretera de la Tramuntana. Necesitas ferry hasta Mallorca.",
+  pts:[["Sóller, Mallorca",39.766,2.715],["Sa Calobra, Mallorca",39.851,2.799],["Santuari de Lluc, Mallorca",39.823,2.884]]}
+];
+
+// ---------- Estado guardado en la tablet ----------
+var KEY="rutasMoto.v1";
+var S={done:{},saved:{},geo:{},pos:null,prog:{}};
+try{var raw=localStorage.getItem(KEY); if(raw){var o=JSON.parse(raw); for(var k in o) S[k]=o[k];}}catch(e){}
+// Si cambian los puntos de las rutas, se descartan los trazados guardados.
+var GEO_V=2; if(S.geoV!==GEO_V){S.geo={};S.prog={};S.geoV=GEO_V;}
+// Puntos que se usan para calcular el trazado (un 4º valor 0 = pueblo por el que se pasa, solo informativo).
+function rpts(r){return r.pts.filter(function(p){return p[3]!==0;});}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+
+var userPos=S.pos, gpsLive=false, selected=null, tab="pend";
+
+// ---------- Utilidades ----------
+function hav(a,b,c,d){var R=6371,r=Math.PI/180,x=(c-a)*r,y=(d-b)*r,h=Math.sin(x/2)*Math.sin(x/2)+Math.cos(a*r)*Math.cos(c*r)*Math.sin(y/2)*Math.sin(y/2);return 2*R*Math.asin(Math.sqrt(h));}
+function distTo(r){ if(!userPos) return null; var m=1e9; r.pts.forEach(function(p){m=Math.min(m,hav(userPos[0],userPos[1],p[1],p[2]));}); return m; }
+function fmtKm(k){return k==null?"":(k<10?k.toFixed(1):Math.round(k))+" km";}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function byId(id){for(var i=0;i<ROUTES.length;i++) if(ROUTES[i].id===id) return ROUTES[i];}
+function gmaps(r){
+  // Formato /maps/dir//A/B/C: el primer hueco vacío es "Tu ubicación", luego el inicio y cada parada de la ruta.
+  // Sin dir_action=navigate, porque en modo navegación la app de Android solo lleva hasta la primera parada.
+  return "https://www.google.com/maps/dir//"+r.pts.map(function(x){return encodeURIComponent(x[0]);}).join("/")+"/data=!4m2!4m1!3e0";
+}
+function sorted(){
+  return ROUTES.slice().sort(function(a,b){var x=distTo(a),y=distTo(b); if(x==null) return a.name.localeCompare(b.name); return x-y;});
+}
+function nearestPending(){ var l=sorted().filter(function(r){return !S.done[r.id];}); return l[0]||null; }
+
+// ---------- Mapa ----------
+var dark=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches;
+var map=L.map("map",{zoomControl:true}).setView([40.2,-3.7],6);
+// Esri no exige referer: funciona abriendo la app como archivo en la tablet (OSM lo bloquea).
+L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+  {maxZoom:19,attribution:'Mapa &copy; Esri · Datos &copy; OpenStreetMap',className:dark?"tiles-dark":""}).addTo(map);
+var markers={}, routeLine=null, poiLayer=L.layerGroup().addTo(map), meMarker=null;
+
+function pinClass(r){return "pin "+(S.done[r.id]?"done":S.saved[r.id]?"saved":"")+(selected===r.id?" sel":"");}
+function drawMarkers(){
+  ROUTES.forEach(function(r){
+    var icon=L.divIcon({className:"",html:'<div class="'+pinClass(r)+'"></div>',iconSize:[34,34],iconAnchor:[13,30]});
+    if(markers[r.id]) markers[r.id].setIcon(icon);
+    else markers[r.id]=L.marker([r.pts[0][1],r.pts[0][2]],{icon:icon,title:r.name}).addTo(map).on("click",function(){openRoute(r.id);});
+  });
+}
+map.on("click",function(e){ if(!gpsLive && settingPos){ setPos([e.latlng.lat,e.latlng.lng],false); settingPos=false; render(); }});
+
+// ---------- Ubicación ----------
+var settingPos=false;
+function setPos(p,live){
+  userPos=p; gpsLive=live; S.pos=p; save();
+  var icon=L.divIcon({className:"",html:'<div class="me"></div>',iconSize:[18,18],iconAnchor:[9,9]});
+  if(meMarker) meMarker.setLatLng(p); else meMarker=L.marker(p,{icon:icon,zIndexOffset:1000,title:"Tu posición"}).addTo(map);
+}
+var firstFix=true;
+function startGps(){
+  if(!navigator.geolocation){render();return;}
+  navigator.geolocation.watchPosition(function(pos){
+    setPos([pos.coords.latitude,pos.coords.longitude],true);
+    if(NAV){ navUpdate(pos.coords.latitude,pos.coords.longitude); return; }
+    if(firstFix){firstFix=false; render(); if(!selected){var n=nearestPending(); if(n) map.setView(userPos,8);} }
+    else if(!selected) renderHome(true);
+  },function(){ gpsLive=false; render(); },{enableHighAccuracy:true,maximumAge:30000,timeout:20000});
+}
+
+// ---------- Trazado por carretera ----------
+function getGeometry(r){
+  if(S.geo[r.id]) return Promise.resolve(S.geo[r.id]);
+  var c=rpts(r).map(function(p){return p[2]+","+p[1];}).join(";");
+  return fetch("https://router.project-osrm.org/route/v1/driving/"+c+"?overview=full&geometries=geojson")
+   .then(function(x){return x.json();})
+   .then(function(j){
+     var rt=j.routes[0], line=rt.geometry.coordinates.map(function(q){return [q[1],q[0]];});
+     // reducir puntos para guardar
+     var step=Math.max(1,Math.floor(line.length/400)), slim=line.filter(function(_,i){return i%step===0;}); slim.push(line[line.length-1]);
+     var g={line:slim,km:rt.distance/1000,min:rt.duration/60}; S.geo[r.id]=g; save(); return g;
+   })
+   .catch(function(){ return {line:r.pts.map(function(p){return [p[1],p[2]];}),km:null,min:null,approx:true}; });
+}
+
+// ---------- Bares y POI (OpenStreetMap) ----------
+var poiCache={};
+function cumul(line){var c=[0];for(var i=1;i<line.length;i++) c.push(c[i-1]+hav(line[i-1][0],line[i-1][1],line[i][0],line[i][1]));return c;}
+function getPois(r,g){
+  if(poiCache[r.id]) return Promise.resolve(poiCache[r.id]);
+  var line=g.line, step=Math.max(1,Math.floor(line.length/40)), pts=[];
+  for(var i=0;i<line.length;i+=step) pts.push(line[i][0].toFixed(4)+","+line[i][1].toFixed(4));
+  var a=pts.join(",");
+  var q='[out:json][timeout:25];(node(around:600,'+a+')["amenity"~"^(bar|cafe|pub|restaurant|biergarten)$"]["name"];'+
+        'node(around:800,'+a+')["tourism"="viewpoint"];node(around:1000,'+a+')["amenity"="fuel"];);out body 250;';
+  var servers=["https://overpass-api.de/api/interpreter","https://overpass.private.coffee/api/interpreter","https://maps.mail.ru/osm/tools/overpass/api/interpreter"];
+  function tryServer(i){
+    if(i>=servers.length) return Promise.reject(new Error("sin servidor"));
+    var ctl=window.AbortController?new AbortController():null, tm=setTimeout(function(){if(ctl)ctl.abort();},20000);
+    return fetch(servers[i]+"?data="+encodeURIComponent(q),ctl?{signal:ctl.signal}:{})
+      .then(function(x){clearTimeout(tm); if(!x.ok) throw 0; return x.json();})
+      .catch(function(){clearTimeout(tm); return tryServer(i+1);});
+  }
+  return tryServer(0)
+   .then(function(j){
+     var cu=cumul(line);
+     var out=j.elements.map(function(e){
+       var t=e.tags||{}, best=0,bd=1e9;
+       for(var i=0;i<line.length;i++){var d=hav(e.lat,e.lon,line[i][0],line[i][1]); if(d<bd){bd=d;best=i;}}
+       var cat=t.tourism==="viewpoint"?"view":t.amenity==="fuel"?"fuel":t.amenity==="restaurant"?"food":"bar";
+       var nm=t.name||(cat==="view"?"Mirador":cat==="fuel"?"Gasolinera":"Sin nombre");
+       if(cat==="fuel"&&t.brand&&!t.name) nm=t.brand;
+       return {cat:cat,name:nm,lat:e.lat,lon:e.lon,km:cu[best]};
+     }).sort(function(x,y){return x.km-y.km;});
+     poiCache[r.id]=out; return out;
+   });
+}
+var CATS={bar:["Bares y cafés","#e2581d"],food:["Restaurantes","#8e44ad"],view:["Miradores","#2f80ed"],fuel:["Gasolineras","#3d8b5a"]};
+
+// ---------- Interfaz ----------
+var panel=document.getElementById("panel");
+function header(){
+  var n=ROUTES.length, d=Object.keys(S.done).length;
+  var loc = gpsLive ? '<span class="dot on"></span>GPS activo'
+          : userPos ? '<span class="dot"></span>Usando tu última posición conocida'
+          : '<span class="dot"></span>Sin ubicación todavía';
+  return '<div class="top"><h1>Rutas moteras</h1>'+(installEvt?'<button class="small" id="install">Instalar app</button>':'')+'</div>'+
+    '<div class="progress"><div class="bar"><i style="width:'+(d/n*100)+'%"></i></div><small>'+d+' de '+n+' rutas hechas</small></div>'+
+    '<div class="loc">'+loc+(gpsLive?'':' <button class="small" id="setpos">'+(settingPos?'Toca el mapa…':'Marcar mi posición en el mapa')+'</button>')+'</div>';
+}
+function renderHome(soft){
+  var nxt=nearestPending(), h=header();
+  if(nxt){
+    var d=distTo(nxt);
+    h+='<div class="next"><span class="eyebrow">'+(userPos?'La más cercana sin hacer':'Siguiente ruta sin hacer')+'</span>'+
+       '<h2>'+esc(nxt.name)+'</h2><span class="meta">'+esc(nxt.region)+(d!=null?' · a '+fmtKm(d)+' de ti':'')+'</span>'+
+       '<button class="go btn" data-open="'+nxt.id+'">Ver ruta</button></div>';
+  } else h+='<div class="next"><h2>¡Todas hechas!</h2><span class="meta">Has completado las '+ROUTES.length+' rutas.</span></div>';
+  var nP=ROUTES.filter(function(r){return !S.done[r.id];}).length, nS=Object.keys(S.saved).length, nD=Object.keys(S.done).length;
+  h+='<div class="tabs" role="tablist">'+
+     '<button role="tab" data-tab="pend" aria-selected="'+(tab==="pend")+'">Pendientes '+nP+'</button>'+
+     '<button role="tab" data-tab="saved" aria-selected="'+(tab==="saved")+'">Guardadas '+nS+'</button>'+
+     '<button role="tab" data-tab="done" aria-selected="'+(tab==="done")+'">Hechas '+nD+'</button></div>';
+  var list=sorted().filter(function(r){return tab==="pend"?!S.done[r.id]:tab==="saved"?S.saved[r.id]:S.done[r.id];});
+  h+='<ul class="list">'+(list.length?list.map(function(r){
+      return '<li><button data-open="'+r.id+'"><span><span class="nm">'+esc(r.name)+
+        (S.done[r.id]&&tab!=="done"?'<span class="badge b-done">Hecha</span>':'')+
+        (S.saved[r.id]&&tab!=="saved"?'<span class="badge b-saved">Guardada</span>':'')+
+        '</span><span class="rg">'+esc(r.region)+'</span></span><span class="km">'+fmtKm(distTo(r))+'</span></button></li>';
+    }).join(""):'<li class="empty">'+(tab==="saved"?'Aún no has guardado ninguna. Abre una ruta y pulsa "Guardar para repetir".':tab==="done"?'Aún no has marcado ninguna como hecha.':'No quedan rutas pendientes.')+'</li>')+'</ul>';
+  var st=panel.scrollTop; panel.innerHTML=h; if(soft) panel.scrollTop=st;
+}
+function renderDetail(r,g,pois,poiErr){
+  var d=distTo(r), done=S.done[r.id], sv=S.saved[r.id];
+  var h='<button class="back" data-home>← Todas las rutas</button><div class="detail">'+
+    '<div><h2>'+esc(r.name)+'</h2><div class="meta">'+esc(r.region)+
+      (g&&g.km?' · '+Math.round(g.km)+' km':'')+(d!=null?' · inicio a '+fmtKm(d):'')+'</div></div>'+
+    '<p class="desc">'+esc(r.desc)+'</p>'+
+    '<div class="wp">'+r.pts.map(function(p){return esc(p[0].split(",")[0]);}).join(" → ")+'</div>'+
+    '<button class="btn go" data-nav>Empezar ruta</button>'+
+    '<div class="row2"><a class="btn" href="'+gmaps(r)+'" target="_blank" rel="noopener">Google Maps</a>'+
+    '<button data-gpx'+(g&&g.km?'':' disabled')+'>Descargar GPX</button></div>'+
+    '<div class="actions"><button data-done class="'+(done?'on-done':'')+'">'+(done?'✓ Hecha':'La hice')+'</button>'+
+    '<button data-save class="'+(sv?'on-saved':'')+'">'+(sv?'★ Guardada':'Guardar para repetir')+'</button></div>'+
+    (done?'<div class="note">Hecha el '+new Date(done).toLocaleDateString("es-ES")+'.</div>':'')+
+    (g&&g.approx?'<div class="note">No se pudo calcular el trazado por carretera; se muestra en línea recta.</div>':'');
+  h+='<h3>Bares en cada parada (Google Maps)</h3><div style="display:flex;flex-wrap:wrap;gap:8px">'+r.pts.map(function(p){
+      var town=p[0].split(",")[0].replace(/^(Puerto|Port|Collada|Col) (de |del |de la |du )?/i,"");
+      return '<a class="btn small" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent("bares cerca de "+p[0])+'">'+esc(p[0].split(",")[0])+'</a>';
+    }).join("")+'</div>';
+  if(poiErr) h+='<h3>Bares y puntos de interés en la ruta</h3><div class="empty">El servicio de mapas está saturado. <button class="small" data-retry>Reintentar</button></div>';
+  else if(!pois) h+='<h3>Bares y puntos de interés</h3><div class="empty">Buscando bares, miradores y gasolineras en la ruta…</div>';
+  else ["bar","food","view","fuel"].forEach(function(c){
+    var l=pois.filter(function(p){return p.cat===c;}); if(!l.length) return;
+    h+='<h3>'+CATS[c][0]+' ('+l.length+')</h3><ul class="poi">'+l.slice(0,25).map(function(p){
+      return '<li><a href="https://www.google.com/maps/search/?api=1&query='+p.lat+','+p.lon+'" target="_blank" rel="noopener">'+esc(p.name)+'</a><span class="km">km '+Math.round(p.km)+'</span></li>';
+    }).join("")+'</ul>';
+  });
+  if(pois) h+='<p class="note">Datos de OpenStreetMap. Toca un sitio para verlo y ver reseñas en Google Maps.</p>';
+  panel.innerHTML=h+'</div>';
+}
+function render(){ if(selected) openRoute(selected,true); else renderHome(); }
+
+function openRoute(id,keepView){
+  var r=byId(id); if(!r) return; var prev=selected; selected=id; drawMarkers();
+  renderDetail(r,S.geo[id]||null,null);
+  if(!keepView) panel.scrollTop=0;
+  getGeometry(r).then(function(g){
+    if(selected!==id) return;
+    if(routeLine) map.removeLayer(routeLine);
+    routeLine=L.polyline(g.line,{color:getComputedStyle(document.documentElement).getPropertyValue("--accent").trim()||"#e2581d",weight:6,opacity:.9}).addTo(map);
+    if(!keepView||prev!==id) map.fitBounds(routeLine.getBounds(),{padding:[30,30]});
+    renderDetail(r,g,poiCache[id]||null);
+    getPois(r,g).then(function(p){
+      if(selected!==id) return; renderDetail(r,g,p);
+      poiLayer.clearLayers();
+      p.forEach(function(x){ L.marker([x.lat,x.lon],{icon:L.divIcon({className:"",html:'<div class="poiDot" style="background:'+CATS[x.cat][1]+'"></div>',iconSize:[12,12],iconAnchor:[6,6]}),title:x.name})
+        .bindPopup(esc(x.name)+'<br><small>'+CATS[x.cat][0]+' · km '+Math.round(x.km)+'</small>').addTo(poiLayer); });
+    }).catch(function(){ if(selected===id) renderDetail(r,g,null,true); });
+  });
+}
+function goHome(){
+  selected=null; if(routeLine){map.removeLayer(routeLine);routeLine=null;} poiLayer.clearLayers(); drawMarkers(); renderHome();
+  if(userPos) map.setView(userPos,7); else map.setView([40.2,-3.7],6);
+}
+
+panel.addEventListener("click",function(e){
+  var t=e.target.closest("button,[data-open]"); if(!t) return;
+  if(t.dataset.open){openRoute(t.dataset.open);return;}
+  if(t.dataset.tab){tab=t.dataset.tab;renderHome();return;}
+  if(t.hasAttribute("data-home")){goHome();return;}
+  if(t.hasAttribute("data-nav")){startNav(selected);return;}
+  if(t.hasAttribute("data-gpx")){downloadGpx(byId(selected));return;}
+  if(t.hasAttribute("data-retry")){openRoute(selected,true);return;}
+  if(t.id==="install"&&installEvt){ installEvt.prompt(); installEvt.userChoice.then(function(){installEvt=null;renderHome(true);}); return; }
+  if(t.id==="setpos"){settingPos=true;renderHome(true);return;}
+  if(t.hasAttribute("data-done")){ if(S.done[selected]) delete S.done[selected]; else S.done[selected]=Date.now(); save(); drawMarkers(); openRoute(selected,true); return;}
+  if(t.hasAttribute("data-save")){ if(S.saved[selected]) delete S.saved[selected]; else S.saved[selected]=true; save(); drawMarkers(); openRoute(selected,true); return;}
+});
+
+// ==================== MODO RUTA ====================
+var NAV=null, navLine=null, wakeLock=null, VOICE=true;
+try{VOICE=localStorage.getItem("rutasMoto.voz")!=="no";}catch(e){}
+var $=function(id){return document.getElementById(id);};
+
+function say(t){
+  if(!NAV||!VOICE||!window.speechSynthesis) return;
+  try{var u=new SpeechSynthesisUtterance(t); u.lang="es-ES"; u.rate=1; speechSynthesis.cancel(); speechSynthesis.speak(u);}catch(e){}
+}
+function requestWake(){
+  try{ if(navigator.wakeLock) navigator.wakeLock.request("screen").then(function(w){wakeLock=w;}).catch(function(){}); }catch(e){}
+}
+document.addEventListener("visibilitychange",function(){ if(NAV&&document.visibilityState==="visible") requestWake(); });
+
+var ORD=["","primera","segunda","tercera","cuarta","quinta","sexta","séptima","octava"];
+var DIRS={"left":"a la izquierda","right":"a la derecha","slight left":"ligeramente a la izquierda","slight right":"ligeramente a la derecha",
+  "sharp left":"fuerte a la izquierda","sharp right":"fuerte a la derecha","straight":"recto","uturn":"media vuelta"};
+var ARROWS={"left":"←","right":"→","slight left":"↖","slight right":"↗","sharp left":"↙","sharp right":"↘","straight":"↑","uturn":"↶"};
+function stepText(st){
+  var m=st.maneuver, t=m.type, mod=m.modifier||"", dir=DIRS[mod]||"", nm=st.name?" por "+st.name:"";
+  if(t==="depart") return "Sal"+nm;
+  if(t==="roundabout"||t==="rotary") return "En la rotonda, toma la "+(m.exit&&ORD[m.exit]?ORD[m.exit]+" salida":"salida")+nm;
+  if(t==="fork") return "En la bifurcación, mantente "+(mod.indexOf("left")>=0?"a la izquierda":"a la derecha")+nm;
+  if(t==="merge") return "Incorpórate"+nm;
+  if(t==="on ramp") return "Toma el acceso"+nm;
+  if(t==="off ramp") return "Toma la salida"+nm;
+  if(t==="end of road") return "Al final de la carretera, gira "+dir+nm;
+  if(mod==="uturn") return "Da media vuelta"+nm;
+  if(t==="continue") return (mod&&mod!=="straight"?"Sigue "+dir:"Continúa")+nm;
+  return "Gira "+dir+nm;
+}
+function stepArrow(st){var m=st.maneuver; if(m.type==="arrive") return "⚑"; if(m.type==="roundabout"||m.type==="rotary") return "⟳"; return ARROWS[m.modifier]||"↑";}
+function silent(st){
+  var t=st.maneuver.type, mod=st.maneuver.modifier;
+  return t==="new name"||t==="notification"||t==="exit roundabout"||t==="exit rotary"||t==="depart"||((t==="continue"||t==="turn")&&mod==="straight");
+}
+function fmtDist(km){ return km<1 ? (Math.round(km*100)*10)+" m" : km.toFixed(1).replace(".",",")+" km"; }
+function spoken(km){ return km<1 ? (Math.round(km*20)*50)+" metros" : km.toFixed(1).replace(".",",")+" kilómetros"; }
+function nearestIdx(line,lat,lon,from,to){
+  var best=from, bd=1e9; from=Math.max(0,from); to=Math.min(line.length-1,to);
+  for(var i=from;i<=to;i++){var d=hav(lat,lon,line[i][0],line[i][1]); if(d<bd){bd=d;best=i;}}
+  return {i:best,d:bd};
+}
+
+function startNav(id){
+  var r=byId(id); if(!r) return;
+  NAV={id:id,r:r,line:null,idx:0,off:0,loading:false,follow:true,finished:false,main:null,cov:null,retryAt:0,
+       targets:rpts(r).map(function(p){return {n:p[0].split(",")[0],lat:p[1],lon:p[2]};})};
+  document.body.classList.add("nav"); $("nav").hidden=false; setTimeout(function(){map.invalidateSize();},50);
+  $("navVoice").textContent="Voz: "+(VOICE?"sí":"no"); $("navDone").hidden=true; $("navCenter").hidden=true;
+  navMsg(""); requestWake();
+  say("Modo ruta iniciado");
+  getGeometry(r).then(function(g){
+    if(!NAV||NAV.id!==id) return;
+    NAV.main=g.line;
+    var saved=S.prog[id]; NAV.cov=(saved&&saved.length===g.line.length)?saved.split("").map(Number):g.line.map(function(){return 0;});
+    showCov();
+  });
+  if(userPos&&gpsLive) navRoute(userPos,NAV.targets);
+  else { $("navText").textContent="Esperando señal GPS… Si no llega, revisa que la ubicación esté activada y que Chrome tenga permiso."; $("navDist").textContent=""; }
+}
+
+function navRoute(from,targets){
+  if(!NAV||NAV.loading) return; NAV.loading=true; var id=NAV.id;
+  var all=[{lat:from[0],lon:from[1]}].concat(targets);
+  var c=all.map(function(p){return p.lon.toFixed(5)+","+p.lat.toFixed(5);}).join(";");
+  fetch("https://router.project-osrm.org/route/v1/driving/"+c+"?overview=full&geometries=geojson&steps=true")
+   .then(function(x){return x.json();})
+   .then(function(j){
+     if(!NAV||NAV.id!==id) return;
+     var rt=j.routes[0], line=rt.geometry.coordinates.map(function(q){return [q[1],q[0]];});
+     var steps=[], wps=[], from=0;
+     rt.legs.forEach(function(leg,k){
+       leg.steps.forEach(function(st){
+         var loc=st.maneuver.location, f=nearestIdx(line,loc[1],loc[0],from,from+3000); from=f.i;
+         if(st.maneuver.type==="arrive"){
+           var last=(k===rt.legs.length-1), tg=targets[k];
+           wps.push({n:tg.n,i:f.i});
+           steps.push({i:f.i,arrive:true,last:last,text:last?"Has llegado al final de la ruta, en "+tg.n:"Llegas a "+tg.n,arrow:"⚑"});
+         } else if(!silent(st)) steps.push({i:f.i,text:stepText(st),arrow:stepArrow(st)});
+       });
+     });
+     NAV.line=line; NAV.cum=cumul(line); NAV.steps=steps; NAV.wps=wps; NAV.targets=targets; NAV.idx=0; NAV.off=0; NAV.loading=false;
+     if(navLine) map.removeLayer(navLine);
+     if(routeLine){map.removeLayer(routeLine);}
+     navLine=L.polyline(line,{color:getComputedStyle(document.documentElement).getPropertyValue("--accent").trim()||"#e2581d",weight:8,opacity:.9}).addTo(map);
+     navMsg("");
+     if(userPos) navUpdate(userPos[0],userPos[1]);
+   })
+   .catch(function(){
+     if(!NAV) return; NAV.loading=false; NAV.retryAt=Date.now()+15000;
+     navMsg("No se pudo calcular el camino. Comprueba los datos móviles; lo vuelvo a intentar enseguida.");
+   });
+}
+
+function navMsg(t){ var m=$("navMsg"); m.textContent=t; m.hidden=!t; }
+function showCov(){
+  if(!NAV||!NAV.cov) return 0;
+  var n=0; NAV.cov.forEach(function(v){n+=v;}); var p=Math.round(n/NAV.cov.length*100);
+  $("navCov").textContent=p+"%"; return p;
+}
+
+function navUpdate(lat,lon){
+  if(!NAV) return;
+  if(!NAV.line){ if(!NAV.loading&&Date.now()>NAV.retryAt) navRoute([lat,lon],NAV.targets); return; }
+  // 1) avance sobre el camino
+  var f=nearestIdx(NAV.line,lat,lon,NAV.idx-15,NAV.idx+250);
+  if(f.d<0.07){ NAV.idx=Math.max(NAV.idx,f.i); NAV.off=0; }
+  else {
+    NAV.off++;
+    if(NAV.off>=3&&!NAV.loading&&Date.now()>NAV.retryAt){
+      var rest=NAV.wps.length?NAV.targets.filter(function(_,k){return NAV.wps[k]&&NAV.wps[k].i>NAV.idx;}):NAV.targets;
+      if(!rest.length) rest=[NAV.targets[NAV.targets.length-1]];
+      navMsg("Fuera de ruta. Recalculando…"); say("Fuera de ruta. Recalculando");
+      NAV.retryAt=Date.now()+20000; navRoute([lat,lon],rest); return;
+    }
+  }
+  // 2) tramos de la ruta original recorridos (para marcarla como hecha)
+  if(NAV.cov){
+    var ch=false;
+    for(var i=0;i<NAV.main.length;i++){ if(!NAV.cov[i]&&hav(lat,lon,NAV.main[i][0],NAV.main[i][1])<0.1){NAV.cov[i]=1;ch=true;} }
+    if(ch){ S.prog[NAV.id]=NAV.cov.join(""); save(); }
+  }
+  var cov=showCov();
+  // 3) siguiente indicación
+  var cum=NAV.cum, here=cum[NAV.idx], st=null;
+  for(var k=0;k<NAV.steps.length;k++){ if(NAV.steps[k].i>NAV.idx+1){st=NAV.steps[k];break;} }
+  var total=cum[cum.length-1]-here;
+  $("navLeft").textContent=total<10?total.toFixed(1).replace(".",","):Math.round(total);
+  var nw=null; for(var w=0;w<NAV.wps.length;w++){ if(NAV.wps[w].i>NAV.idx+1){nw=NAV.wps[w];break;} }
+  if(nw){ $("navNext").textContent=fmtDist(cum[nw.i]-here); $("navNextName").textContent=nw.n; }
+  var endD=hav(lat,lon,NAV.r.pts[NAV.r.pts.length-1][1],NAV.r.pts[NAV.r.pts.length-1][2]);
+  if(!st||(total<0.05)||(endD<0.08&&NAV.idx>cum.length*0.8)){ finishNav(cov); }
+  else {
+    var d=cum[st.i]-here;
+    $("navArrow").textContent=st.arrow; $("navDist").textContent=fmtDist(d); $("navText").textContent=st.text;
+    if(!st.a1&&d<=0.8&&d>0.3){st.a1=1; say("En "+spoken(d)+", "+st.text);}
+    if(!st.a2&&d<=0.15){st.a1=st.a2=1; say(st.text);}
+  }
+  // 4) el mapa te sigue
+  if(NAV.follow) map.setView([lat,lon],Math.max(map.getZoom(),15),{animate:true});
+}
+
+function finishNav(cov){
+  if(NAV.finished) return; NAV.finished=true;
+  $("navArrow").textContent="⚑"; $("navDist").textContent="";
+  if(cov>=80){
+    markDone(NAV.id);
+    $("navText").textContent="Ruta completada. ¡Una menos!"; say("Ruta completada. Una menos.");
+  } else {
+    $("navText").textContent="Has llegado al final. Has recorrido el "+cov+"% de la ruta.";
+    say("Has llegado al final de la ruta"); $("navDone").hidden=!!S.done[NAV.id];
+  }
+}
+function markDone(id){ S.done[id]=Date.now(); save(); drawMarkers(); }
+
+function exitNav(){
+  if(!NAV) return; var id=NAV.id; NAV=null;
+  try{ if(wakeLock) wakeLock.release(); }catch(e){} wakeLock=null;
+  try{ speechSynthesis.cancel(); }catch(e){}
+  if(navLine){map.removeLayer(navLine);navLine=null;}
+  document.body.classList.remove("nav"); $("nav").hidden=true;
+  setTimeout(function(){map.invalidateSize(); openRoute(id);},50);
+}
+$("navExit").onclick=exitNav;
+$("navVoice").onclick=function(){ VOICE=!VOICE; try{localStorage.setItem("rutasMoto.voz",VOICE?"si":"no");}catch(e){} this.textContent="Voz: "+(VOICE?"sí":"no"); };
+$("navCenter").onclick=function(){ if(!NAV) return; NAV.follow=true; this.hidden=true; if(userPos) map.setView(userPos,16); };
+$("navDone").onclick=function(){ if(!NAV) return; markDone(NAV.id); this.hidden=true; $("navText").textContent="Ruta marcada como hecha."; };
+map.on("dragstart",function(){ if(NAV){ NAV.follow=false; $("navCenter").hidden=false; } });
+
+// ---------- GPX para OsmAnd, Kurviger, Calimoto… ----------
+function downloadGpx(r){
+  var g=S.geo[r.id]; if(!g) return;
+  var x='<?xml version="1.0" encoding="UTF-8"?>\n<gpx version="1.1" creator="Rutas Moteras" xmlns="http://www.topografix.com/GPX/1/1">\n<metadata><name>'+esc(r.name)+'</name></metadata>\n';
+  r.pts.forEach(function(p){ x+='<wpt lat="'+p[1]+'" lon="'+p[2]+'"><name>'+esc(p[0].split(",")[0])+'</name></wpt>\n'; });
+  x+='<trk><name>'+esc(r.name)+'</name><trkseg>\n';
+  g.line.forEach(function(p){ x+='<trkpt lat="'+p[0].toFixed(6)+'" lon="'+p[1].toFixed(6)+'"/>\n'; });
+  x+='</trkseg></trk>\n</gpx>\n';
+  var a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([x],{type:"application/gpx+xml"}));
+  a.download=r.id+".gpx"; document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},2000);
+}
+
+// ---------- App instalable ----------
+var installEvt=null;
+window.addEventListener("beforeinstallprompt",function(e){ e.preventDefault(); installEvt=e; if(!selected&&!NAV) renderHome(true); });
+window.addEventListener("appinstalled",function(){ installEvt=null; if(!selected&&!NAV) renderHome(true); });
+if("serviceWorker" in navigator && (location.protocol==="https:"||location.hostname==="localhost")){
+  navigator.serviceWorker.register("sw.js").catch(function(){});
+}
+
+// ---------- Inicio ----------
+if(userPos) setPos(userPos,false);
+drawMarkers(); renderHome(); startGps();
+</script>
+</body>
+</html>
