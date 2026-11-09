@@ -2,7 +2,7 @@
 // - La app (index, iconos, Leaflet) se guarda al instalar.
 // - index.html: primero red (para recibir rutas nuevas), si no hay conexión, la copia guardada.
 // - Trozos de mapa: se guardan los que ya has visto, para tenerlos sin cobertura.
-var APP = "rutas-app-v1";
+var APP = "rutas-app-v2";
 var TILES = "rutas-tiles-v1";
 var MAX_TILES = 3000;
 var SHELL = [
