@@ -26,11 +26,13 @@ function Expand-Nombre([string]$n) {
 function Find-Punto($p, [string]$comunidad) {
   $nombre = Expand-Nombre $p.nombre
   $esPaso = $nombre -match '^(Puerto|Port|Coll|Collada|Alto|Estacas)\b'
+  # Se prueban las dos búsquedas: un puerto puede estar en la provincia vecina (Cotos está en Segovia, no en Madrid)
+  # y la primera puede devolver una calle homónima lejos.
   $res = @()
   foreach ($q in @("$nombre, $comunidad, España", "$nombre, España")) {
     Start-Sleep -Milliseconds 1100   # Nominatim pide como máximo 1 petición por segundo
     $r = Get-Json ('https://nominatim.openstreetmap.org/search?format=json&limit=8&countrycodes=es&q=' + [uri]::EscapeDataString($q))
-    if ($r) { $res = @($r); break }
+    if ($r) { $res += @($r) }
   }
   $mejor = $null; $mejorClave = 1e9
   foreach ($c in $res) {

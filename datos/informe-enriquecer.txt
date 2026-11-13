@@ -1,319 +1,43 @@
-    1  Aínsa                                          -> Aínsa (Q13049257) [2,15]  1733 hab. · 580 m · Bien de interés cultural · movido 0,3 km
-    2  Agulo                                          -> Agulo (Q398588) [2,15]  1078 hab. · 215 m
-    3  Albarracín                                     -> Albarracín (Q695488) [2,15]  998 hab. · 1182 m · movido 0,3 km
-    4  Alcalá del Júcar                               -> Alcalá del Júcar (Q559148) [2,15]  1130 hab. · 596 m
-    5  Alcúdia                                        -> Alcudia (Q385923) [2,15]  21907 hab. · 13 m · movido 0,2 km
-    6  Almagro                                        -> Almagro (Ciudad Real) (Q752280) [2,15]  9190 hab. · 646 m · Bien de interés cultural
-    7  Almonaster la Real                             -> Almonaster la Real (Q533277) [2,15]  1759 hab. · 913 m
-    8  Alpuente                                       -> Alpuente (Q367038) [2,13]  688 hab. · 1000 m · movido 2,0 km
-    9  Alquézar                                       -> Alquézar (Q1921204) [2,15]  328 hab. · 660 m · movido 0,4 km
-   10  Ampudia                                        -> Ampudia (Q1657195) [2,15]  588 hab. · 840 m · movido 0,2 km
-   11  Anento                                         -> Anento (Q1639608) [2,15]  117 hab. · 700 m
-   12  Ansó                                           -> Ansó (Q570484) [2,14]  409 hab. · 860 m · movido 1,3 km
-   13  Arties                                         -> Artiés (Q2865771) [2,15]  506 hab. · 1143 m · Bien cultural parte del patrimonio cultural de Cataluña · movido 0,2 km
-   14  Atienza                                        -> Atienza (Q524820) [2,15]  406 hab. · 1169 m · movido 0,2 km
-   15  Ayllón                                         -> Ayllón (Q1769718) [2,15]  1110 hab. · 972 m
-   16  Bagergue                                       -> Bagergue (Q11907586) [2,13]  107 hab. · 1424 m · Bien cultural parte del patrimonio cultural de Cataluña · movido 1,8 km
-   17  Baños de la Encina                             -> Baños de la Encina (Q587590) [2,14]  2542 hab. · 450 m · movido 0,9 km
-   18  Bárcena Mayor                                  -> Bárcena Mayor (Q5004843) [2,12]  57 hab. · 495 m · Bien de interés cultural · movido 3,3 km
-   19  Beget                                          -> Beget (Q11908911) [2,15]  24 hab. · 526 m · Bien Cultural de Interés Nacional · movido 0,2 km
-   20  Berlanga de Duero                              -> Berlanga de Duero (Q178684) [2,15]  810 hab. · 936 m · Bien de interés cultural
-   21  Betancuria                                     -> Betancuria (Q830969) [2,15]  801 hab. · 395 m
-   22  Bonilla de la Sierra                           -> Bonilla de la Sierra (Q1606930) [2,13]  139 hab. · 1089 m · movido 1,6 km
-   23  Briones                                        -> Briones (Q584251) [2,15]  752 hab. · 502 m
-   24  Bubión                                         -> Bubión (Q554265) [2,15]  305 hab. · 1350 m
-   25  Bulnes                                         -> Bulnes (Cabrales) (Q1004663) [2,15]  32 hab. · 649 m · movido 0,2 km
-   26  Calaceite                                      -> Calaceite (Q954175) [2,15]  961 hab. · 511 m · movido 0,2 km
-   27  Caleruega                                      -> Caleruega (Q848172) [2,15]  385 hab. · 960 m
-   28  Candelario                                     -> Candelario (Q1777917) [2,15]  832 hab. · 1136 m
-   29  Cantavieja                                     -> Cantavieja (Q633345) [2,15]  729 hab. · 1290 m
-   30  Capileira                                      -> Capileira (Q555140) [2,15]  590 hab. · 1436 m
-   31  Carmona                                        -> Carmona (Cantabria) (Q5752773) [2,08]  150 hab. · Bien de interés cultural · movido 6,9 km
-   32  Castellar de la Frontera                       -> Castellar de la Frontera (Q1610266) [2,13]  2984 hab. · 47 m · movido 2,4 km
-   33  Castrillo de los Polvazares                    -> Castrillo de los Polvazares (Q5050775) [2,14]  99 hab. · 872 m · movido 0,6 km
-   34  Castrojeriz                                    -> Castrojeriz (Q255845) [2,15]  794 hab. · 795 m
-   35  Castro Caldelas                                -> Castro Caldelas (Q1607646) [2,15]  1244 hab. · 763 m
-   36  Chinchón                                       -> Chinchón (Q915395) [2,15]  5800 hab. · 753 m · movido 0,4 km
-   37  Ciudad Rodrigo                                 -> Ciudad Rodrigo (Q820476) [2,15]  11750 hab. · 651 m · movido 0,4 km
-   38  Comillas                                       -> Comillas (Cantabria) (Q847329) [2,15]  2075 hab. · 23 m · movido 0,2 km
-   39  Covarrubias                                    -> Covarrubias (Q1109944) [2,15]  501 hab. · 894 m · movido 0,2 km
-   40  Cudillero                                      -> Cudillero (Q818372) [2,15]  4867 hab.
-   41  Culla                                          -> Culla (Q1983206) [2,15]  503 hab. · 1088 m · movido 0,2 km
-   42  Durro                                          -> Durro (Q6745217) [2,13]  100 hab. · 1396 m · Bien de interés cultural · movido 1,7 km
-   43  El Burgo de Osma                               -> El Burgo de Osma (Q24015514) [2,15]  3577 hab. · Bien de interés cultural · movido 0,3 km
-   44  Fornalutx                                      -> Fornalutx (Q950901) [2,15]  743 hab. · 139 m
-   45  Frías                                          -> Frías (Burgos) (Q1657230) [2,15]  258 hab. · 555 m
-   46  Frigiliana                                     -> Frigiliana (Q944137) [2,15]  3383 hab. · 320 m
-   47  Garachico                                      -> Garachico (Q612815) [2,15]  4940 hab. · 10 m
-   48  Garós                                          -> Garós (Q11923818) [2,15]  159 hab. · 1117 m · Bien cultural parte del patrimonio cultural de Cataluña · movido 0,4 km
-   49  Genalguacil                                    -> Genalguacil (Q1630292) [2,15]  352 hab. · 500 m · movido 0,2 km
-   50  Grazalema                                      -> Grazalema (Q832949) [2,15]  1977 hab. · 812 m · movido 0,2 km
-   51  Guadalest                                      -> Guadalest (Q984526) [2,15]  284 hab. · 571 m
-   52  Guadalupe                                      -> Guadalupe (España) (Q695504) [2,15]  1722 hab. · 640 m
-   53  Hita                                           -> Hita (Q1769186) [2,15]  336 hab. · 876 m · movido 0,4 km
-   54  Jerez de los Caballeros                        -> Jerez de los Caballeros (Q1153945) [2,15]  9095 hab. · 506 m
-   55  La Alberca                                     -> La Alberca (Salamanca) (Q1012961) [2,15]  1034 hab. · 1044 m · Bien de interés cultural
-   56  La Fresneda                                    -> La Fresneda (Teruel) (Q1651574) [2,13]  459 hab. · 586 m · movido 1,8 km
-   57  Laguardia                                      -> Laguardia (localidad) (Q24008400) [2,15]  movido 0,3 km
-   58  Ledesma                                        -> Ledesma (Salamanca) (Q965028) [2,15]  1480 hab. · 768 m
-   59  Lerma                                          -> Lerma (España) (Q1614795) [2,15]  2629 hab. · 849 m
-   60  Letur                                          -> Letur (Q582823) [2,15]  911 hab. · 720 m
-   61  Liérganes                                      -> Liérganes (Q377115) [2,15]  2365 hab. · 110 m · movido 0,2 km
-   62  Linares de Mora                                -> Linares de Mora (Q1651539) [2,14]  242 hab. · 1311 m · movido 1,0 km
-   63  Llastres                                       -> (sin elemento en Wikidata)
-   64  Llerena                                        -> Llerena (Q686184) [2,15]  5642 hab. · 641 m
-   65  Lucainena de las Torres                        -> Lucainena de las Torres (Q1358027) [2,15]  722 hab. · 542 m
-   66  Maderuelo                                      -> Maderuelo (Q1948893) [2,15]  100 hab. · 952 m · Bien de interés cultural
-   67  Medinaceli                                     -> Medinaceli (Q484628) [2,15]  686 hab. · 1092 m
-   68  Mirambel                                       -> Mirambel (Q1645435) [2,15]  110 hab. · 993 m
-   69  Miranda del Castañar                           -> Miranda del Castañar (Q1769783) [2,15]  361 hab. · 649 m
-   70  Mogarraz                                       -> Mogarraz (Q1910893) [2,15]  236 hab. · 765 m · movido 0,2 km
-   71  Mogrovejo                                      -> Mogrovejo (Q6020490) [2,11]  40 hab. · 640 m · Bien de interés cultural · movido 3,6 km
-   72  Mojácar                                        -> Mojácar (Q496968) [2,15]  7680 hab. · 152 m
-   73  Molinaseca                                     -> Molinaseca (Q44873) [2,15]  870 hab. · 588 m
-   74  Mondoñedo                                      -> Mondoñedo (Q840362) [2,15]  3303 hab. · 141 m
-   75  Monteagudo de las Vicarías                     -> Monteagudo de las Vicarías (Q837210) [2,15]  169 hab. · 794 m · movido 0,3 km
-   76  Morella                                        -> Morella (Q732907) [2,15]  2501 hab. · 984 m
-   77  Níjar                                          -> Níjar (Q1110355) [2,15]  33319 hab. · 356 m
-   78  Nuevo Baztán                                   -> Nuevo Baztán (Q921352) [2,15]  7429 hab. · 831 m · movido 0,3 km
-   79  Olivenza                                       -> Olivenza (Q488052) [2,15]  11742 hab. · 327 m · movido 0,4 km
-   80  Oseira                                         -> Monasterio de Santa María la Real (Osera) (Q1466868) [1,15]  Bien de interés cultural · movido 0,2 km
-   81  Pampaneira                                     -> Pampaneira (Q605273) [2,15]  312 hab. · 1060 m
-   82  Parauta                                        -> Parauta (Q1630188) [2,15]  271 hab. · 799 m · movido 0,2 km
-   83  Pastrana                                       -> Pastrana (Q1655081) [2,15]  971 hab. · 755 m
-   84  Pedraza                                        -> Pedraza (Segovia) (Q1013497) [2,15]  335 hab. · 1068 m
-   85  Peñalba de Santiago                            -> Peñalba de Santiago (Q3377891) [2,14]  15 hab. · movido 1,2 km
-   86  Peñíscola                                      -> Peñíscola (Q845424) [2,15]  8774 hab. · 46 m · movido 0,2 km
-   87  Pollença                                       ->  (Q23982870) [2]  9439 hab. · 47 m
-   88  Ponte Maceira                                  -> Ponte Maceira (España) (Q2103712) [2,14]  movido 1,5 km
-   89  Potes                                          -> Potes (Q919035) [2,15]  1323 hab. · 291 m · Bien de interés cultural
-   90  Poza de la Sal                                 -> Poza de la Sal (Q1642806) [2,15]  278 hab. · 763 m · movido 0,3 km
-   91  Puertomingalvo                                 -> Puertomingalvo (Q1651188) [2,11]  135 hab. · 1449 m · movido 3,9 km
-   92  Puebla de Sanabria                             -> Puebla de Sanabria (Q1646385) [2,15]  1378 hab. · 941 m · movido 0,2 km
-   93  Robledillo de Gata                             -> Robledillo de Gata (Q1120025) [2,14]  91 hab. · 576 m · movido 1,0 km
-   94  Roda de Isábena                                -> Roda de Isábena (Q1020516) [2,14]  44 hab. · 907 m · movido 0,9 km
-   95  Roncal                                         -> Roncal (Q578795) [2,13]  206 hab. · 720 m · movido 2,2 km
-   96  Rubielos de Mora                               -> Rubielos de Mora (Q1552349) [2,15]  600 hab. · 929 m · movido 0,3 km
-   97  Sajazarra                                      -> Sajazarra (Q577585) [2,15]  123 hab. · 515 m · movido 0,2 km
-   98  Santa Gadea del Cid                            -> Santa Gadea del Cid (Q1641214) [2,15]  180 hab. · 506 m · movido 0,3 km
-   99  Santillana del Mar                             -> Santillana del Mar (Q493817) [2,14]  4189 hab. · 82 m · movido 0,5 km
-  100  San Martín de Trevejo                          -> San Martín de Trevejo (Q1628492) [2,15]  693 hab. · 796 m
-  101  Segura de la Sierra                            -> Segura de la Sierra (Q1645054) [2,15]  1711 hab. · 1145 m
-  102  Sepúlveda                                      -> Sepúlveda (Q1246441) [2,15]  979 hab. · 1003 m · movido 0,5 km
-  103  Setenil de las Bodegas                         -> Setenil de las Bodegas (Q918623) [2,15]  2634 hab. · 640 m
-  104  Sos del Rey Católico                           -> Sos del Rey Católico (Q49571) [2,15]  582 hab. · 652 m
-  105  Tazones                                        -> Tazones (Q5195477) [2,15]  197 hab. · 18 m · movido 0,3 km
-  106  Teguise                                        -> Teguise (Q737440) [2,15]  24027 hab. · 360 m · movido 0,4 km
-  107  Tejeda                                         -> Tejeda (Q986361) [2,15]  1806 hab. · 1050 m · movido 0,3 km
-  108  Torazo                                         -> Torazo (Q987594) [2,1]  240 hab. · 410 m · movido 5,0 km
-  109  Trevejo                                        -> Trevejo (Q6152270) [2,09]  7 hab. · 733 m · movido 6,1 km
-  110  Trévelez                                       -> Río Trevélez (Q3301734) [2,15]  movido 0,3 km
-  111  Trujillo                                       -> Trujillo (España) (Q324489) [2,14]  8611 hab. · 564 m · Bien de interés cultural · movido 0,7 km
-  112  Ujué                                           -> Ujué (Q943072) [2,13]  168 hab. · 815 m · movido 2,3 km
-  113  Urueña                                         -> Urueña (Q609581) [2,15]  200 hab. · 830 m
-  114  Valderrobres                                   -> Valderrobres (Q1641285) [2,14]  2555 hab. · 510 m · movido 1,2 km
-  115  Valverde de la Vera                            -> Valverde de la Vera (Q1642209) [2,15]  428 hab. · 509 m
-  116  Valverde de los Arroyos                        -> Valverde de los Arroyos (Q594289) [2,15]  85 hab. · 1255 m · movido 0,2 km
-  117  Vejer de la Frontera                           -> Vejer de la Frontera (Q827393) [2,15]  13131 hab. · 168 m · movido 0,3 km
-  118  Vilafamés                                      ->  (Q126828178) [1]  movido 0,3 km
-  119  Vilanova dos Infantes                          -> Vilanova (Celanova) (Q6162808) [2,1]  240 hab. · 482 m · movido 4,6 km
-  120  Villanueva de los Infantes                     -> Villanueva de los Infantes (Ciudad Real) (Q768433) [2,15]  4733 hab. · 880 m · movido 0,4 km
-  121  Viniegra de Abajo                              -> Viniegra de Abajo (Q1646991) [2,11]  81 hab. · 887 m · movido 4,1 km
-  122  Viniegra de Arriba                             -> Viniegra de Arriba (Q1636160) [2,13]  40 hab. · 1182 m · movido 2,2 km
-  123  Vinuesa                                        -> Vinuesa (Q830571) [2,15]  826 hab. · 1108 m
-  124  Yanguas                                        -> Yanguas (Q486029) [2,14]  104 hab. · 991 m · movido 0,6 km
-  125  Zahara de la Sierra                            -> Zahara de la Sierra (Q140520) [2,14]  1344 hab. · 500 m · movido 1,0 km
-  126  Zuheros                                        -> Zuheros (Q228599) [2,15]  596 hab. · 656 m
-  127  Alhambra, Generalife y Albaicín                -> Alhambra (Q47476) [2,15]  1239 · Arte andalusí · Bien de interés cultural
-  128  Catedral de Burgos                             -> Catedral de Burgos (Q744420) [2,15]  1221 · Arquitectura gótica · Patrimonio de la Humanidad
-  129  Mezquita-Catedral y centro histórico           -> Mezquita-catedral de Córdoba (Q33200) [1,15]  786 · Arquitectura islámica · Patrimonio de la Humanidad
-  130  Monasterio de El Escorial                      -> El Escorial, Patrimonio de la Humanidad (Q5821857) [1,15]  Patrimonio de la Humanidad
-  131  Obras de Gaudí (Sagrada Familia)               -> Templo Expiatorio de la Sagrada Familia (Q48435) [1,15]  1882 · Arquitectura neogótica · Patrimonio de la Humanidad
-  132  Cueva de Altamira                              -> Cueva de Altamira (Q133575) [2,15]  Patrimonio de la Humanidad · movido 0,2 km
-  133  Acueducto y ciudad vieja                       -> Acueducto de Segovia (Q244947) [1,15]  s. II · Bien de interés cultural
-  134  Monumentos de Oviedo y del Reino de Asturias   -> Monumentos de Oviedo y del Reino de Asturias (Q10588848) [2,15]  Arte asturiano · Patrimonio de la Humanidad
-  135  Murallas y ciudad vieja                        -> Ávila  [artículo del pueblo, sin datos]
-  136  Ciudad vieja de Santiago                       -> Santiago de Compostela  [artículo del pueblo, sin datos]
-  137  Parque Nacional de Garajonay                   -> Parque nacional de Garajonay (Q464942) [2,15]  1981 · Patrimonio de la Humanidad
-  138  Ciudad histórica de Toledo                     -> Ciudad Histórica de Toledo (Q17255635) [2,15]  Patrimonio de la Humanidad
-  139  Arquitectura mudéjar de Aragón                 ->  (Q64861487) [2]  Patrimonio de la Humanidad
-  140  Ciudad vieja de Cáceres                        -> Ciudad monumental de Cáceres (Q9757828) [2,15]  Patrimonio de la Humanidad
-  141  Catedral, Alcázar y Archivo de Indias          ->  (Q9709444) [1]  Patrimonio de la Humanidad · movido 0,3 km
-  142  Ciudad vieja de Salamanca                      -> Ciudad vieja de Salamanca (Q12156631) [2,15]  Patrimonio de la Humanidad · movido 0,5 km
-  143  Monasterio de Poblet                           -> Monasterio de Poblet (Q645157) [2,15]  1150 · Arte cisterciense · Patrimonio de la Humanidad
-  144  Conjunto arqueológico de Mérida                -> Conjunto arqueológico de Mérida (Q15233334) [2,15]  Patrimonio de la Humanidad
-  145  Real Monasterio de Guadalupe                   -> Guadalupe (España)  [artículo del pueblo, sin datos]
-  146  Camino de Santiago                             -> (sin elemento en Wikidata)
-  147  Parque Nacional de Doñana                      -> Parque nacional y natural de Doñana (Q463141) [2,13]  1969 · Patrimonio de la Humanidad · movido 2,4 km
-  148  Ciudad histórica fortificada de Cuenca         ->  (Q15965460) [2]  Patrimonio de la Humanidad · movido 0,3 km
-  149  Lonja de la Seda                               -> Lonja de la Seda (Q588009) [2,15]  Gótico valenciano · Patrimonio de la Humanidad
-  150  Las Médulas                                    -> Las Médulas (Carucedo) (Q5970613) [2,15]  movido 0,4 km
-  151  Palau de la Música y Hospital de Sant Pau      ->  (Q64955212) [0,97]  Patrimonio de la Humanidad · movido 2,6 km
-  152  Monasterios de San Millán de Yuso y Suso       -> San Millán de la Cogolla  [artículo del pueblo, sin datos]
-  153  Yacimientos de Atapuerca                       -> Atapuerca (Burgos)  [artículo del pueblo, sin datos]
-  154  Pirineos – Monte Perdido                       -> Pirineos-Monte Perdido (Q3411434) [2,12]  Patrimonio de la Humanidad · movido 2,8 km
-  155  Arte rupestre del arco mediterráneo            -> (sin elemento en Wikidata)
-  156  Universidad y recinto histórico                ->  (Q47531644) [1]  1499 · Patrimonio de la Humanidad
-  157  Ibiza, biodiversidad y cultura (Dalt Vila)     -> Ibiza, biodiversidad y cultura (Q11918155) [1,15]  Patrimonio de la Humanidad · movido 0,5 km
-  158  San Cristóbal de La Laguna                     -> San Cristóbal de La Laguna (capital municipal) (Q16628307) [2,15]  1496
-  159  Conjunto arqueológico de Tarraco               -> Conjunto arqueológico de Tarraco (Q3119914) [2,15]  Patrimonio de la Humanidad
-  160  Palmeral de Elche                              -> Palmeral de Elche (Q930784) [2,15]  Patrimonio de la Humanidad · movido 0,6 km
-  161  Muralla romana de Lugo                         -> Muralla romana de Lugo (Q2733427) [2,14]  Patrimonio de la Humanidad · movido 0,6 km
-  162  Iglesias románicas del Vall de Boí             -> (sin elemento en Wikidata)
-  163  Arte rupestre de Siega Verde                   -> Villar de la Yegua  [artículo del pueblo, sin datos]
-  164  Paisaje cultural de Aranjuez                   -> Paisaje cultural de Aranjuez (Q6057341) [2,15]  Patrimonio de la Humanidad
-  165  Conjuntos renacentistas de Úbeda y Baeza       -> Úbeda  [artículo del pueblo, sin datos]
-  166  Puente de Vizcaya                              -> Puente de Vizcaya (Q331996) [2,15]  Patrimonio de la Humanidad
-  167  Parque Nacional del Teide                      -> Parque nacional del Teide (Q715124) [2,15]  1954 · Patrimonio de la Humanidad · movido 2,5 km
-  168  Torre de Hércules                              -> Torre de Hércules (Q245151) [2,15]  s. I · Arquitectura de la Antigua Roma · Patrimonio de la Humanidad
-  169  Paisaje cultural de la Serra de Tramuntana     -> (sin elemento en Wikidata)
-  170  Patrimonio del mercurio                        -> Almadén  [artículo del pueblo, sin datos]
-  171  Hayedo de Montejo (Hayedos primarios de Europa) -> Hayedo de Montejo (Q539730) [2,13]  Parte de un sitio Patrimonio de la Humanidad · movido 1,6 km
-  172  Dólmenes de Antequera                          -> Antequera  [artículo del pueblo, sin datos]
-  173  Ciudad califal de Medina Azahara               -> Medina Azahara (Q211252) [1,15]  s. X · Patrimonio de la Humanidad
-  174  Risco Caído y montañas sagradas                -> Paisaje cultural del Risco Caído y montañas sagradas de Gran Canaria (Q55495511) [2,13]  Patrimonio de la Humanidad · movido 1,9 km
-  175  Paseo del Prado y Buen Retiro                  -> Paseo del Prado (Q2079615) [2,15]  Bien de interés cultural
-  176  Menorca Talayótica                             -> Menorca  [artículo del pueblo, sin datos]
-  177  Palacio Real                                   -> Palacio Real de Madrid (Q171517) [1,15]  1735 · Arquitectura barroca · Bien de interés cultural
-  178  Templo de Debod                                -> Templo de Debod (Q1140249) [2,15]  Arquitectura del Antiguo Egipto · Bien de interés cultural
-  179  Castillo de Manzanares el Real                 -> Castillo nuevo de Manzanares el Real (Q1013093) [1,15]  1475 · Bien de interés cultural · movido 0,3 km
-  180  Basílica del Pilar                             -> Catedral basílica de Nuestra Señora del Pilar (Zaragoza) (Q810684) [1,15]  1681 · Arquitectura neoclásica · Bien de interés cultural
-  181  Castillo de Loarre                             -> Castillo de Loarre (Q1049259) [2,15]  1020 · Arquitectura románica · Bien de interés cultural
-  182  Monasterio de San Juan de la Peña              -> Real Monasterio de San Juan de la Peña (Q1389060) [1,15]  s. IX · Arquitectura románica · Bien de interés cultural
-  183  Monasterio de Piedra                           -> Monasterio de Piedra (Q1775814) [2,15]  1194 · Arte cisterciense · Bien de interés cultural · movido 0,4 km
-  184  Catedral de León                               -> Catedral de León (Q175874) [2,15]  1205 · Arquitectura gótica · Bien de interés cultural
-  185  Castillo de Peñafiel                           -> Castillo de Peñafiel (Q1013495) [2,15]  Bien de interés cultural · movido 0,2 km
-  186  Castillo de Coca                               -> Castillo de Coca (Q11845) [2,15]  1453 · Arte gótico · Bien de interés cultural · movido 0,5 km
-  187  Castillo de los Templarios                     -> Castillo de Ponferrada (Q1049270) [1,15]  1178 · Bien de interés cultural · movido 0,4 km
-  188  Iglesia de San Martín                          -> Iglesia de San Martín de Tours (Frómista) (Q2858167) [1,15]  1100 · Arquitectura románica · Bien de interés cultural
-  189  Castillo de Gormaz                             -> Castillo de Gormaz (Q511688) [2,15]  Bien de interés cultural · movido 0,4 km
-  190  Románico de Zamora (Catedral)                  -> Zamora  [artículo del pueblo, sin datos]
-  191  Castillo de Belmonte                           -> Castillo de Belmonte (Q917896) [2,14]  1456 · Arte mudéjar · Bien de interés cultural · movido 0,6 km
-  192  Catedral de Sigüenza                           -> Catedral de Santa María (Sigüenza) (Q2942824) [1,15]  1144 · Arquitectura gótica · Bien de interés cultural
-  193  Catedral de Palma (La Seu)                     -> Catedral de Palma de Mallorca (Q1298819) [1,15]  1228 · Arquitectura gótica · Bien de interés cultural
-  194  Castillo de Bellver                            -> Castillo de Bellver (Q261707) [2,15]  años 1310 · Arquitectura gótica · Bien de interés cultural
-  195  Museo Guggenheim                               -> Museo Guggenheim Bilbao (Q179199) [1,15]  1997
-  196  San Juan de Gaztelugatxe                       -> Gaztelugache (Q1496690) [1,15]  
-  197  Castillo de Butrón                             -> Castillo de Butrón (Q5002745) [2,12]  Arquitectura neogótica · Patrimonio construido vasco destacado · movido 3,3 km
-  198  Ciudad de las Artes y las Ciencias             -> Ciudad de las Artes y las Ciencias (Q239935) [2,15]  1998 · Arquitectura high-tech
-  199  Catedral de Valencia                           -> Catedral de Santa María (Valencia) (Q1466926) [1,15]  1262 · Arte gótico · Bien de interés cultural
-  200  Castillo de Santa Bárbara                      -> Castillo de Santa Bárbara (Q429562) [2,15]  Bien de interés cultural
-  201  Monasterio de Montserrat                       -> Monasterio de Montserrat (Q771935) [2,15]  s. XI · Arquitectura románica · Bien Cultural de Interés Local
-  202  Teatro-Museo Dalí                              -> Teatro-Museo Dalí (Q1143722) [2,15]  1974 · Bien cultural parte del patrimonio cultural de Cataluña
-  203  Catedral de Girona                             -> Catedral de Santa María (Gerona) (Q2261322) [1,15]  s. XV · Arquitectura románica · Bien de interés cultural
-  204  Palacio Real de Olite                          -> Palacio Real de Olite (Q1934670) [2,15]  s. XIII · Arquitectura gótica · Bien de interés cultural
-  205  Castillo de Javier                             -> Castillo de Javier (Q112738) [2,14]  Bien de interés cultural · movido 0,5 km
-  206  Monasterio de Leyre                            -> Monasterio de Leyre (Q669194) [2,15]  s. IX · Arquitectura románica · Bien de interés cultural · movido 0,2 km
-  207  Puente Nuevo                                   -> Puente Nuevo (Ronda) (Q2004707) [2,15]  
-  208  Alcazaba de Málaga                             -> Alcazaba de Málaga (Q3127243) [2,15]  1057 · Arquitectura morisca · Bien de interés cultural
-  209  Alcazaba de Almería                            -> Alcazaba y Murallas del Cerro de San Cristóbal (Q24024872) [1,15]  Arte andalusí · Bien de interés cultural
-  210  Catedral de Cádiz                              -> Catedral de la Santa Cruz (Cádiz) (Q650007) [1,15]  1722 · Arquitectura barroca · Bien de interés cultural
-  211  Catedral de Jaén                               -> Catedral de la Asunción (Jaén) (Q425898) [2,15]  1249 · Arquitectura del Renacimiento · Bien de interés cultural
-  212  Plaza de España                                -> Plaza de España (Sevilla) (Q956018) [2,15]  1928 · Arquitectura regionalista · Bien de interés cultural
-  213  Castillo de Almodóvar del Río                  -> Castillo de Almodóvar del Río (Q626232) [2,14]  Bien de interés cultural · movido 0,7 km
-  214  Teatro romano de Cartagena                     -> Teatro romano de Cartagena (Q2627735) [2,15]  Arquitectura de la Antigua Roma · Bien de interés cultural
-  215  Catedral de Murcia                             -> Catedral de Murcia (Q2419290) [2,15]  1291 · Arquitectura gótica · Bien de interés cultural
-  216  Puente romano de Alcántara                     -> Alcántara  [artículo del pueblo, sin datos]
-  217  Puerto de Navacerrada y Cotos                  -> Puerto de Navacerrada (Q547949) [2,14]  movido 0,6 km
-  218  Puerto de la Morcuera                          -> Puerto de la Morcuera (Q960162) [2,14]  movido 0,7 km
-  219  Puerto de Canencia                             -> Puerto de Canencia (Q3925444) [2,15]  
-  220  Puerto del Pico                                -> Puerto del Pico (Q6092513) [2,15]  
-  221  Valle del Tiétar                               -> Comarca de Arenas de San Pedro (Q1074460) [1,93]  
-  222  Puerto de la Quesera y Pueblos Negros          -> Puerto de la Quesera (Q6092480) [2,1]  
-  223  Serranía de Cuenca                             -> Serranía de Cuenca (Q2605436) [2,07]  
-  224  Cañón del Río Lobos                            -> Parque natural del Cañón del Río Lobos (Q3385422) [1,06]  
-  225  Desfiladero de La Hermida                      -> Desfiladero de La Hermida (Q1906567) [2,13]  movido 2,1 km
-  226  Puerto de San Glorio                           -> Puerto de San Glorio (Q7414266) [2,15]  movido 0,2 km
-  227  Puerto del Pontón y Desfiladero de los Beyos   -> Puerto del Pontón (Q6092515) [2,13]  movido 1,8 km
-  228  Lagos de Covadonga                             -> Lagos de Covadonga (Q2477016) [2,08]  
-  229  Puerto de Somiedo                              -> Puerto de Somiedo (Q6092415) [2,12]  movido 2,7 km
-  230  Ruta del Maestrazgo                            -> Mirambel  [artículo del pueblo, sin datos]
-  231  Puerto del Portalet                            -> Portalet (Q2641320) [1,13]  movido 1,7 km
-  232  Puerto de Cotefablo y Ordesa                   -> (sin elemento en Wikidata)
-  233  Port de la Bonaigua                            -> La Bonaigua (Q1571977) [1,15]  
-  234  Alpujarras                                     -> Pitres  [artículo del pueblo, sin datos]
-  235  Puerto de la Ragua                             -> Puerto de La Ragua (Q6092322) [2,14]  movido 1,2 km
-  236  Carretera de Sierra Nevada                     -> (sin elemento en Wikidata)
-  237  Sierra de Grazalema: Boyar y Palomas           -> Parque natural de la Sierra de Grazalema (Q1755037) [1,09]  
-  238  Valle del Jerte y Puerto de Tornavacas         -> Valle del Jerte (Q2606802) [2,06]  Bien de interés cultural
-  239  Puerto de Honduras                             ->  (Q23999229) [1,99]  movido 0,8 km
-  240  Monfragüe                                      -> Castillo de Monfragüe (Q5757454) [1,14]  Bien de interés cultural · movido 1,4 km
-  241  Puerto de Pajares                              -> Puerto de Pajares (Q3329179) [2,15]  movido 0,3 km
-  242  Puerto de San Isidro                           -> Puerto de San Isidro (Q8558801) [2,14]  movido 1,5 km
-  243  Puerto de Tarna                                -> Puerto de Tarna (Q8558762) [2,13]  movido 1,8 km
-  244  Puerto de Leitariegos                          -> Puerto de Leitariegos (Q6092333) [2,15]  
-  245  Puerto de Piedrasluengas                       -> Puerto de Piedrasluengas (Q5846328) [2,15]  movido 0,2 km
-  246  Puerto de Palombera                            -> Puerto de Palombera (Q1942621) [2,12]  movido 2,7 km
-  247  Puerto del Escudo                              -> Puerto del Escudo (Q7258846) [2,14]  movido 0,9 km
-  248  Puerto de Estacas de Trueba                    -> (sin elemento en Wikidata)
-  249  Puerto de Somport                              -> Somport (Q389859) [1,14]  movido 0,7 km
-  250  Puerto de Belagua                              -> (sin elemento en Wikidata)
-  251  Coll del Cantó                                 -> (sin elemento en Wikidata)
-  252  Collada de Toses                               -> (sin elemento en Wikidata)
-  253  Alto del León                                  -> (sin elemento en Wikidata)
-  254  Las Batuecas                                   -> Las Batuecas (Q9092425) [2,13]  Bien de interés cultural · movido 2,5 km
-  255  Puerto de Piqueras                             ->  (Q23993858) [1,98]  movido 2,4 km
-  256  Puerto de Velefique                            -> Alto de Velefique  [artículo del pueblo, sin datos]
-  257  Sa Calobra                                     ->  (Q153530) [0,96]  24 m
-  258  Hoces del Duratón                              -> Parque natural de las Hoces del Río Duratón (Q5875351) [1,07]  1989 · 50,4 km2
-  259  Laguna Negra de Urbión                         -> Laguna Negra de Urbión (Q5969113) [2,15]  
-  260  Lago de Sanabria                               -> Lago de Sanabria (Q1520979) [2,15]  997 m · Bien de interés cultural · 3,7 km2
-  261  Laguna Grande de Gredos                        -> Laguna Grande de Gredos (Q5969065) [2,15]  1940 m · 0,1 km2
-  262  Lagunas de Ruidera                             -> Parque natural de las Lagunas de Ruidera (Q6473040) [1,11]  1979 · 37,7 km2
-  263  Ciudad Encantada                               -> Ciudad Encantada (Q1094352) [2,14]  
-  264  Nacimiento del Río Cuervo                      ->  (Q124736032) [0,99]  Monumento Natural
-  265  Hayedo de Tejera Negra                         -> Hayedo de Tejera Negra (Q11682361) [2,11]  Parte de un sitio Patrimonio de la Humanidad · 138,8 km2
-  266  Hoces del Cabriel                              ->  (Q128501526) [1,91]  
-  267  Valle del Jerte en flor                        -> Cabezuela del Valle  [artículo del pueblo, sin datos]
-  268  Garganta de los Infiernos                      ->  (Q26869712) [1,97]  
-  269  Bardenas Reales                                -> Bardenas Reales (Q521527) [2,14]  650 m · 1999 · 414,4 km2
-  270  Selva de Irati                                 -> Selva de Irati (Q3078795) [2,11]  173 km2
-  271  Nacedero del Urederra                          -> Baquedano (Navarra)  [artículo del pueblo, sin datos]
-  272  Mallos de Riglos                               -> Mallos de Riglos (Q3106788) [2,14]  1045 m
-  273  Ruta del Cares                                 -> Ruta del Cares (Q6114450) [2,1]  
-  274  Fuente Dé                                      -> Fuente Dé (Q154903) [2,15]  1094 m
-  275  Costa Quebrada                                 ->  (Q136915121) [0,95]  2025 · 345 km2
-  276  Flysch de Zumaia                               -> (sin elemento en Wikidata)
-  277  Playa de las Catedrales                        -> Playa de Las Catedrales (Q2561808) [2,15]  
-  278  Cañón del Sil                                  -> Cañón del Sil (Q14916370) [2,14]  2006 · 59,3 km2
-  279  Cabo de Finisterre                             -> Cabo Finisterre (Q1136198) [1,15]  
-  280  Islas Cíes                                     -> Islas Cíes (Q1658753) [2,13]  197 m · 2004 · 4,5 km2
-  281  Cap de Creus                                   -> Parque natural del Cabo de Creus (Q3328519) [2,07]  1998 · 139,2 km2
-  282  Aigüestortes i Estany de Sant Maurici          -> Parque nacional de Aigüestortes i estany de Sant Maurici (Q1470066) [1,15]  1955 · Zona Especial de Conservación · 139,3 km2
-  283  Delta del Ebro                                 ->  (Q18611146) [1,94]  
-  284  Albufera de Valencia                           ->  (Q84165268) [1,99]  
-  285  Cabo de Gata                                   -> Cabo de Gata (Q2932431) [2,09]  
-  286  Desierto de Tabernas                           -> Desierto de Tabernas (Q939811) [2,08]  413 m · 114,5 km2
-  287  El Torcal de Antequera                         -> Torcal de Antequera (Q1013353) [1,14]  1992 · Parte de un sitio Patrimonio de la Humanidad · 21,8 km2
-  288  Caminito del Rey                               -> Caminito del Rey (Q857763) [2,13]  1905
-  289  Sierra de Cazorla                              -> Sierra de Cazorla (comarca) (Q2198539) [2,07]  
-  290  Calblanque                                     -> Calblanque, Monte de las Cenizas y Peña del Águila (Q5739766) [1,14]  1992 · 28 km2
-  291  Cap de Formentor                               -> (sin elemento en Wikidata)
-  292  Roque Nublo                                    -> Monumento natural del Roque Nublo (Q1424835) [2,15]  1803 m
-  293  Parque Nacional de Timanfaya                   -> Parque nacional de Timanfaya (Q1480521) [2,12]  103 m · 1974 · 51 km2
-  294  Molinos y castillo de Consuegra                -> Consuegra  [artículo del pueblo, sin datos]
-  295  Molinos de Campo de Criptana                   -> Molinos de Campo de Criptana (Q43173861) [2,15]  Bien de interés cultural · movido 0,2 km
-  296  Molinos de Mota del Cuervo                     -> Mota del Cuervo  [artículo del pueblo, sin datos]
-  297  Molinos de Alcázar de San Juan                 -> Molinos de Alcázar de San Juan (Q29564115) [2,12]  Bien de interés patrimonial · movido 2,8 km
-  298  Molinos de Vejer                               -> Vejer de la Frontera  [artículo del pueblo, sin datos]
-  299  Molinos del Campo de Cartagena                 -> Torre-Pacheco  [artículo del pueblo, sin datos]
-  300  Castillo de Almansa                            -> Castillo de Almansa (Q1049138) [2,15]  Bien de interés cultural · movido 0,4 km
-  301  Castillo de Calatrava la Nueva                 -> Castillo de Calatrava la Nueva (Q2933633) [2,13]  s. XIII · Arte gótico · Bien de interés cultural · movido 2,1 km
-  302  Castillo de Molina de Aragón                   -> Castillo de Molina de Aragón (Q1049240) [2,15]  Bien de interés cultural · movido 0,3 km
-  303  Castillo de Zafra                              -> Castillo de Zafra (Guadalajara) (Q3571719) [2,12]  Bien de interés cultural · movido 3,1 km
-  304  Castillo de Garcimuñoz                         -> Castillo de Castillo de Garcimuñoz (Q5757217) [2,14]  s. XV · Bien de interés cultural · movido 1,3 km
-  305  Castillo de la Mota                            -> Castillo de la Mota (Q2969574) [2,15]  s. XI · Bien de interés cultural · movido 0,4 km
-  306  Castillo de Cuéllar                            -> Castillo de Cuéllar (Q927265) [2,15]  Arquitectura gótica · Bien de interés cultural · movido 0,3 km
-  307  Castillo de Turégano                           -> Castillo de Turégano (Q5050435) [2,15]  Bien de interés cultural · movido 0,4 km
-  308  Castillo de Peñaranda de Duero                 -> Castillo de Peñaranda de Duero (Q5050404) [2,15]  Bien de interés cultural · movido 0,4 km
-  309  Castillo de Montealegre                        -> Castillo de Montealegre de Campos (Q1049226) [1,01]  1956 · Tipo Z · Bien de interés cultural · movido 13,6 km
-  310  Castillo de Monzón                             -> Castillo de Monzón (Q2970084) [2,15]  s. X · Arquitectura románica · Bien de interés cultural · movido 0,4 km
-  311  Castillo de Mesones de Isuela                  -> Castillo de los Luna (Mesones de Isuela) (Q13048672) [2,15]  Arquitectura gótica · Bien de interés cultural · movido 0,2 km
- 1001  Ronda – San Pedro (A-397)                      -> A-397 (Q4827070) [2,13]  movido 2,5 km
- 1002  Cazorla – Tranco – Hornos                      -> Cazorla (Q518339) [1,96]  826 m
- 1003  Guadalest y Puerto de Confrides (CV-70)        -> CV-70 (Q8254210) [2,15]  
- 1004  Sierra de Albarracín                           -> Sierra de Albarracín (Q7511633) [2,12]  1921 m
- 1005  Ribeira Sacra                                  -> Ribeira Sacra (Q3394276) [2,11]  Lista indicativa del Patrimonio de la Humanidad
- 1006  Cañones del Ebro                               -> Orbaneja del Castillo  [artículo del pueblo, sin datos]
- 1007  Costa vasca: Getaria – Lekeitio                -> (sin elemento en Wikidata)
- 1008  Montseny                                       -> Montseny (Barcelona) (Q15434) [2,09]  528 m
+   63  Llastres                                       -> Lastres (Q1022266) [9]  835 hab. · 63 m · movido 0,2 km
+   87  Pollença                                       -> Pollensa (Q601112) [9]  17807 hab.
+  110  Trévelez                                       -> Trevélez (Q618381) [9]  698 hab. · 1776 m · movido 0,7 km
+  118  Vilafamés                                      -> Villafamés (Q1116829) [9]  1962 hab. · 391 m · movido 0,2 km
+  135  Murallas y ciudad vieja                        -> Muralla de Ávila (Q3050235) [9]  Bien de interés cultural · movido 0,6 km
+  136  Ciudad vieja de Santiago                       -> Ciudad vieja de Santiago de Compostela (Q12386144) [9]  Patrimonio de la Humanidad
+  139  Arquitectura mudéjar de Aragón                 -> Arquitectura mudéjar de Aragón (Q764675) [9]  Patrimonio de la Humanidad
+  141  Catedral, Alcázar y Archivo de Indias          -> Catedral de Sevilla (Q231606) [9]  1410 · Arquitectura gótica · Bien de interés cultural · movido 0,3 km
+  145  Real Monasterio de Guadalupe                   -> Real Monasterio de Santa María de Guadalupe (Q750248) [9]  Arquitectura gótica · Patrimonio de la Humanidad
+  146  Camino de Santiago                             -> Camino de Santiago (Q41150) [9]  Bien de interés cultural
+  148  Ciudad histórica fortificada de Cuenca         -> Cuenca (España) (Q15098) [9]  movido 0,6 km
+  150  Las Médulas                                    -> Las Médulas (Q696803) [9]  Patrimonio de la Humanidad · movido 0,8 km
+  151  Palau de la Música y Hospital de Sant Pau      -> Palacio de la Música Catalana (Q327940) [9]  Modernismo catalán · Bien de interés cultural
+  152  Monasterios de San Millán de Yuso y Suso       -> Monasterio de San Millán de Yuso (Q1775925) [9]  Arquitectura herreriana · Bien de interés cultural · movido 0,2 km
+  153  Yacimientos de Atapuerca                       -> Sierra de Atapuerca (Q48782131) [9]  
+  155  Arte rupestre del arco mediterráneo            -> Arte rupestre del arco mediterráneo de la península ibérica (Q1975533) [9]  Patrimonio de la Humanidad
+  156  Universidad y recinto histórico                -> Universidad de Alcalá (Q1243904) [9]  1977
+  162  Iglesias románicas del Vall de Boí             -> Valle de Bohí (Q12711) [9]  movido 3,0 km
+  163  Arte rupestre de Siega Verde                   -> Siega Verde (Q2717874) [9]  Bien de interés cultural · movido 7,5 km
+  165  Conjuntos renacentistas de Úbeda y Baeza       -> Conjuntos monumentales renacentistas de Úbeda y Baeza (Q15831671) [9]  Patrimonio de la Humanidad · movido 0,2 km
+  169  Paisaje cultural de la Serra de Tramuntana     -> Sierra de Tramontana (Q379025) [9]  
+  172  Dólmenes de Antequera                          -> Sitio de los Dólmenes de Antequera (Q97633694) [9]  Patrimonio de la Humanidad
+  176  Menorca Talayótica                             -> Cultura talayótica (Q530894) [9]  
+  190  Románico de Zamora (Catedral)                  -> Catedral de Zamora (Q2942864) [9]  s. XII · Arquitectura románica en España · Bien de interés cultural
+  216  Puente romano de Alcántara                     -> Puente de Alcántara (Q996197) [9]  Bien de interés cultural
+  230  Ruta del Maestrazgo                            -> Maestrazgo (Q588841) [9]  
+  232  Puerto de Cotefablo y Ordesa                   -> Puerto de Cotefablo (Q13049931) [9]  
+  234  Alpujarras                                     -> La Alpujarra (Q661868) [9]  movido 0,2 km
+  236  Carretera de Sierra Nevada                     -> Sierra Nevada (España) (Q26955) [9]  
+  240  Monfragüe                                      -> Parque nacional de Monfragüe (Q1968939) [9]  
+  248  Puerto de Estacas de Trueba                    -> Puerto de las Estacas de Trueba (Q16623246) [9]  
+  250  Puerto de Belagua                              -> Valle de Belagua (Q3572351) [9]  
+  251  Coll del Cantó                                 -> Puerto del Cantó (Q11942406) [9]  movido 3,0 km
+  264  Nacimiento del Río Cuervo                      -> Río Cuervo (Q6115067) [9]  
+  266  Hoces del Cabriel                              -> Hoces del Cabriel (Q10943174) [9]  
+  268  Garganta de los Infiernos                      -> Reserva natural Garganta de los Infiernos (Q10996981) [9]  1994 · 72,6 km2
+  271  Nacedero del Urederra                          -> Río Urederra (Q3822262) [9]  
+  276  Flysch de Zumaia                               -> Flysch (Q756914) [9]  
+  283  Delta del Ebro                                 -> Parque natural del Delta del Ebro (Q549557) [9]  1983 · Sitio Ramsar · 76,3 km2
+  284  Albufera de Valencia                           -> Parque natural de la Albufera (Q2367959) [9]  1986 · Sitio Ramsar · 211,2 km2
+  289  Sierra de Cazorla                              -> Parque natural de las Sierras de Cazorla, Segura y Las Villas (Q1755523) [9]  1986 · 2099,3 km2
+  291  Cap de Formentor                               -> Cabo de Formentor (Q1034144) [9]  
+  309  Castillo de Montealegre                        -> Castillo de Montealegre de Campos (Q1049226) [9]  1956 · Bien de interés cultural

@@ -159,8 +159,20 @@ else { $lista = @($todos | Where-Object { -not $_.wikidata -and ($null -eq $_.PS
 Write-Output "Lugares a investigar: $($lista.Count)"
 
 $elegido = @{}   # id -> candidato
-$pend = @($lista | Where-Object { $Buscar -or -not $_.wikidata })
 foreach ($l in $lista) { if ($l.wikidata -and -not $Buscar) { $elegido[[string]$l.id] = [pscustomobject]@{ q = $l.wikidata; titulo = $l.wiki; coord = $null; score = 9 } } }
+# Corrección a mano: si un lugar tiene "wiki" pero no "wikidata", se busca el elemento de ese artículo.
+$manual = @($lista | Where-Object { $_.wiki -and -not $_.wikidata -and -not $Buscar })
+if ($manual.Count) {
+  $q = 'SELECT ?t ?item WHERE { VALUES ?t { ' + (($manual | ForEach-Object { (Q $_.wiki) + '@es' }) -join ' ') + ' } ?a schema:name ?t ; schema:isPartOf <https://es.wikipedia.org/> ; schema:about ?item . }'
+  $porT = @{}; foreach ($f in @(Invoke-Sparql $q)) { if ($f) { $porT[$f.t] = Get-Q $f.item } }
+  foreach ($l in $manual) {
+    if ($porT.ContainsKey($l.wiki)) { $elegido[[string]$l.id] = [pscustomobject]@{ q = $porT[$l.wiki]; titulo = $l.wiki; coord = $null; score = 9 } }
+    else { Write-Output "  Aviso: no existe el artículo '$($l.wiki)' (id $($l.id))" }
+  }
+}
+$pend = @($lista | Where-Object { -not $elegido.ContainsKey([string]$_.id) -and ($Buscar -or -not $_.wikidata) })
+# los datos investigados se recalculan desde cero (la altitud no, porque puede venir del usuario)
+foreach ($l in $lista) { foreach ($k in 'habitantes', 'habitantes_anio', 'epoca', 'estilo', 'proteccion', 'proteccion_anio', 'superficie_km2') { $l.PSObject.Properties.Remove($k) } }
 
 foreach ($pasada in 1, 2) {
   $porNombre = @{}
@@ -230,7 +242,7 @@ foreach ($l in $lista) {
       Set-Campo $l 'wiki' $respaldo[[string]$l.id]
       [void]$informe.Add(('{0,5}  {1,-46} -> {2}  [artículo del pueblo, sin datos]' -f $l.id, $l.nombre, $l.wiki)); continue
     }
-    if (-not $l.wiki) { Set-Campo $l 'wiki' '' }
+    # sin "wiki": la app intentará encontrar el artículo sola por cercanía
     [void]$informe.Add(('{0,5}  {1,-46} -> (sin elemento en Wikidata)' -f $l.id, $l.nombre)); continue
   }
   $q = $c.q; $hechos = @()
@@ -246,7 +258,8 @@ foreach ($l in $lista) {
     if ($n -gt 0) { Set-Campo $l 'habitantes' ([int]$n); $a = Get-AnioTexto $m.t; if ($a) { Set-Campo $l 'habitantes_anio' $a.anio }; $hechos += "$([int]$n) hab." }
   }
   # altitud
-  if (-not $l.altitud_m -and $G.alt[$q] -and $l.capa -ne 'monumentos' -and $l.capa -ne 'historia') {
+  # altitud: pueblos y paisajes (en rutas, la del puerto la pone el usuario; en monumentos no aporta)
+  if (-not $l.altitud_m -and $G.alt[$q] -and ($l.capa -eq 'pueblos_bonitos' -or $l.capa -eq 'paisajes_naturales')) {
     $f = @($G.alt[$q])[0]; $m = [double]::Parse($f.v, $inv); if ($f.u -match 'Q3710$') { $m = $m * 0.3048 }
     if ($m -gt 0 -and $f.u -match 'Q11573$|Q3710$') { Set-Campo $l 'altitud_m' ([int][Math]::Round($m)); $hechos += "$([int][Math]::Round($m)) m" }
   }
@@ -256,10 +269,14 @@ foreach ($l in $lista) {
     if ($e) { Set-Campo $l 'epoca' $e; $hechos += $e }
   }
   # estilo
-  if (($l.capa -eq 'monumentos' -or $l.capa -eq 'historia') -and $G.est[$q]) { $s = Format-Etiqueta (@($G.est[$q])[0].v); Set-Campo $l 'estilo' $s; $hechos += $s }
+  $estilos = @($G.est[$q] | Where-Object { $_ -and $_.v -notmatch '^Tipo ' })
+  if (($l.capa -eq 'monumentos' -or $l.capa -eq 'historia') -and $estilos.Count) { $s = Format-Etiqueta $estilos[0].v; Set-Campo $l 'estilo' $s; $hechos += $s }
   # protección: Patrimonio de la Humanidad > Bien de Interés Cultural > otras
   if ($G.pro[$q]) {
-    $filas = @($G.pro[$q])
+    # se descartan registros genéricos que no dicen nada al usuario
+    $filas = @($G.pro[$q] | Where-Object { $_.v -notmatch 'parte del patrimonio cultural|Tipo [A-Z]$' })
+  }
+  if ($G.pro[$q] -and $filas.Count) {
     $m = $filas | Sort-Object { $h = Get-Q $_.h; if ($h -eq 'Q9259') { 0 } elseif ($h -eq 'Q23712') { 1 } else { 5 } } | Select-Object -First 1
     $s = Format-Etiqueta $m.v; Set-Campo $l 'proteccion' $s
     $a = Get-AnioTexto $m.t; if ($a) { Set-Campo $l 'proteccion_anio' $a.anio }
