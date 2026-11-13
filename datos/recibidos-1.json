@@ -1,0 +1,4168 @@
+{
+  "version": 1,
+  "nota": "Coordenadas aproximadas",
+  "total": 520,
+  "lugares": [
+    {
+      "id": 1,
+      "capa": "pueblos_bonitos",
+      "nombre": "Aínsa",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Huesca",
+      "comunidad": "Aragón",
+      "lat": 42.415,
+      "lon": 0.139
+    },
+    {
+      "id": 2,
+      "capa": "pueblos_bonitos",
+      "nombre": "Agulo",
+      "tipo": "Pueblo más bonito",
+      "lugar": "La Gomera",
+      "comunidad": "Canarias",
+      "lat": 28.188,
+      "lon": -17.195
+    },
+    {
+      "id": 3,
+      "capa": "pueblos_bonitos",
+      "nombre": "Albarracín",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Teruel",
+      "comunidad": "Aragón",
+      "lat": 40.408,
+      "lon": -1.443
+    },
+    {
+      "id": 4,
+      "capa": "pueblos_bonitos",
+      "nombre": "Alcalá del Júcar",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Albacete",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 39.193,
+      "lon": -1.43
+    },
+    {
+      "id": 5,
+      "capa": "pueblos_bonitos",
+      "nombre": "Alcúdia",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Mallorca",
+      "comunidad": "Illes Balears",
+      "lat": 39.853,
+      "lon": 3.121
+    },
+    {
+      "id": 6,
+      "capa": "pueblos_bonitos",
+      "nombre": "Almagro",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Ciudad Real",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 38.889,
+      "lon": -3.712
+    },
+    {
+      "id": 7,
+      "capa": "pueblos_bonitos",
+      "nombre": "Almonaster la Real",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Huelva",
+      "comunidad": "Andalucía",
+      "lat": 37.873,
+      "lon": -6.787
+    },
+    {
+      "id": 8,
+      "capa": "pueblos_bonitos",
+      "nombre": "Alpuente",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Valencia",
+      "comunidad": "C. Valenciana",
+      "lat": 39.893,
+      "lon": -1.008
+    },
+    {
+      "id": 9,
+      "capa": "pueblos_bonitos",
+      "nombre": "Alquézar",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Huesca",
+      "comunidad": "Aragón",
+      "lat": 42.171,
+      "lon": 0.025
+    },
+    {
+      "id": 10,
+      "capa": "pueblos_bonitos",
+      "nombre": "Ampudia",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Palencia",
+      "comunidad": "Castilla y León",
+      "lat": 41.917,
+      "lon": -4.78
+    },
+    {
+      "id": 11,
+      "capa": "pueblos_bonitos",
+      "nombre": "Anento",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Zaragoza",
+      "comunidad": "Aragón",
+      "lat": 41.069,
+      "lon": -1.334
+    },
+    {
+      "id": 12,
+      "capa": "pueblos_bonitos",
+      "nombre": "Ansó",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Huesca",
+      "comunidad": "Aragón",
+      "lat": 42.757,
+      "lon": -0.829
+    },
+    {
+      "id": 13,
+      "capa": "pueblos_bonitos",
+      "nombre": "Arties",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Lleida",
+      "comunidad": "Cataluña",
+      "lat": 42.7,
+      "lon": 0.873
+    },
+    {
+      "id": 14,
+      "capa": "pueblos_bonitos",
+      "nombre": "Atienza",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Guadalajara",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 41.198,
+      "lon": -2.871
+    },
+    {
+      "id": 15,
+      "capa": "pueblos_bonitos",
+      "nombre": "Ayllón",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Segovia",
+      "comunidad": "Castilla y León",
+      "lat": 41.419,
+      "lon": -3.375
+    },
+    {
+      "id": 16,
+      "capa": "pueblos_bonitos",
+      "nombre": "Bagergue",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Lleida",
+      "comunidad": "Cataluña",
+      "lat": 42.723,
+      "lon": 0.937
+    },
+    {
+      "id": 17,
+      "capa": "pueblos_bonitos",
+      "nombre": "Baños de la Encina",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Jaén",
+      "comunidad": "Andalucía",
+      "lat": 38.172,
+      "lon": -3.775
+    },
+    {
+      "id": 18,
+      "capa": "pueblos_bonitos",
+      "nombre": "Bárcena Mayor",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cantabria",
+      "comunidad": "Cantabria",
+      "lat": 43.13,
+      "lon": -4.23
+    },
+    {
+      "id": 19,
+      "capa": "pueblos_bonitos",
+      "nombre": "Beget",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Girona",
+      "comunidad": "Cataluña",
+      "lat": 42.32,
+      "lon": 2.484
+    },
+    {
+      "id": 20,
+      "capa": "pueblos_bonitos",
+      "nombre": "Berlanga de Duero",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Soria",
+      "comunidad": "Castilla y León",
+      "lat": 41.465,
+      "lon": -2.862
+    },
+    {
+      "id": 21,
+      "capa": "pueblos_bonitos",
+      "nombre": "Betancuria",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Fuerteventura",
+      "comunidad": "Canarias",
+      "lat": 28.425,
+      "lon": -14.057
+    },
+    {
+      "id": 22,
+      "capa": "pueblos_bonitos",
+      "nombre": "Bonilla de la Sierra",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Ávila",
+      "comunidad": "Castilla y León",
+      "lat": 40.533,
+      "lon": -5.282
+    },
+    {
+      "id": 23,
+      "capa": "pueblos_bonitos",
+      "nombre": "Briones",
+      "tipo": "Pueblo más bonito",
+      "lugar": "La Rioja",
+      "comunidad": "La Rioja",
+      "lat": 42.544,
+      "lon": -2.786
+    },
+    {
+      "id": 24,
+      "capa": "pueblos_bonitos",
+      "nombre": "Bubión",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Granada",
+      "comunidad": "Andalucía",
+      "lat": 36.949,
+      "lon": -3.356
+    },
+    {
+      "id": 25,
+      "capa": "pueblos_bonitos",
+      "nombre": "Bulnes",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Asturias",
+      "comunidad": "Asturias",
+      "lat": 43.237,
+      "lon": -4.818
+    },
+    {
+      "id": 26,
+      "capa": "pueblos_bonitos",
+      "nombre": "Calaceite",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Teruel",
+      "comunidad": "Aragón",
+      "lat": 41.017,
+      "lon": 0.188
+    },
+    {
+      "id": 27,
+      "capa": "pueblos_bonitos",
+      "nombre": "Caleruega",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Burgos",
+      "comunidad": "Castilla y León",
+      "lat": 41.825,
+      "lon": -3.486
+    },
+    {
+      "id": 28,
+      "capa": "pueblos_bonitos",
+      "nombre": "Candelario",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Salamanca",
+      "comunidad": "Castilla y León",
+      "lat": 40.367,
+      "lon": -5.745
+    },
+    {
+      "id": 29,
+      "capa": "pueblos_bonitos",
+      "nombre": "Cantavieja",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Teruel",
+      "comunidad": "Aragón",
+      "lat": 40.526,
+      "lon": -0.404
+    },
+    {
+      "id": 30,
+      "capa": "pueblos_bonitos",
+      "nombre": "Capileira",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Granada",
+      "comunidad": "Andalucía",
+      "lat": 36.961,
+      "lon": -3.359
+    },
+    {
+      "id": 31,
+      "capa": "pueblos_bonitos",
+      "nombre": "Carmona",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cantabria",
+      "comunidad": "Cantabria",
+      "lat": 43.3,
+      "lon": -4.3
+    },
+    {
+      "id": 32,
+      "capa": "pueblos_bonitos",
+      "nombre": "Castellar de la Frontera",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cádiz",
+      "comunidad": "Andalucía",
+      "lat": 36.318,
+      "lon": -5.425
+    },
+    {
+      "id": 33,
+      "capa": "pueblos_bonitos",
+      "nombre": "Castrillo de los Polvazares",
+      "tipo": "Pueblo más bonito",
+      "lugar": "León",
+      "comunidad": "Castilla y León",
+      "lat": 42.468,
+      "lon": -6.134
+    },
+    {
+      "id": 34,
+      "capa": "pueblos_bonitos",
+      "nombre": "Castrojeriz",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Burgos",
+      "comunidad": "Castilla y León",
+      "lat": 42.288,
+      "lon": -4.138
+    },
+    {
+      "id": 35,
+      "capa": "pueblos_bonitos",
+      "nombre": "Castro Caldelas",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Ourense",
+      "comunidad": "Galicia",
+      "lat": 42.375,
+      "lon": -7.416
+    },
+    {
+      "id": 36,
+      "capa": "pueblos_bonitos",
+      "nombre": "Chinchón",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Madrid",
+      "comunidad": "Madrid",
+      "lat": 40.14,
+      "lon": -3.422
+    },
+    {
+      "id": 37,
+      "capa": "pueblos_bonitos",
+      "nombre": "Ciudad Rodrigo",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Salamanca",
+      "comunidad": "Castilla y León",
+      "lat": 40.6,
+      "lon": -6.533
+    },
+    {
+      "id": 38,
+      "capa": "pueblos_bonitos",
+      "nombre": "Comillas",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cantabria",
+      "comunidad": "Cantabria",
+      "lat": 43.386,
+      "lon": -4.291
+    },
+    {
+      "id": 39,
+      "capa": "pueblos_bonitos",
+      "nombre": "Covarrubias",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Burgos",
+      "comunidad": "Castilla y León",
+      "lat": 42.059,
+      "lon": -3.518
+    },
+    {
+      "id": 40,
+      "capa": "pueblos_bonitos",
+      "nombre": "Cudillero",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Asturias",
+      "comunidad": "Asturias",
+      "lat": 43.563,
+      "lon": -6.146
+    },
+    {
+      "id": 41,
+      "capa": "pueblos_bonitos",
+      "nombre": "Culla",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Castellón",
+      "comunidad": "C. Valenciana",
+      "lat": 40.336,
+      "lon": -0.166
+    },
+    {
+      "id": 42,
+      "capa": "pueblos_bonitos",
+      "nombre": "Durro",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Lleida",
+      "comunidad": "Cataluña",
+      "lat": 42.494,
+      "lon": 0.802
+    },
+    {
+      "id": 43,
+      "capa": "pueblos_bonitos",
+      "nombre": "El Burgo de Osma",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Soria",
+      "comunidad": "Castilla y León",
+      "lat": 41.587,
+      "lon": -3.068
+    },
+    {
+      "id": 44,
+      "capa": "pueblos_bonitos",
+      "nombre": "Fornalutx",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Mallorca",
+      "comunidad": "Illes Balears",
+      "lat": 39.782,
+      "lon": 2.74
+    },
+    {
+      "id": 45,
+      "capa": "pueblos_bonitos",
+      "nombre": "Frías",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Burgos",
+      "comunidad": "Castilla y León",
+      "lat": 42.762,
+      "lon": -3.294
+    },
+    {
+      "id": 46,
+      "capa": "pueblos_bonitos",
+      "nombre": "Frigiliana",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Málaga",
+      "comunidad": "Andalucía",
+      "lat": 36.791,
+      "lon": -3.894
+    },
+    {
+      "id": 47,
+      "capa": "pueblos_bonitos",
+      "nombre": "Garachico",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Tenerife",
+      "comunidad": "Canarias",
+      "lat": 28.373,
+      "lon": -16.764
+    },
+    {
+      "id": 48,
+      "capa": "pueblos_bonitos",
+      "nombre": "Garós",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Lleida",
+      "comunidad": "Cataluña",
+      "lat": 42.703,
+      "lon": 0.844
+    },
+    {
+      "id": 49,
+      "capa": "pueblos_bonitos",
+      "nombre": "Genalguacil",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Málaga",
+      "comunidad": "Andalucía",
+      "lat": 36.546,
+      "lon": -5.235
+    },
+    {
+      "id": 50,
+      "capa": "pueblos_bonitos",
+      "nombre": "Grazalema",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cádiz",
+      "comunidad": "Andalucía",
+      "lat": 36.759,
+      "lon": -5.367
+    },
+    {
+      "id": 51,
+      "capa": "pueblos_bonitos",
+      "nombre": "Guadalest",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Alicante",
+      "comunidad": "C. Valenciana",
+      "lat": 38.676,
+      "lon": -0.199
+    },
+    {
+      "id": 52,
+      "capa": "pueblos_bonitos",
+      "nombre": "Guadalupe",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cáceres",
+      "comunidad": "Extremadura",
+      "lat": 39.452,
+      "lon": -5.327
+    },
+    {
+      "id": 53,
+      "capa": "pueblos_bonitos",
+      "nombre": "Hita",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Guadalajara",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 40.822,
+      "lon": -3.047
+    },
+    {
+      "id": 54,
+      "capa": "pueblos_bonitos",
+      "nombre": "Jerez de los Caballeros",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Badajoz",
+      "comunidad": "Extremadura",
+      "lat": 38.32,
+      "lon": -6.773
+    },
+    {
+      "id": 55,
+      "capa": "pueblos_bonitos",
+      "nombre": "La Alberca",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Salamanca",
+      "comunidad": "Castilla y León",
+      "lat": 40.489,
+      "lon": -6.111
+    },
+    {
+      "id": 56,
+      "capa": "pueblos_bonitos",
+      "nombre": "La Fresneda",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Teruel",
+      "comunidad": "Aragón",
+      "lat": 40.912,
+      "lon": 0.068
+    },
+    {
+      "id": 57,
+      "capa": "pueblos_bonitos",
+      "nombre": "Laguardia",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Álava",
+      "comunidad": "País Vasco",
+      "lat": 42.553,
+      "lon": -2.585
+    },
+    {
+      "id": 58,
+      "capa": "pueblos_bonitos",
+      "nombre": "Ledesma",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Salamanca",
+      "comunidad": "Castilla y León",
+      "lat": 41.088,
+      "lon": -6
+    },
+    {
+      "id": 59,
+      "capa": "pueblos_bonitos",
+      "nombre": "Lerma",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Burgos",
+      "comunidad": "Castilla y León",
+      "lat": 42.026,
+      "lon": -3.756
+    },
+    {
+      "id": 60,
+      "capa": "pueblos_bonitos",
+      "nombre": "Letur",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Albacete",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 38.367,
+      "lon": -2.101
+    },
+    {
+      "id": 61,
+      "capa": "pueblos_bonitos",
+      "nombre": "Liérganes",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cantabria",
+      "comunidad": "Cantabria",
+      "lat": 43.345,
+      "lon": -3.742
+    },
+    {
+      "id": 62,
+      "capa": "pueblos_bonitos",
+      "nombre": "Linares de Mora",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Teruel",
+      "comunidad": "Aragón",
+      "lat": 40.314,
+      "lon": -0.57
+    },
+    {
+      "id": 63,
+      "capa": "pueblos_bonitos",
+      "nombre": "Llastres",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Asturias",
+      "comunidad": "Asturias",
+      "lat": 43.513,
+      "lon": -5.267
+    },
+    {
+      "id": 64,
+      "capa": "pueblos_bonitos",
+      "nombre": "Llerena",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Badajoz",
+      "comunidad": "Extremadura",
+      "lat": 38.237,
+      "lon": -6.016
+    },
+    {
+      "id": 65,
+      "capa": "pueblos_bonitos",
+      "nombre": "Lucainena de las Torres",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Almería",
+      "comunidad": "Andalucía",
+      "lat": 37.041,
+      "lon": -2.2
+    },
+    {
+      "id": 66,
+      "capa": "pueblos_bonitos",
+      "nombre": "Maderuelo",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Segovia",
+      "comunidad": "Castilla y León",
+      "lat": 41.487,
+      "lon": -3.522
+    },
+    {
+      "id": 67,
+      "capa": "pueblos_bonitos",
+      "nombre": "Medinaceli",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Soria",
+      "comunidad": "Castilla y León",
+      "lat": 41.172,
+      "lon": -2.434
+    },
+    {
+      "id": 68,
+      "capa": "pueblos_bonitos",
+      "nombre": "Mirambel",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Teruel",
+      "comunidad": "Aragón",
+      "lat": 40.586,
+      "lon": -0.343
+    },
+    {
+      "id": 69,
+      "capa": "pueblos_bonitos",
+      "nombre": "Miranda del Castañar",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Salamanca",
+      "comunidad": "Castilla y León",
+      "lat": 40.484,
+      "lon": -5.997
+    },
+    {
+      "id": 70,
+      "capa": "pueblos_bonitos",
+      "nombre": "Mogarraz",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Salamanca",
+      "comunidad": "Castilla y León",
+      "lat": 40.492,
+      "lon": -6.051
+    },
+    {
+      "id": 71,
+      "capa": "pueblos_bonitos",
+      "nombre": "Mogrovejo",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cantabria",
+      "comunidad": "Cantabria",
+      "lat": 43.149,
+      "lon": -4.665
+    },
+    {
+      "id": 72,
+      "capa": "pueblos_bonitos",
+      "nombre": "Mojácar",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Almería",
+      "comunidad": "Andalucía",
+      "lat": 37.14,
+      "lon": -1.851
+    },
+    {
+      "id": 73,
+      "capa": "pueblos_bonitos",
+      "nombre": "Molinaseca",
+      "tipo": "Pueblo más bonito",
+      "lugar": "León",
+      "comunidad": "Castilla y León",
+      "lat": 42.538,
+      "lon": -6.519
+    },
+    {
+      "id": 74,
+      "capa": "pueblos_bonitos",
+      "nombre": "Mondoñedo",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Lugo",
+      "comunidad": "Galicia",
+      "lat": 43.428,
+      "lon": -7.363
+    },
+    {
+      "id": 75,
+      "capa": "pueblos_bonitos",
+      "nombre": "Monteagudo de las Vicarías",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Soria",
+      "comunidad": "Castilla y León",
+      "lat": 41.362,
+      "lon": -2.168
+    },
+    {
+      "id": 76,
+      "capa": "pueblos_bonitos",
+      "nombre": "Morella",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Castellón",
+      "comunidad": "C. Valenciana",
+      "lat": 40.619,
+      "lon": -0.101
+    },
+    {
+      "id": 77,
+      "capa": "pueblos_bonitos",
+      "nombre": "Níjar",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Almería",
+      "comunidad": "Andalucía",
+      "lat": 36.966,
+      "lon": -2.207
+    },
+    {
+      "id": 78,
+      "capa": "pueblos_bonitos",
+      "nombre": "Nuevo Baztán",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Madrid",
+      "comunidad": "Madrid",
+      "lat": 40.366,
+      "lon": -3.24
+    },
+    {
+      "id": 79,
+      "capa": "pueblos_bonitos",
+      "nombre": "Olivenza",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Badajoz",
+      "comunidad": "Extremadura",
+      "lat": 38.682,
+      "lon": -7.1
+    },
+    {
+      "id": 80,
+      "capa": "pueblos_bonitos",
+      "nombre": "Oseira",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Ourense",
+      "comunidad": "Galicia",
+      "lat": 42.54,
+      "lon": -7.95
+    },
+    {
+      "id": 81,
+      "capa": "pueblos_bonitos",
+      "nombre": "Pampaneira",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Granada",
+      "comunidad": "Andalucía",
+      "lat": 36.94,
+      "lon": -3.361
+    },
+    {
+      "id": 82,
+      "capa": "pueblos_bonitos",
+      "nombre": "Parauta",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Málaga",
+      "comunidad": "Andalucía",
+      "lat": 36.655,
+      "lon": -5.128
+    },
+    {
+      "id": 83,
+      "capa": "pueblos_bonitos",
+      "nombre": "Pastrana",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Guadalajara",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 40.418,
+      "lon": -2.923
+    },
+    {
+      "id": 84,
+      "capa": "pueblos_bonitos",
+      "nombre": "Pedraza",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Segovia",
+      "comunidad": "Castilla y León",
+      "lat": 41.13,
+      "lon": -3.81
+    },
+    {
+      "id": 85,
+      "capa": "pueblos_bonitos",
+      "nombre": "Peñalba de Santiago",
+      "tipo": "Pueblo más bonito",
+      "lugar": "León",
+      "comunidad": "Castilla y León",
+      "lat": 42.418,
+      "lon": -6.548
+    },
+    {
+      "id": 86,
+      "capa": "pueblos_bonitos",
+      "nombre": "Peñíscola",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Castellón",
+      "comunidad": "C. Valenciana",
+      "lat": 40.358,
+      "lon": 0.405
+    },
+    {
+      "id": 87,
+      "capa": "pueblos_bonitos",
+      "nombre": "Pollença",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Mallorca",
+      "comunidad": "Illes Balears",
+      "lat": 39.877,
+      "lon": 3.016
+    },
+    {
+      "id": 88,
+      "capa": "pueblos_bonitos",
+      "nombre": "Ponte Maceira",
+      "tipo": "Pueblo más bonito",
+      "lugar": "A Coruña",
+      "comunidad": "Galicia",
+      "lat": 42.893,
+      "lon": -8.687
+    },
+    {
+      "id": 89,
+      "capa": "pueblos_bonitos",
+      "nombre": "Potes",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cantabria",
+      "comunidad": "Cantabria",
+      "lat": 43.154,
+      "lon": -4.623
+    },
+    {
+      "id": 90,
+      "capa": "pueblos_bonitos",
+      "nombre": "Poza de la Sal",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Burgos",
+      "comunidad": "Castilla y León",
+      "lat": 42.665,
+      "lon": -3.505
+    },
+    {
+      "id": 91,
+      "capa": "pueblos_bonitos",
+      "nombre": "Puertomingalvo",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Teruel",
+      "comunidad": "Aragón",
+      "lat": 40.271,
+      "lon": -0.414
+    },
+    {
+      "id": 92,
+      "capa": "pueblos_bonitos",
+      "nombre": "Puebla de Sanabria",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Zamora",
+      "comunidad": "Castilla y León",
+      "lat": 42.054,
+      "lon": -6.635
+    },
+    {
+      "id": 93,
+      "capa": "pueblos_bonitos",
+      "nombre": "Robledillo de Gata",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cáceres",
+      "comunidad": "Extremadura",
+      "lat": 40.33,
+      "lon": -6.464
+    },
+    {
+      "id": 94,
+      "capa": "pueblos_bonitos",
+      "nombre": "Roda de Isábena",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Huesca",
+      "comunidad": "Aragón",
+      "lat": 42.29,
+      "lon": 0.528
+    },
+    {
+      "id": 95,
+      "capa": "pueblos_bonitos",
+      "nombre": "Roncal",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Navarra",
+      "comunidad": "Navarra",
+      "lat": 42.809,
+      "lon": -0.955
+    },
+    {
+      "id": 96,
+      "capa": "pueblos_bonitos",
+      "nombre": "Rubielos de Mora",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Teruel",
+      "comunidad": "Aragón",
+      "lat": 40.188,
+      "lon": -0.654
+    },
+    {
+      "id": 97,
+      "capa": "pueblos_bonitos",
+      "nombre": "Sajazarra",
+      "tipo": "Pueblo más bonito",
+      "lugar": "La Rioja",
+      "comunidad": "La Rioja",
+      "lat": 42.587,
+      "lon": -2.961
+    },
+    {
+      "id": 98,
+      "capa": "pueblos_bonitos",
+      "nombre": "Santa Gadea del Cid",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Burgos",
+      "comunidad": "Castilla y León",
+      "lat": 42.717,
+      "lon": -3.059
+    },
+    {
+      "id": 99,
+      "capa": "pueblos_bonitos",
+      "nombre": "Santillana del Mar",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cantabria",
+      "comunidad": "Cantabria",
+      "lat": 43.389,
+      "lon": -4.107
+    },
+    {
+      "id": 100,
+      "capa": "pueblos_bonitos",
+      "nombre": "San Martín de Trevejo",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cáceres",
+      "comunidad": "Extremadura",
+      "lat": 40.212,
+      "lon": -6.796
+    },
+    {
+      "id": 101,
+      "capa": "pueblos_bonitos",
+      "nombre": "Segura de la Sierra",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Jaén",
+      "comunidad": "Andalucía",
+      "lat": 38.298,
+      "lon": -2.651
+    },
+    {
+      "id": 102,
+      "capa": "pueblos_bonitos",
+      "nombre": "Sepúlveda",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Segovia",
+      "comunidad": "Castilla y León",
+      "lat": 41.297,
+      "lon": -3.744
+    },
+    {
+      "id": 103,
+      "capa": "pueblos_bonitos",
+      "nombre": "Setenil de las Bodegas",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cádiz",
+      "comunidad": "Andalucía",
+      "lat": 36.864,
+      "lon": -5.181
+    },
+    {
+      "id": 104,
+      "capa": "pueblos_bonitos",
+      "nombre": "Sos del Rey Católico",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Zaragoza",
+      "comunidad": "Aragón",
+      "lat": 42.497,
+      "lon": -1.214
+    },
+    {
+      "id": 105,
+      "capa": "pueblos_bonitos",
+      "nombre": "Tazones",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Asturias",
+      "comunidad": "Asturias",
+      "lat": 43.543,
+      "lon": -5.4
+    },
+    {
+      "id": 106,
+      "capa": "pueblos_bonitos",
+      "nombre": "Teguise",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Lanzarote",
+      "comunidad": "Canarias",
+      "lat": 29.06,
+      "lon": -13.564
+    },
+    {
+      "id": 107,
+      "capa": "pueblos_bonitos",
+      "nombre": "Tejeda",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Gran Canaria",
+      "comunidad": "Canarias",
+      "lat": 27.995,
+      "lon": -15.615
+    },
+    {
+      "id": 108,
+      "capa": "pueblos_bonitos",
+      "nombre": "Torazo",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Asturias",
+      "comunidad": "Asturias",
+      "lat": 43.43,
+      "lon": -5.36
+    },
+    {
+      "id": 109,
+      "capa": "pueblos_bonitos",
+      "nombre": "Trevejo",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cáceres",
+      "comunidad": "Extremadura",
+      "lat": 40.228,
+      "lon": -6.771
+    },
+    {
+      "id": 110,
+      "capa": "pueblos_bonitos",
+      "nombre": "Trévelez",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Granada",
+      "comunidad": "Andalucía",
+      "lat": 36.999,
+      "lon": -3.266
+    },
+    {
+      "id": 111,
+      "capa": "pueblos_bonitos",
+      "nombre": "Trujillo",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cáceres",
+      "comunidad": "Extremadura",
+      "lat": 39.459,
+      "lon": -5.882
+    },
+    {
+      "id": 112,
+      "capa": "pueblos_bonitos",
+      "nombre": "Ujué",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Navarra",
+      "comunidad": "Navarra",
+      "lat": 42.5,
+      "lon": -1.502
+    },
+    {
+      "id": 113,
+      "capa": "pueblos_bonitos",
+      "nombre": "Urueña",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Valladolid",
+      "comunidad": "Castilla y León",
+      "lat": 41.726,
+      "lon": -5.203
+    },
+    {
+      "id": 114,
+      "capa": "pueblos_bonitos",
+      "nombre": "Valderrobres",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Teruel",
+      "comunidad": "Aragón",
+      "lat": 40.873,
+      "lon": 0.155
+    },
+    {
+      "id": 115,
+      "capa": "pueblos_bonitos",
+      "nombre": "Valverde de la Vera",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cáceres",
+      "comunidad": "Extremadura",
+      "lat": 40.123,
+      "lon": -5.494
+    },
+    {
+      "id": 116,
+      "capa": "pueblos_bonitos",
+      "nombre": "Valverde de los Arroyos",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Guadalajara",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 41.13,
+      "lon": -3.235
+    },
+    {
+      "id": 117,
+      "capa": "pueblos_bonitos",
+      "nombre": "Vejer de la Frontera",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cádiz",
+      "comunidad": "Andalucía",
+      "lat": 36.252,
+      "lon": -5.967
+    },
+    {
+      "id": 118,
+      "capa": "pueblos_bonitos",
+      "nombre": "Vilafamés",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Castellón",
+      "comunidad": "C. Valenciana",
+      "lat": 40.115,
+      "lon": -0.051
+    },
+    {
+      "id": 119,
+      "capa": "pueblos_bonitos",
+      "nombre": "Vilanova dos Infantes",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Ourense",
+      "comunidad": "Galicia",
+      "lat": 42.208,
+      "lon": -7.948
+    },
+    {
+      "id": 120,
+      "capa": "pueblos_bonitos",
+      "nombre": "Villanueva de los Infantes",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Ciudad Real",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 38.737,
+      "lon": -3.014
+    },
+    {
+      "id": 121,
+      "capa": "pueblos_bonitos",
+      "nombre": "Viniegra de Abajo",
+      "tipo": "Pueblo más bonito",
+      "lugar": "La Rioja",
+      "comunidad": "La Rioja",
+      "lat": 42.143,
+      "lon": -2.84
+    },
+    {
+      "id": 122,
+      "capa": "pueblos_bonitos",
+      "nombre": "Viniegra de Arriba",
+      "tipo": "Pueblo más bonito",
+      "lugar": "La Rioja",
+      "comunidad": "La Rioja",
+      "lat": 42.104,
+      "lon": -2.858
+    },
+    {
+      "id": 123,
+      "capa": "pueblos_bonitos",
+      "nombre": "Vinuesa",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Soria",
+      "comunidad": "Castilla y León",
+      "lat": 41.912,
+      "lon": -2.763
+    },
+    {
+      "id": 124,
+      "capa": "pueblos_bonitos",
+      "nombre": "Yanguas",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Soria",
+      "comunidad": "Castilla y León",
+      "lat": 42.103,
+      "lon": -2.346
+    },
+    {
+      "id": 125,
+      "capa": "pueblos_bonitos",
+      "nombre": "Zahara de la Sierra",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Cádiz",
+      "comunidad": "Andalucía",
+      "lat": 36.84,
+      "lon": -5.391
+    },
+    {
+      "id": 126,
+      "capa": "pueblos_bonitos",
+      "nombre": "Zuheros",
+      "tipo": "Pueblo más bonito",
+      "lugar": "Córdoba",
+      "comunidad": "Andalucía",
+      "lat": 37.543,
+      "lon": -4.316
+    },
+    {
+      "id": 127,
+      "capa": "monumentos",
+      "nombre": "Alhambra, Generalife y Albaicín",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Granada",
+      "comunidad": "Andalucía",
+      "lat": 37.176,
+      "lon": -3.588,
+      "unesco": true
+    },
+    {
+      "id": 128,
+      "capa": "monumentos",
+      "nombre": "Catedral de Burgos",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Burgos",
+      "comunidad": "Castilla y León",
+      "lat": 42.341,
+      "lon": -3.704,
+      "unesco": true
+    },
+    {
+      "id": 129,
+      "capa": "monumentos",
+      "nombre": "Mezquita-Catedral y centro histórico",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Córdoba",
+      "comunidad": "Andalucía",
+      "lat": 37.879,
+      "lon": -4.779,
+      "unesco": true
+    },
+    {
+      "id": 130,
+      "capa": "monumentos",
+      "nombre": "Monasterio de El Escorial",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "San Lorenzo de El Escorial",
+      "comunidad": "Madrid",
+      "lat": 40.589,
+      "lon": -4.148,
+      "unesco": true
+    },
+    {
+      "id": 131,
+      "capa": "monumentos",
+      "nombre": "Obras de Gaudí (Sagrada Familia)",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Barcelona",
+      "comunidad": "Cataluña",
+      "lat": 41.404,
+      "lon": 2.174,
+      "unesco": true
+    },
+    {
+      "id": 132,
+      "capa": "monumentos",
+      "nombre": "Cueva de Altamira",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Santillana del Mar",
+      "comunidad": "Cantabria",
+      "lat": 43.377,
+      "lon": -4.122,
+      "unesco": true
+    },
+    {
+      "id": 133,
+      "capa": "monumentos",
+      "nombre": "Acueducto y ciudad vieja",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Segovia",
+      "comunidad": "Castilla y León",
+      "lat": 40.948,
+      "lon": -4.118,
+      "unesco": true
+    },
+    {
+      "id": 134,
+      "capa": "monumentos",
+      "nombre": "Monumentos de Oviedo y del Reino de Asturias",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Oviedo",
+      "comunidad": "Asturias",
+      "lat": 43.379,
+      "lon": -5.867,
+      "unesco": true
+    },
+    {
+      "id": 135,
+      "capa": "monumentos",
+      "nombre": "Murallas y ciudad vieja",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Ávila",
+      "comunidad": "Castilla y León",
+      "lat": 40.656,
+      "lon": -4.7,
+      "unesco": true
+    },
+    {
+      "id": 136,
+      "capa": "monumentos",
+      "nombre": "Ciudad vieja de Santiago",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Santiago de Compostela",
+      "comunidad": "Galicia",
+      "lat": 42.881,
+      "lon": -8.545,
+      "unesco": true
+    },
+    {
+      "id": 137,
+      "capa": "monumentos",
+      "nombre": "Parque Nacional de Garajonay",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "La Gomera",
+      "comunidad": "Canarias",
+      "lat": 28.127,
+      "lon": -17.237,
+      "unesco": true
+    },
+    {
+      "id": 138,
+      "capa": "monumentos",
+      "nombre": "Ciudad histórica de Toledo",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Toledo",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 39.857,
+      "lon": -4.024,
+      "unesco": true
+    },
+    {
+      "id": 139,
+      "capa": "monumentos",
+      "nombre": "Arquitectura mudéjar de Aragón",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Teruel",
+      "comunidad": "Aragón",
+      "lat": 40.344,
+      "lon": -1.107,
+      "unesco": true
+    },
+    {
+      "id": 140,
+      "capa": "monumentos",
+      "nombre": "Ciudad vieja de Cáceres",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Cáceres",
+      "comunidad": "Extremadura",
+      "lat": 39.474,
+      "lon": -6.371,
+      "unesco": true
+    },
+    {
+      "id": 141,
+      "capa": "monumentos",
+      "nombre": "Catedral, Alcázar y Archivo de Indias",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Sevilla",
+      "comunidad": "Andalucía",
+      "lat": 37.386,
+      "lon": -5.993,
+      "unesco": true
+    },
+    {
+      "id": 142,
+      "capa": "monumentos",
+      "nombre": "Ciudad vieja de Salamanca",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Salamanca",
+      "comunidad": "Castilla y León",
+      "lat": 40.961,
+      "lon": -5.666,
+      "unesco": true
+    },
+    {
+      "id": 143,
+      "capa": "monumentos",
+      "nombre": "Monasterio de Poblet",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Vimbodí i Poblet",
+      "comunidad": "Cataluña",
+      "lat": 41.381,
+      "lon": 1.083,
+      "unesco": true
+    },
+    {
+      "id": 144,
+      "capa": "monumentos",
+      "nombre": "Conjunto arqueológico de Mérida",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Mérida",
+      "comunidad": "Extremadura",
+      "lat": 38.915,
+      "lon": -6.338,
+      "unesco": true
+    },
+    {
+      "id": 145,
+      "capa": "monumentos",
+      "nombre": "Real Monasterio de Guadalupe",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Guadalupe",
+      "comunidad": "Extremadura",
+      "lat": 39.453,
+      "lon": -5.328,
+      "unesco": true
+    },
+    {
+      "id": 146,
+      "capa": "monumentos",
+      "nombre": "Camino de Santiago",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "O Cebreiro",
+      "comunidad": "Galicia",
+      "lat": 42.708,
+      "lon": -7.043,
+      "unesco": true
+    },
+    {
+      "id": 147,
+      "capa": "monumentos",
+      "nombre": "Parque Nacional de Doñana",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Huelva",
+      "comunidad": "Andalucía",
+      "lat": 37,
+      "lon": -6.45,
+      "unesco": true
+    },
+    {
+      "id": 148,
+      "capa": "monumentos",
+      "nombre": "Ciudad histórica fortificada de Cuenca",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Cuenca",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 40.078,
+      "lon": -2.129,
+      "unesco": true
+    },
+    {
+      "id": 149,
+      "capa": "monumentos",
+      "nombre": "Lonja de la Seda",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Valencia",
+      "comunidad": "C. Valenciana",
+      "lat": 39.474,
+      "lon": -0.378,
+      "unesco": true
+    },
+    {
+      "id": 150,
+      "capa": "monumentos",
+      "nombre": "Las Médulas",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Carucedo",
+      "comunidad": "Castilla y León",
+      "lat": 42.461,
+      "lon": -6.77,
+      "unesco": true
+    },
+    {
+      "id": 151,
+      "capa": "monumentos",
+      "nombre": "Palau de la Música y Hospital de Sant Pau",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Barcelona",
+      "comunidad": "Cataluña",
+      "lat": 41.411,
+      "lon": 2.175,
+      "unesco": true
+    },
+    {
+      "id": 152,
+      "capa": "monumentos",
+      "nombre": "Monasterios de San Millán de Yuso y Suso",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "San Millán de la Cogolla",
+      "comunidad": "La Rioja",
+      "lat": 42.326,
+      "lon": -2.863,
+      "unesco": true
+    },
+    {
+      "id": 153,
+      "capa": "monumentos",
+      "nombre": "Yacimientos de Atapuerca",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Atapuerca",
+      "comunidad": "Castilla y León",
+      "lat": 42.352,
+      "lon": -3.517,
+      "unesco": true
+    },
+    {
+      "id": 154,
+      "capa": "monumentos",
+      "nombre": "Pirineos – Monte Perdido",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Ordesa",
+      "comunidad": "Aragón",
+      "lat": 42.672,
+      "lon": 0.033,
+      "unesco": true
+    },
+    {
+      "id": 155,
+      "capa": "monumentos",
+      "nombre": "Arte rupestre del arco mediterráneo",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Valltorta (Castellón)",
+      "comunidad": "C. Valenciana",
+      "lat": 40.4,
+      "lon": 0.07,
+      "unesco": true
+    },
+    {
+      "id": 156,
+      "capa": "monumentos",
+      "nombre": "Universidad y recinto histórico",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Alcalá de Henares",
+      "comunidad": "Madrid",
+      "lat": 40.482,
+      "lon": -3.364,
+      "unesco": true
+    },
+    {
+      "id": 157,
+      "capa": "monumentos",
+      "nombre": "Ibiza, biodiversidad y cultura (Dalt Vila)",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Ibiza",
+      "comunidad": "Illes Balears",
+      "lat": 38.907,
+      "lon": 1.436,
+      "unesco": true
+    },
+    {
+      "id": 158,
+      "capa": "monumentos",
+      "nombre": "San Cristóbal de La Laguna",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Tenerife",
+      "comunidad": "Canarias",
+      "lat": 28.488,
+      "lon": -16.315,
+      "unesco": true
+    },
+    {
+      "id": 159,
+      "capa": "monumentos",
+      "nombre": "Conjunto arqueológico de Tarraco",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Tarragona",
+      "comunidad": "Cataluña",
+      "lat": 41.115,
+      "lon": 1.259,
+      "unesco": true
+    },
+    {
+      "id": 160,
+      "capa": "monumentos",
+      "nombre": "Palmeral de Elche",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Elche",
+      "comunidad": "C. Valenciana",
+      "lat": 38.266,
+      "lon": -0.698,
+      "unesco": true
+    },
+    {
+      "id": 161,
+      "capa": "monumentos",
+      "nombre": "Muralla romana de Lugo",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Lugo",
+      "comunidad": "Galicia",
+      "lat": 43.01,
+      "lon": -7.556,
+      "unesco": true
+    },
+    {
+      "id": 162,
+      "capa": "monumentos",
+      "nombre": "Iglesias románicas del Vall de Boí",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Vall de Boí",
+      "comunidad": "Cataluña",
+      "lat": 42.519,
+      "lon": 0.835,
+      "unesco": true
+    },
+    {
+      "id": 163,
+      "capa": "monumentos",
+      "nombre": "Arte rupestre de Siega Verde",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Villar de la Yegua",
+      "comunidad": "Castilla y León",
+      "lat": 40.69,
+      "lon": -6.75,
+      "unesco": true
+    },
+    {
+      "id": 164,
+      "capa": "monumentos",
+      "nombre": "Paisaje cultural de Aranjuez",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Aranjuez",
+      "comunidad": "Madrid",
+      "lat": 40.036,
+      "lon": -3.609,
+      "unesco": true
+    },
+    {
+      "id": 165,
+      "capa": "monumentos",
+      "nombre": "Conjuntos renacentistas de Úbeda y Baeza",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Úbeda",
+      "comunidad": "Andalucía",
+      "lat": 38.01,
+      "lon": -3.37,
+      "unesco": true
+    },
+    {
+      "id": 166,
+      "capa": "monumentos",
+      "nombre": "Puente de Vizcaya",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Portugalete",
+      "comunidad": "País Vasco",
+      "lat": 43.323,
+      "lon": -3.017,
+      "unesco": true
+    },
+    {
+      "id": 167,
+      "capa": "monumentos",
+      "nombre": "Parque Nacional del Teide",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Tenerife",
+      "comunidad": "Canarias",
+      "lat": 28.272,
+      "lon": -16.642,
+      "unesco": true
+    },
+    {
+      "id": 168,
+      "capa": "monumentos",
+      "nombre": "Torre de Hércules",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "A Coruña",
+      "comunidad": "Galicia",
+      "lat": 43.386,
+      "lon": -8.406,
+      "unesco": true
+    },
+    {
+      "id": 169,
+      "capa": "monumentos",
+      "nombre": "Paisaje cultural de la Serra de Tramuntana",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Mallorca",
+      "comunidad": "Illes Balears",
+      "lat": 39.7,
+      "lon": 2.62,
+      "unesco": true
+    },
+    {
+      "id": 170,
+      "capa": "monumentos",
+      "nombre": "Patrimonio del mercurio",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Almadén",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 38.774,
+      "lon": -4.838,
+      "unesco": true
+    },
+    {
+      "id": 171,
+      "capa": "monumentos",
+      "nombre": "Hayedo de Montejo (Hayedos primarios de Europa)",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Montejo de la Sierra",
+      "comunidad": "Madrid",
+      "lat": 41.117,
+      "lon": -3.497,
+      "unesco": true
+    },
+    {
+      "id": 172,
+      "capa": "monumentos",
+      "nombre": "Dólmenes de Antequera",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Antequera",
+      "comunidad": "Andalucía",
+      "lat": 37.024,
+      "lon": -4.548,
+      "unesco": true
+    },
+    {
+      "id": 173,
+      "capa": "monumentos",
+      "nombre": "Ciudad califal de Medina Azahara",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Córdoba",
+      "comunidad": "Andalucía",
+      "lat": 37.887,
+      "lon": -4.867,
+      "unesco": true
+    },
+    {
+      "id": 174,
+      "capa": "monumentos",
+      "nombre": "Risco Caído y montañas sagradas",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Gran Canaria",
+      "comunidad": "Canarias",
+      "lat": 28.03,
+      "lon": -15.65,
+      "unesco": true
+    },
+    {
+      "id": 175,
+      "capa": "monumentos",
+      "nombre": "Paseo del Prado y Buen Retiro",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Madrid",
+      "comunidad": "Madrid",
+      "lat": 40.414,
+      "lon": -3.692,
+      "unesco": true
+    },
+    {
+      "id": 176,
+      "capa": "monumentos",
+      "nombre": "Menorca Talayótica",
+      "tipo": "Patrimonio Mundial UNESCO",
+      "lugar": "Menorca",
+      "comunidad": "Illes Balears",
+      "lat": 39.89,
+      "lon": 4.2,
+      "unesco": true
+    },
+    {
+      "id": 177,
+      "capa": "monumentos",
+      "nombre": "Palacio Real",
+      "tipo": "Monumento",
+      "lugar": "Madrid",
+      "comunidad": "Madrid",
+      "lat": 40.418,
+      "lon": -3.714
+    },
+    {
+      "id": 178,
+      "capa": "monumentos",
+      "nombre": "Templo de Debod",
+      "tipo": "Monumento",
+      "lugar": "Madrid",
+      "comunidad": "Madrid",
+      "lat": 40.424,
+      "lon": -3.718
+    },
+    {
+      "id": 179,
+      "capa": "monumentos",
+      "nombre": "Castillo de Manzanares el Real",
+      "tipo": "Monumento",
+      "lugar": "Manzanares el Real",
+      "comunidad": "Madrid",
+      "lat": 40.725,
+      "lon": -3.861
+    },
+    {
+      "id": 180,
+      "capa": "monumentos",
+      "nombre": "Basílica del Pilar",
+      "tipo": "Monumento",
+      "lugar": "Zaragoza",
+      "comunidad": "Aragón",
+      "lat": 41.657,
+      "lon": -0.878
+    },
+    {
+      "id": 181,
+      "capa": "monumentos",
+      "nombre": "Castillo de Loarre",
+      "tipo": "Monumento",
+      "lugar": "Loarre",
+      "comunidad": "Aragón",
+      "lat": 42.326,
+      "lon": -0.612
+    },
+    {
+      "id": 182,
+      "capa": "monumentos",
+      "nombre": "Monasterio de San Juan de la Peña",
+      "tipo": "Monumento",
+      "lugar": "Botaya",
+      "comunidad": "Aragón",
+      "lat": 42.508,
+      "lon": -0.673
+    },
+    {
+      "id": 183,
+      "capa": "monumentos",
+      "nombre": "Monasterio de Piedra",
+      "tipo": "Monumento",
+      "lugar": "Nuévalos",
+      "comunidad": "Aragón",
+      "lat": 41.193,
+      "lon": -1.787
+    },
+    {
+      "id": 184,
+      "capa": "monumentos",
+      "nombre": "Catedral de León",
+      "tipo": "Monumento",
+      "lugar": "León",
+      "comunidad": "Castilla y León",
+      "lat": 42.599,
+      "lon": -5.567
+    },
+    {
+      "id": 185,
+      "capa": "monumentos",
+      "nombre": "Castillo de Peñafiel",
+      "tipo": "Monumento",
+      "lugar": "Peñafiel",
+      "comunidad": "Castilla y León",
+      "lat": 41.596,
+      "lon": -4.112
+    },
+    {
+      "id": 186,
+      "capa": "monumentos",
+      "nombre": "Castillo de Coca",
+      "tipo": "Monumento",
+      "lugar": "Coca",
+      "comunidad": "Castilla y León",
+      "lat": 41.212,
+      "lon": -4.522
+    },
+    {
+      "id": 187,
+      "capa": "monumentos",
+      "nombre": "Castillo de los Templarios",
+      "tipo": "Monumento",
+      "lugar": "Ponferrada",
+      "comunidad": "Castilla y León",
+      "lat": 42.543,
+      "lon": -6.598
+    },
+    {
+      "id": 188,
+      "capa": "monumentos",
+      "nombre": "Iglesia de San Martín",
+      "tipo": "Monumento",
+      "lugar": "Frómista",
+      "comunidad": "Castilla y León",
+      "lat": 42.267,
+      "lon": -4.406
+    },
+    {
+      "id": 189,
+      "capa": "monumentos",
+      "nombre": "Castillo de Gormaz",
+      "tipo": "Monumento",
+      "lugar": "Gormaz",
+      "comunidad": "Castilla y León",
+      "lat": 41.497,
+      "lon": -3.006
+    },
+    {
+      "id": 190,
+      "capa": "monumentos",
+      "nombre": "Románico de Zamora (Catedral)",
+      "tipo": "Monumento",
+      "lugar": "Zamora",
+      "comunidad": "Castilla y León",
+      "lat": 41.499,
+      "lon": -5.755
+    },
+    {
+      "id": 191,
+      "capa": "monumentos",
+      "nombre": "Castillo de Belmonte",
+      "tipo": "Monumento",
+      "lugar": "Belmonte",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 39.556,
+      "lon": -2.703
+    },
+    {
+      "id": 192,
+      "capa": "monumentos",
+      "nombre": "Catedral de Sigüenza",
+      "tipo": "Monumento",
+      "lugar": "Sigüenza",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 41.068,
+      "lon": -2.64
+    },
+    {
+      "id": 193,
+      "capa": "monumentos",
+      "nombre": "Catedral de Palma (La Seu)",
+      "tipo": "Monumento",
+      "lugar": "Palma",
+      "comunidad": "Illes Balears",
+      "lat": 39.567,
+      "lon": 2.648
+    },
+    {
+      "id": 194,
+      "capa": "monumentos",
+      "nombre": "Castillo de Bellver",
+      "tipo": "Monumento",
+      "lugar": "Palma",
+      "comunidad": "Illes Balears",
+      "lat": 39.564,
+      "lon": 2.62
+    },
+    {
+      "id": 195,
+      "capa": "monumentos",
+      "nombre": "Museo Guggenheim",
+      "tipo": "Monumento",
+      "lugar": "Bilbao",
+      "comunidad": "País Vasco",
+      "lat": 43.269,
+      "lon": -2.934
+    },
+    {
+      "id": 196,
+      "capa": "monumentos",
+      "nombre": "San Juan de Gaztelugatxe",
+      "tipo": "Monumento",
+      "lugar": "Bermeo",
+      "comunidad": "País Vasco",
+      "lat": 43.447,
+      "lon": -2.785
+    },
+    {
+      "id": 197,
+      "capa": "monumentos",
+      "nombre": "Castillo de Butrón",
+      "tipo": "Monumento",
+      "lugar": "Gatika",
+      "comunidad": "País Vasco",
+      "lat": 43.359,
+      "lon": -2.877
+    },
+    {
+      "id": 198,
+      "capa": "monumentos",
+      "nombre": "Ciudad de las Artes y las Ciencias",
+      "tipo": "Monumento",
+      "lugar": "Valencia",
+      "comunidad": "C. Valenciana",
+      "lat": 39.455,
+      "lon": -0.35
+    },
+    {
+      "id": 199,
+      "capa": "monumentos",
+      "nombre": "Catedral de Valencia",
+      "tipo": "Monumento",
+      "lugar": "Valencia",
+      "comunidad": "C. Valenciana",
+      "lat": 39.476,
+      "lon": -0.375
+    },
+    {
+      "id": 200,
+      "capa": "monumentos",
+      "nombre": "Castillo de Santa Bárbara",
+      "tipo": "Monumento",
+      "lugar": "Alicante",
+      "comunidad": "C. Valenciana",
+      "lat": 38.349,
+      "lon": -0.478
+    },
+    {
+      "id": 201,
+      "capa": "monumentos",
+      "nombre": "Monasterio de Montserrat",
+      "tipo": "Monumento",
+      "lugar": "Montserrat",
+      "comunidad": "Cataluña",
+      "lat": 41.593,
+      "lon": 1.837
+    },
+    {
+      "id": 202,
+      "capa": "monumentos",
+      "nombre": "Teatro-Museo Dalí",
+      "tipo": "Monumento",
+      "lugar": "Figueres",
+      "comunidad": "Cataluña",
+      "lat": 42.268,
+      "lon": 2.959
+    },
+    {
+      "id": 203,
+      "capa": "monumentos",
+      "nombre": "Catedral de Girona",
+      "tipo": "Monumento",
+      "lugar": "Girona",
+      "comunidad": "Cataluña",
+      "lat": 41.987,
+      "lon": 2.826
+    },
+    {
+      "id": 204,
+      "capa": "monumentos",
+      "nombre": "Palacio Real de Olite",
+      "tipo": "Monumento",
+      "lugar": "Olite",
+      "comunidad": "Navarra",
+      "lat": 42.481,
+      "lon": -1.651
+    },
+    {
+      "id": 205,
+      "capa": "monumentos",
+      "nombre": "Castillo de Javier",
+      "tipo": "Monumento",
+      "lugar": "Javier",
+      "comunidad": "Navarra",
+      "lat": 42.59,
+      "lon": -1.213
+    },
+    {
+      "id": 206,
+      "capa": "monumentos",
+      "nombre": "Monasterio de Leyre",
+      "tipo": "Monumento",
+      "lugar": "Yesa",
+      "comunidad": "Navarra",
+      "lat": 42.637,
+      "lon": -1.172
+    },
+    {
+      "id": 207,
+      "capa": "monumentos",
+      "nombre": "Puente Nuevo",
+      "tipo": "Monumento",
+      "lugar": "Ronda",
+      "comunidad": "Andalucía",
+      "lat": 36.741,
+      "lon": -5.166
+    },
+    {
+      "id": 208,
+      "capa": "monumentos",
+      "nombre": "Alcazaba de Málaga",
+      "tipo": "Monumento",
+      "lugar": "Málaga",
+      "comunidad": "Andalucía",
+      "lat": 36.721,
+      "lon": -4.416
+    },
+    {
+      "id": 209,
+      "capa": "monumentos",
+      "nombre": "Alcazaba de Almería",
+      "tipo": "Monumento",
+      "lugar": "Almería",
+      "comunidad": "Andalucía",
+      "lat": 36.841,
+      "lon": -2.471
+    },
+    {
+      "id": 210,
+      "capa": "monumentos",
+      "nombre": "Catedral de Cádiz",
+      "tipo": "Monumento",
+      "lugar": "Cádiz",
+      "comunidad": "Andalucía",
+      "lat": 36.529,
+      "lon": -6.295
+    },
+    {
+      "id": 211,
+      "capa": "monumentos",
+      "nombre": "Catedral de Jaén",
+      "tipo": "Monumento",
+      "lugar": "Jaén",
+      "comunidad": "Andalucía",
+      "lat": 37.765,
+      "lon": -3.79
+    },
+    {
+      "id": 212,
+      "capa": "monumentos",
+      "nombre": "Plaza de España",
+      "tipo": "Monumento",
+      "lugar": "Sevilla",
+      "comunidad": "Andalucía",
+      "lat": 37.377,
+      "lon": -5.987
+    },
+    {
+      "id": 213,
+      "capa": "monumentos",
+      "nombre": "Castillo de Almodóvar del Río",
+      "tipo": "Monumento",
+      "lugar": "Almodóvar del Río",
+      "comunidad": "Andalucía",
+      "lat": 37.814,
+      "lon": -5.022
+    },
+    {
+      "id": 214,
+      "capa": "monumentos",
+      "nombre": "Teatro romano de Cartagena",
+      "tipo": "Monumento",
+      "lugar": "Cartagena",
+      "comunidad": "Murcia",
+      "lat": 37.599,
+      "lon": -0.985
+    },
+    {
+      "id": 215,
+      "capa": "monumentos",
+      "nombre": "Catedral de Murcia",
+      "tipo": "Monumento",
+      "lugar": "Murcia",
+      "comunidad": "Murcia",
+      "lat": 37.984,
+      "lon": -1.128
+    },
+    {
+      "id": 216,
+      "capa": "monumentos",
+      "nombre": "Puente romano de Alcántara",
+      "tipo": "Monumento",
+      "lugar": "Alcántara",
+      "comunidad": "Extremadura",
+      "lat": 39.722,
+      "lon": -6.892
+    },
+    {
+      "id": 217,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Navacerrada y Cotos",
+      "tipo": "Puerto",
+      "lugar": "Pto. Navacerrada",
+      "comunidad": "Madrid",
+      "lat": 40.793,
+      "lon": -4.008,
+      "descripcion": "El clásico de la sierra de Madrid: curvas entre pinares y bajada al Valle del Lozoya hasta el Monasterio de El Paular.",
+      "altitud_m": 1858,
+      "km_aprox": 30,
+      "recorrido": [
+        {
+          "nombre": "Cercedilla",
+          "lat": 40.741,
+          "lon": -4.057
+        },
+        {
+          "nombre": "Pto. Navacerrada",
+          "lat": 40.793,
+          "lon": -4.008
+        },
+        {
+          "nombre": "Pto. de Cotos",
+          "lat": 40.822,
+          "lon": -3.962
+        },
+        {
+          "nombre": "Rascafría",
+          "lat": 40.903,
+          "lon": -3.88
+        }
+      ]
+    },
+    {
+      "id": 218,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de la Morcuera",
+      "tipo": "Puerto",
+      "lugar": "Pto. de la Morcuera",
+      "comunidad": "Madrid",
+      "lat": 40.835,
+      "lon": -3.832,
+      "descripcion": "Une Miraflores con el Valle del Lozoya. Vistas abiertas de la sierra y mucho ambiente motero los fines de semana.",
+      "altitud_m": 1796,
+      "km_aprox": 20,
+      "recorrido": [
+        {
+          "nombre": "Miraflores de la Sierra",
+          "lat": 40.813,
+          "lon": -3.763
+        },
+        {
+          "nombre": "Pto. de la Morcuera",
+          "lat": 40.835,
+          "lon": -3.832
+        },
+        {
+          "nombre": "Rascafría",
+          "lat": 40.903,
+          "lon": -3.88
+        }
+      ]
+    },
+    {
+      "id": 219,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Canencia",
+      "tipo": "Puerto",
+      "lugar": "Pto. de Canencia",
+      "comunidad": "Madrid",
+      "lat": 40.869,
+      "lon": -3.764,
+      "descripcion": "Más tranquilo que la Morcuera, entre robledales. Muy bonito en otoño.",
+      "altitud_m": 1524,
+      "km_aprox": 25,
+      "recorrido": [
+        {
+          "nombre": "Miraflores de la Sierra",
+          "lat": 40.813,
+          "lon": -3.763
+        },
+        {
+          "nombre": "Pto. de Canencia",
+          "lat": 40.869,
+          "lon": -3.764
+        },
+        {
+          "nombre": "Canencia",
+          "lat": 40.906,
+          "lon": -3.735
+        },
+        {
+          "nombre": "Lozoyuela",
+          "lat": 40.926,
+          "lon": -3.623
+        }
+      ]
+    },
+    {
+      "id": 220,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto del Pico",
+      "tipo": "Puerto",
+      "lugar": "Pto. del Pico",
+      "comunidad": "Castilla y León",
+      "lat": 40.322,
+      "lon": -5.013,
+      "descripcion": "Sube desde el Valle del Tiétar junto a una calzada romana, con vistas espectaculares de Gredos.",
+      "altitud_m": 1395,
+      "km_aprox": 15,
+      "recorrido": [
+        {
+          "nombre": "Mombeltrán",
+          "lat": 40.26,
+          "lon": -5.016
+        },
+        {
+          "nombre": "Cuevas del Valle",
+          "lat": 40.293,
+          "lon": -5.01
+        },
+        {
+          "nombre": "Pto. del Pico",
+          "lat": 40.322,
+          "lon": -5.013
+        },
+        {
+          "nombre": "Venta Rasquilla",
+          "lat": 40.36,
+          "lon": -5.02
+        }
+      ]
+    },
+    {
+      "id": 221,
+      "capa": "carreteras_puertos",
+      "nombre": "Valle del Tiétar",
+      "tipo": "Ruta",
+      "lugar": "Arenas de San Pedro",
+      "comunidad": "Castilla y León",
+      "lat": 40.209,
+      "lon": -5.088,
+      "descripcion": "Carretera de curvas suaves a los pies de Gredos, con pueblos serranos y pinares. Ideal para empezar.",
+      "km_aprox": 100,
+      "recorrido": [
+        {
+          "nombre": "San Martín de Valdeiglesias",
+          "lat": 40.362,
+          "lon": -4.398
+        },
+        {
+          "nombre": "Sotillo de la Adrada",
+          "lat": 40.291,
+          "lon": -4.585
+        },
+        {
+          "nombre": "Piedralaves",
+          "lat": 40.316,
+          "lon": -4.697
+        },
+        {
+          "nombre": "Arenas de San Pedro",
+          "lat": 40.209,
+          "lon": -5.088
+        },
+        {
+          "nombre": "Candeleda",
+          "lat": 40.155,
+          "lon": -5.24
+        }
+      ]
+    },
+    {
+      "id": 222,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de la Quesera y Pueblos Negros",
+      "tipo": "Puerto",
+      "lugar": "Pto. de la Quesera",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 41.175,
+      "lon": -3.405,
+      "descripcion": "De Riaza a la arquitectura negra de pizarra de Guadalajara: Majaelrayo, Campillo de Ranas, Tamajón.",
+      "altitud_m": 1710,
+      "km_aprox": 50,
+      "recorrido": [
+        {
+          "nombre": "Riaza",
+          "lat": 41.278,
+          "lon": -3.479
+        },
+        {
+          "nombre": "Pto. de la Quesera",
+          "lat": 41.175,
+          "lon": -3.405
+        },
+        {
+          "nombre": "Majaelrayo",
+          "lat": 41.106,
+          "lon": -3.3
+        },
+        {
+          "nombre": "Campillo de Ranas",
+          "lat": 41.088,
+          "lon": -3.318
+        },
+        {
+          "nombre": "Tamajón",
+          "lat": 40.997,
+          "lon": -3.249
+        }
+      ]
+    },
+    {
+      "id": 223,
+      "capa": "carreteras_puertos",
+      "nombre": "Serranía de Cuenca",
+      "tipo": "Ruta",
+      "lugar": "Villalba de la Sierra",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 40.235,
+      "lon": -2.088,
+      "descripcion": "Hoz del Júcar, Ciudad Encantada y Nacimiento del Río Cuervo. Carretera con rocas y cañones.",
+      "km_aprox": 75,
+      "recorrido": [
+        {
+          "nombre": "Cuenca",
+          "lat": 40.078,
+          "lon": -2.129
+        },
+        {
+          "nombre": "Villalba de la Sierra",
+          "lat": 40.235,
+          "lon": -2.088
+        },
+        {
+          "nombre": "Ciudad Encantada",
+          "lat": 40.202,
+          "lon": -1.996
+        },
+        {
+          "nombre": "Uña",
+          "lat": 40.223,
+          "lon": -1.973
+        },
+        {
+          "nombre": "Tragacete",
+          "lat": 40.346,
+          "lon": -1.851
+        },
+        {
+          "nombre": "Nacimiento del Río Cuervo",
+          "lat": 40.432,
+          "lon": -1.887
+        }
+      ]
+    },
+    {
+      "id": 224,
+      "capa": "carreteras_puertos",
+      "nombre": "Cañón del Río Lobos",
+      "tipo": "Ruta",
+      "lugar": "Ucero",
+      "comunidad": "Castilla y León",
+      "lat": 41.718,
+      "lon": -3.05,
+      "descripcion": "Carretera corta y muy fotogénica junto al cañón y la ermita templaria de San Bartolomé.",
+      "km_aprox": 35,
+      "recorrido": [
+        {
+          "nombre": "San Leonardo de Yagüe",
+          "lat": 41.829,
+          "lon": -3.067
+        },
+        {
+          "nombre": "Ucero",
+          "lat": 41.718,
+          "lon": -3.05
+        },
+        {
+          "nombre": "El Burgo de Osma",
+          "lat": 41.587,
+          "lon": -3.068
+        }
+      ]
+    },
+    {
+      "id": 225,
+      "capa": "carreteras_puertos",
+      "nombre": "Desfiladero de La Hermida",
+      "tipo": "Ruta",
+      "lugar": "La Hermida",
+      "comunidad": "Cantabria",
+      "lat": 43.256,
+      "lon": -4.6,
+      "descripcion": "21 km encajonados entre paredes de roca siguiendo el río Deva, hasta Potes. Imprescindible.",
+      "km_aprox": 25,
+      "recorrido": [
+        {
+          "nombre": "Panes",
+          "lat": 43.325,
+          "lon": -4.582
+        },
+        {
+          "nombre": "La Hermida",
+          "lat": 43.256,
+          "lon": -4.6
+        },
+        {
+          "nombre": "Lebeña",
+          "lat": 43.218,
+          "lon": -4.62
+        },
+        {
+          "nombre": "Potes",
+          "lat": 43.154,
+          "lon": -4.623
+        }
+      ]
+    },
+    {
+      "id": 226,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de San Glorio",
+      "tipo": "Puerto",
+      "lugar": "Pto. de San Glorio",
+      "comunidad": "Cantabria",
+      "lat": 43.067,
+      "lon": -4.763,
+      "descripcion": "De Potes a Riaño por Liébana. Desde el mirador de Llesba se ven los Picos de Europa.",
+      "altitud_m": 1609,
+      "km_aprox": 50,
+      "recorrido": [
+        {
+          "nombre": "Potes",
+          "lat": 43.154,
+          "lon": -4.623
+        },
+        {
+          "nombre": "Pto. de San Glorio",
+          "lat": 43.067,
+          "lon": -4.763
+        },
+        {
+          "nombre": "Portilla de la Reina",
+          "lat": 43.053,
+          "lon": -4.826
+        },
+        {
+          "nombre": "Riaño",
+          "lat": 42.976,
+          "lon": -5.006
+        }
+      ]
+    },
+    {
+      "id": 227,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto del Pontón y Desfiladero de los Beyos",
+      "tipo": "Puerto",
+      "lugar": "Pto. del Pontón",
+      "comunidad": "Castilla y León",
+      "lat": 43.087,
+      "lon": -5.006,
+      "descripcion": "Desde el embalse de Riaño hacia Asturias por un desfiladero estrecho y verde.",
+      "altitud_m": 1280,
+      "km_aprox": 55,
+      "recorrido": [
+        {
+          "nombre": "Riaño",
+          "lat": 42.976,
+          "lon": -5.006
+        },
+        {
+          "nombre": "Pto. del Pontón",
+          "lat": 43.087,
+          "lon": -5.006
+        },
+        {
+          "nombre": "Desf. de los Beyos",
+          "lat": 43.2,
+          "lon": -5.085
+        },
+        {
+          "nombre": "Cangas de Onís",
+          "lat": 43.351,
+          "lon": -5.13
+        }
+      ]
+    },
+    {
+      "id": 228,
+      "capa": "carreteras_puertos",
+      "nombre": "Lagos de Covadonga",
+      "tipo": "Puerto",
+      "lugar": "Covadonga",
+      "comunidad": "Asturias",
+      "lat": 43.309,
+      "lon": -5.056,
+      "descripcion": "Subida a los lagos Enol y Ercina. En temporada alta el acceso con vehículo privado está restringido: consulta antes de ir.",
+      "altitud_m": 1070,
+      "km_aprox": 20,
+      "recorrido": [
+        {
+          "nombre": "Cangas de Onís",
+          "lat": 43.351,
+          "lon": -5.13
+        },
+        {
+          "nombre": "Covadonga",
+          "lat": 43.309,
+          "lon": -5.056
+        },
+        {
+          "nombre": "Lago Enol",
+          "lat": 43.272,
+          "lon": -4.991
+        }
+      ]
+    },
+    {
+      "id": 229,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Somiedo",
+      "tipo": "Puerto",
+      "lugar": "Pto. de Somiedo",
+      "comunidad": "Asturias",
+      "lat": 43,
+      "lon": -6.243,
+      "descripcion": "Del valle de Laciana al Parque Natural de Somiedo: montaña salvaje, brañas y poco tráfico.",
+      "altitud_m": 1486,
+      "km_aprox": 25,
+      "recorrido": [
+        {
+          "nombre": "Villablino",
+          "lat": 42.94,
+          "lon": -6.32
+        },
+        {
+          "nombre": "Pto. de Somiedo",
+          "lat": 43,
+          "lon": -6.243
+        },
+        {
+          "nombre": "Pola de Somiedo",
+          "lat": 43.093,
+          "lon": -6.255
+        }
+      ]
+    },
+    {
+      "id": 230,
+      "capa": "carreteras_puertos",
+      "nombre": "Ruta del Maestrazgo",
+      "tipo": "Ruta",
+      "lugar": "Mirambel",
+      "comunidad": "Aragón",
+      "lat": 40.586,
+      "lon": -0.343,
+      "descripcion": "Curvas sin tráfico entre pueblos medievales: Morella, Forcall, Mirambel, Cantavieja y Villarluengo.",
+      "km_aprox": 65,
+      "recorrido": [
+        {
+          "nombre": "Morella",
+          "lat": 40.619,
+          "lon": -0.101
+        },
+        {
+          "nombre": "Forcall",
+          "lat": 40.645,
+          "lon": -0.199
+        },
+        {
+          "nombre": "Mirambel",
+          "lat": 40.586,
+          "lon": -0.343
+        },
+        {
+          "nombre": "Cantavieja",
+          "lat": 40.526,
+          "lon": -0.404
+        },
+        {
+          "nombre": "Villarluengo",
+          "lat": 40.656,
+          "lon": -0.527
+        }
+      ]
+    },
+    {
+      "id": 231,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto del Portalet",
+      "tipo": "Puerto",
+      "lugar": "Pto. del Portalet",
+      "comunidad": "Aragón",
+      "lat": 42.802,
+      "lon": -0.398,
+      "descripcion": "Valle de Tena hasta la frontera con Francia, pasando por Sallent y Formigal.",
+      "altitud_m": 1794,
+      "km_aprox": 30,
+      "recorrido": [
+        {
+          "nombre": "Biescas",
+          "lat": 42.627,
+          "lon": -0.32
+        },
+        {
+          "nombre": "Sallent de Gállego",
+          "lat": 42.771,
+          "lon": -0.333
+        },
+        {
+          "nombre": "Formigal",
+          "lat": 42.774,
+          "lon": -0.364
+        },
+        {
+          "nombre": "Pto. del Portalet",
+          "lat": 42.802,
+          "lon": -0.398
+        }
+      ]
+    },
+    {
+      "id": 232,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Cotefablo y Ordesa",
+      "tipo": "Puerto",
+      "lugar": "Pto. de Cotefablo",
+      "comunidad": "Aragón",
+      "lat": 42.637,
+      "lon": -0.231,
+      "descripcion": "Cruza al valle de Broto y Torla, puerta del Parque Nacional de Ordesa.",
+      "altitud_m": 1423,
+      "km_aprox": 25,
+      "recorrido": [
+        {
+          "nombre": "Biescas",
+          "lat": 42.627,
+          "lon": -0.32
+        },
+        {
+          "nombre": "Pto. de Cotefablo",
+          "lat": 42.637,
+          "lon": -0.231
+        },
+        {
+          "nombre": "Broto",
+          "lat": 42.604,
+          "lon": -0.123
+        },
+        {
+          "nombre": "Torla",
+          "lat": 42.627,
+          "lon": -0.112
+        }
+      ]
+    },
+    {
+      "id": 233,
+      "capa": "carreteras_puertos",
+      "nombre": "Port de la Bonaigua",
+      "tipo": "Puerto",
+      "lugar": "Port de la Bonaigua",
+      "comunidad": "Cataluña",
+      "lat": 42.663,
+      "lon": 0.982,
+      "descripcion": "Del Valle de Arán al Pallars por uno de los puertos asfaltados más altos de los Pirineos.",
+      "altitud_m": 2072,
+      "km_aprox": 40,
+      "recorrido": [
+        {
+          "nombre": "Vielha",
+          "lat": 42.702,
+          "lon": 0.795
+        },
+        {
+          "nombre": "Salardú",
+          "lat": 42.708,
+          "lon": 0.9
+        },
+        {
+          "nombre": "Port de la Bonaigua",
+          "lat": 42.663,
+          "lon": 0.982
+        },
+        {
+          "nombre": "Esterri d'Àneu",
+          "lat": 42.627,
+          "lon": 1.123
+        }
+      ]
+    },
+    {
+      "id": 234,
+      "capa": "carreteras_puertos",
+      "nombre": "Alpujarras",
+      "tipo": "Ruta",
+      "lugar": "Pitres",
+      "comunidad": "Andalucía",
+      "lat": 36.932,
+      "lon": -3.334,
+      "descripcion": "Carretera colgada de la ladera sur de Sierra Nevada entre pueblos blancos: Pampaneira, Bubión, Capileira y Trévelez.",
+      "km_aprox": 35,
+      "recorrido": [
+        {
+          "nombre": "Lanjarón",
+          "lat": 36.918,
+          "lon": -3.48
+        },
+        {
+          "nombre": "Órgiva",
+          "lat": 36.896,
+          "lon": -3.425
+        },
+        {
+          "nombre": "Pampaneira",
+          "lat": 36.94,
+          "lon": -3.361
+        },
+        {
+          "nombre": "Pitres",
+          "lat": 36.932,
+          "lon": -3.334
+        },
+        {
+          "nombre": "Trévelez",
+          "lat": 36.999,
+          "lon": -3.266
+        }
+      ]
+    },
+    {
+      "id": 235,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de la Ragua",
+      "tipo": "Puerto",
+      "lugar": "Pto. de la Ragua",
+      "comunidad": "Andalucía",
+      "lat": 37.105,
+      "lon": -3.038,
+      "descripcion": "Cruza Sierra Nevada de la Alpujarra almeriense al Marquesado, con el castillo de La Calahorra al fondo.",
+      "altitud_m": 2041,
+      "km_aprox": 25,
+      "recorrido": [
+        {
+          "nombre": "Bayárcal",
+          "lat": 37.031,
+          "lon": -2.995
+        },
+        {
+          "nombre": "Pto. de la Ragua",
+          "lat": 37.105,
+          "lon": -3.038
+        },
+        {
+          "nombre": "La Calahorra",
+          "lat": 37.181,
+          "lon": -3.065
+        }
+      ]
+    },
+    {
+      "id": 236,
+      "capa": "carreteras_puertos",
+      "nombre": "Carretera de Sierra Nevada",
+      "tipo": "Puerto",
+      "lugar": "Hoya de la Mora",
+      "comunidad": "Andalucía",
+      "lat": 37.092,
+      "lon": -3.385,
+      "descripcion": "Desde Granada hasta la Hoya de la Mora: de las carreteras asfaltadas más altas de España.",
+      "altitud_m": 2500,
+      "km_aprox": 25,
+      "recorrido": [
+        {
+          "nombre": "Granada",
+          "lat": 37.176,
+          "lon": -3.588
+        },
+        {
+          "nombre": "Pinos Genil",
+          "lat": 37.159,
+          "lon": -3.505
+        },
+        {
+          "nombre": "Pradollano",
+          "lat": 37.094,
+          "lon": -3.398
+        },
+        {
+          "nombre": "Hoya de la Mora",
+          "lat": 37.092,
+          "lon": -3.385
+        }
+      ]
+    },
+    {
+      "id": 237,
+      "capa": "carreteras_puertos",
+      "nombre": "Sierra de Grazalema: Boyar y Palomas",
+      "tipo": "Puerto",
+      "lugar": "Pto. de las Palomas",
+      "comunidad": "Andalucía",
+      "lat": 36.788,
+      "lon": -5.41,
+      "descripcion": "Dos puertos encadenados entre El Bosque, Grazalema y Zahara de la Sierra, con vistas al embalse.",
+      "altitud_m": 1357,
+      "km_aprox": 30,
+      "recorrido": [
+        {
+          "nombre": "El Bosque",
+          "lat": 36.758,
+          "lon": -5.507
+        },
+        {
+          "nombre": "Pto. del Boyar",
+          "lat": 36.765,
+          "lon": -5.43
+        },
+        {
+          "nombre": "Grazalema",
+          "lat": 36.759,
+          "lon": -5.367
+        },
+        {
+          "nombre": "Pto. de las Palomas",
+          "lat": 36.788,
+          "lon": -5.41
+        },
+        {
+          "nombre": "Zahara de la Sierra",
+          "lat": 36.84,
+          "lon": -5.391
+        }
+      ]
+    },
+    {
+      "id": 238,
+      "capa": "carreteras_puertos",
+      "nombre": "Valle del Jerte y Puerto de Tornavacas",
+      "tipo": "Puerto",
+      "lugar": "Cabezuela del Valle",
+      "comunidad": "Extremadura",
+      "lat": 40.193,
+      "lon": -5.805,
+      "descripcion": "Cerezos en flor a finales de marzo o en abril. Sube por todo el valle hasta Tornavacas.",
+      "altitud_m": 1275,
+      "km_aprox": 60,
+      "recorrido": [
+        {
+          "nombre": "Plasencia",
+          "lat": 40.03,
+          "lon": -6.09
+        },
+        {
+          "nombre": "Navaconcejo",
+          "lat": 40.177,
+          "lon": -5.829
+        },
+        {
+          "nombre": "Cabezuela del Valle",
+          "lat": 40.193,
+          "lon": -5.805
+        },
+        {
+          "nombre": "Jerte",
+          "lat": 40.221,
+          "lon": -5.752
+        },
+        {
+          "nombre": "Pto. de Tornavacas",
+          "lat": 40.27,
+          "lon": -5.66
+        }
+      ]
+    },
+    {
+      "id": 239,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Honduras",
+      "tipo": "Puerto",
+      "lugar": "Pto. de Honduras",
+      "comunidad": "Extremadura",
+      "lat": 40.226,
+      "lon": -5.88,
+      "descripcion": "Une el Valle del Jerte con Hervás y el Valle del Ambroz entre castaños.",
+      "altitud_m": 1430,
+      "km_aprox": 15,
+      "recorrido": [
+        {
+          "nombre": "Cabezuela del Valle",
+          "lat": 40.193,
+          "lon": -5.805
+        },
+        {
+          "nombre": "Pto. de Honduras",
+          "lat": 40.226,
+          "lon": -5.88
+        },
+        {
+          "nombre": "Hervás",
+          "lat": 40.273,
+          "lon": -5.857
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "capa": "carreteras_puertos",
+      "nombre": "Monfragüe",
+      "tipo": "Ruta",
+      "lugar": "Salto del Gitano",
+      "comunidad": "Extremadura",
+      "lat": 39.828,
+      "lon": -6.035,
+      "descripcion": "Atraviesa el Parque Nacional: para en el Salto del Gitano para ver buitres y el castillo.",
+      "km_aprox": 30,
+      "recorrido": [
+        {
+          "nombre": "Torrejón el Rubio",
+          "lat": 39.771,
+          "lon": -6.009
+        },
+        {
+          "nombre": "Salto del Gitano",
+          "lat": 39.828,
+          "lon": -6.035
+        },
+        {
+          "nombre": "Villarreal de San Carlos",
+          "lat": 39.845,
+          "lon": -6.032
+        },
+        {
+          "nombre": "Malpartida de Plasencia",
+          "lat": 39.979,
+          "lon": -6.045
+        }
+      ]
+    },
+    {
+      "id": 241,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Pajares",
+      "tipo": "Puerto",
+      "lugar": "Pto. de Pajares",
+      "comunidad": "Asturias",
+      "lat": 42.993,
+      "lon": -5.763,
+      "descripcion": "El paso histórico entre León y Asturias, con curvas espectaculares en la bajada asturiana.",
+      "altitud_m": 1378,
+      "km_aprox": 30,
+      "recorrido": [
+        {
+          "nombre": "Villamanín",
+          "lat": 42.95,
+          "lon": -5.67
+        },
+        {
+          "nombre": "Pto. de Pajares",
+          "lat": 42.993,
+          "lon": -5.763
+        },
+        {
+          "nombre": "Pajares",
+          "lat": 43.03,
+          "lon": -5.76
+        },
+        {
+          "nombre": "Campomanes",
+          "lat": 43.1,
+          "lon": -5.82
+        }
+      ]
+    },
+    {
+      "id": 242,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de San Isidro",
+      "tipo": "Puerto",
+      "lugar": "Pto. de San Isidro",
+      "comunidad": "Asturias",
+      "lat": 43.06,
+      "lon": -5.37,
+      "descripcion": "Estación de esquí entre León y el valle del Aller.",
+      "altitud_m": 1520,
+      "km_aprox": 20,
+      "recorrido": [
+        {
+          "nombre": "Puebla de Lillo",
+          "lat": 43,
+          "lon": -5.27
+        },
+        {
+          "nombre": "Pto. de San Isidro",
+          "lat": 43.06,
+          "lon": -5.37
+        },
+        {
+          "nombre": "Felechosa",
+          "lat": 43.09,
+          "lon": -5.42
+        }
+      ]
+    },
+    {
+      "id": 243,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Tarna",
+      "tipo": "Puerto",
+      "lugar": "Pto. de Tarna",
+      "comunidad": "Asturias",
+      "lat": 43.1,
+      "lon": -5.21,
+      "descripcion": "De Riaño al Parque Natural de Redes por bosques y praderas.",
+      "altitud_m": 1490,
+      "km_aprox": 50,
+      "recorrido": [
+        {
+          "nombre": "Riaño",
+          "lat": 42.976,
+          "lon": -5.006
+        },
+        {
+          "nombre": "Pto. de Tarna",
+          "lat": 43.1,
+          "lon": -5.21
+        },
+        {
+          "nombre": "Tarna",
+          "lat": 43.11,
+          "lon": -5.24
+        },
+        {
+          "nombre": "Campo de Caso",
+          "lat": 43.18,
+          "lon": -5.37
+        }
+      ]
+    },
+    {
+      "id": 244,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Leitariegos",
+      "tipo": "Puerto",
+      "lugar": "Pto. de Leitariegos",
+      "comunidad": "Asturias",
+      "lat": 42.995,
+      "lon": -6.415,
+      "descripcion": "De Laciana a Cangas del Narcea, entre montañas salvajes.",
+      "altitud_m": 1525,
+      "km_aprox": 45,
+      "recorrido": [
+        {
+          "nombre": "Villablino",
+          "lat": 42.94,
+          "lon": -6.32
+        },
+        {
+          "nombre": "Pto. de Leitariegos",
+          "lat": 42.995,
+          "lon": -6.415
+        },
+        {
+          "nombre": "Cangas del Narcea",
+          "lat": 43.18,
+          "lon": -6.55
+        }
+      ]
+    },
+    {
+      "id": 245,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Piedrasluengas",
+      "tipo": "Puerto",
+      "lugar": "Pto. de Piedrasluengas",
+      "comunidad": "Cantabria",
+      "lat": 43.04,
+      "lon": -4.46,
+      "descripcion": "De la Montaña Palentina a Liébana, con mirador sobre los Picos.",
+      "altitud_m": 1355,
+      "km_aprox": 50,
+      "recorrido": [
+        {
+          "nombre": "Cervera de Pisuerga",
+          "lat": 42.87,
+          "lon": -4.5
+        },
+        {
+          "nombre": "Pto. de Piedrasluengas",
+          "lat": 43.04,
+          "lon": -4.46
+        },
+        {
+          "nombre": "Potes",
+          "lat": 43.154,
+          "lon": -4.623
+        }
+      ]
+    },
+    {
+      "id": 246,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Palombera",
+      "tipo": "Puerto",
+      "lugar": "Pto. de Palombera",
+      "comunidad": "Cantabria",
+      "lat": 43.07,
+      "lon": -4.2,
+      "descripcion": "De Reinosa al valle de Cabuérniga atravesando el bosque del Saja.",
+      "altitud_m": 1260,
+      "km_aprox": 35,
+      "recorrido": [
+        {
+          "nombre": "Reinosa",
+          "lat": 43,
+          "lon": -4.14
+        },
+        {
+          "nombre": "Pto. de Palombera",
+          "lat": 43.07,
+          "lon": -4.2
+        },
+        {
+          "nombre": "Sopeña",
+          "lat": 43.21,
+          "lon": -4.28
+        }
+      ]
+    },
+    {
+      "id": 247,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto del Escudo",
+      "tipo": "Puerto",
+      "lugar": "Pto. del Escudo",
+      "comunidad": "Cantabria",
+      "lat": 43.04,
+      "lon": -3.88,
+      "descripcion": "Clásico paso entre la meseta burgalesa y los valles pasiegos.",
+      "altitud_m": 1011,
+      "km_aprox": 35,
+      "recorrido": [
+        {
+          "nombre": "Soncillo",
+          "lat": 42.97,
+          "lon": -3.79
+        },
+        {
+          "nombre": "Pto. del Escudo",
+          "lat": 43.04,
+          "lon": -3.88
+        },
+        {
+          "nombre": "Entrambasmestas",
+          "lat": 43.17,
+          "lon": -3.93
+        }
+      ]
+    },
+    {
+      "id": 248,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Estacas de Trueba",
+      "tipo": "Puerto",
+      "lugar": "Estacas de Trueba",
+      "comunidad": "Castilla y León",
+      "lat": 43.12,
+      "lon": -3.66,
+      "descripcion": "Curvas entre praderas pasiegas hacia Vega de Pas.",
+      "altitud_m": 1166,
+      "km_aprox": 25,
+      "recorrido": [
+        {
+          "nombre": "Espinosa de los Monteros",
+          "lat": 43.08,
+          "lon": -3.55
+        },
+        {
+          "nombre": "Estacas de Trueba",
+          "lat": 43.12,
+          "lon": -3.66
+        },
+        {
+          "nombre": "Vega de Pas",
+          "lat": 43.16,
+          "lon": -3.78
+        }
+      ]
+    },
+    {
+      "id": 249,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Somport",
+      "tipo": "Puerto",
+      "lugar": "Pto. de Somport",
+      "comunidad": "Aragón",
+      "lat": 42.79,
+      "lon": -0.53,
+      "descripcion": "Valle del Aragón: Jaca, la estación de Canfranc y la frontera.",
+      "altitud_m": 1632,
+      "km_aprox": 30,
+      "recorrido": [
+        {
+          "nombre": "Jaca",
+          "lat": 42.57,
+          "lon": -0.55
+        },
+        {
+          "nombre": "Canfranc",
+          "lat": 42.71,
+          "lon": -0.52
+        },
+        {
+          "nombre": "Pto. de Somport",
+          "lat": 42.79,
+          "lon": -0.53
+        }
+      ]
+    },
+    {
+      "id": 250,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Belagua",
+      "tipo": "Puerto",
+      "lugar": "La Piedra de San Martín",
+      "comunidad": "Navarra",
+      "lat": 42.97,
+      "lon": -0.77,
+      "descripcion": "Del valle del Roncal a la frontera francesa por un paisaje kárstico.",
+      "altitud_m": 1760,
+      "km_aprox": 25,
+      "recorrido": [
+        {
+          "nombre": "Isaba",
+          "lat": 42.86,
+          "lon": -0.92
+        },
+        {
+          "nombre": "Belagua",
+          "lat": 42.92,
+          "lon": -0.83
+        },
+        {
+          "nombre": "La Piedra de San Martín",
+          "lat": 42.97,
+          "lon": -0.77
+        }
+      ]
+    },
+    {
+      "id": 251,
+      "capa": "carreteras_puertos",
+      "nombre": "Coll del Cantó",
+      "tipo": "Puerto",
+      "lugar": "Coll del Cantó",
+      "comunidad": "Cataluña",
+      "lat": 42.38,
+      "lon": 1.27,
+      "descripcion": "Entre el Pallars y La Seu d'Urgell, con curvas enlazadas.",
+      "altitud_m": 1725,
+      "km_aprox": 35,
+      "recorrido": [
+        {
+          "nombre": "Sort",
+          "lat": 42.41,
+          "lon": 1.13
+        },
+        {
+          "nombre": "Coll del Cantó",
+          "lat": 42.38,
+          "lon": 1.27
+        },
+        {
+          "nombre": "La Seu d'Urgell",
+          "lat": 42.36,
+          "lon": 1.46
+        }
+      ]
+    },
+    {
+      "id": 252,
+      "capa": "carreteras_puertos",
+      "nombre": "Collada de Toses",
+      "tipo": "Puerto",
+      "lugar": "Collada de Toses",
+      "comunidad": "Cataluña",
+      "lat": 42.32,
+      "lon": 2,
+      "descripcion": "Del Ripollès a la Cerdanya con vistas al Pirineo.",
+      "altitud_m": 1800,
+      "km_aprox": 35,
+      "recorrido": [
+        {
+          "nombre": "Ribes de Freser",
+          "lat": 42.3,
+          "lon": 2.17
+        },
+        {
+          "nombre": "Collada de Toses",
+          "lat": 42.32,
+          "lon": 2
+        },
+        {
+          "nombre": "Puigcerdà",
+          "lat": 42.43,
+          "lon": 1.93
+        }
+      ]
+    },
+    {
+      "id": 253,
+      "capa": "carreteras_puertos",
+      "nombre": "Alto del León",
+      "tipo": "Puerto",
+      "lugar": "Alto del León",
+      "comunidad": "Madrid",
+      "lat": 40.71,
+      "lon": -4.14,
+      "descripcion": "Paso clásico de la sierra entre Guadarrama y San Rafael.",
+      "altitud_m": 1511,
+      "km_aprox": 10,
+      "recorrido": [
+        {
+          "nombre": "Guadarrama",
+          "lat": 40.67,
+          "lon": -4.09
+        },
+        {
+          "nombre": "Alto del León",
+          "lat": 40.71,
+          "lon": -4.14
+        },
+        {
+          "nombre": "San Rafael",
+          "lat": 40.71,
+          "lon": -4.18
+        }
+      ]
+    },
+    {
+      "id": 254,
+      "capa": "carreteras_puertos",
+      "nombre": "Las Batuecas",
+      "tipo": "Puerto",
+      "lugar": "El Portillo",
+      "comunidad": "Castilla y León",
+      "lat": 40.47,
+      "lon": -6.14,
+      "descripcion": "Bajada de curvas cerradas desde La Alberca al valle de Las Batuecas.",
+      "altitud_m": 1240,
+      "km_aprox": 10,
+      "recorrido": [
+        {
+          "nombre": "La Alberca",
+          "lat": 40.489,
+          "lon": -6.111
+        },
+        {
+          "nombre": "El Portillo",
+          "lat": 40.47,
+          "lon": -6.14
+        },
+        {
+          "nombre": "Las Mestas",
+          "lat": 40.43,
+          "lon": -6.16
+        }
+      ]
+    },
+    {
+      "id": 255,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Piqueras",
+      "tipo": "Puerto",
+      "lugar": "Pto. de Piqueras",
+      "comunidad": "La Rioja",
+      "lat": 42.04,
+      "lon": -2.52,
+      "descripcion": "Paso entre Soria y La Rioja por la Sierra de Cebollera.",
+      "altitud_m": 1710,
+      "km_aprox": 35,
+      "recorrido": [
+        {
+          "nombre": "Lumbreras",
+          "lat": 42.1,
+          "lon": -2.62
+        },
+        {
+          "nombre": "Pto. de Piqueras",
+          "lat": 42.04,
+          "lon": -2.52
+        },
+        {
+          "nombre": "San Pedro Manrique",
+          "lat": 41.94,
+          "lon": -2.39
+        }
+      ]
+    },
+    {
+      "id": 256,
+      "capa": "carreteras_puertos",
+      "nombre": "Puerto de Velefique",
+      "tipo": "Puerto",
+      "lugar": "Alto de Velefique",
+      "comunidad": "Andalucía",
+      "lat": 37.23,
+      "lon": -2.4,
+      "descripcion": "Una escalera de curvas cerradas en la Sierra de los Filabres.",
+      "altitud_m": 1800,
+      "km_aprox": 5,
+      "recorrido": [
+        {
+          "nombre": "Velefique",
+          "lat": 37.19,
+          "lon": -2.4
+        },
+        {
+          "nombre": "Alto de Velefique",
+          "lat": 37.23,
+          "lon": -2.4
+        }
+      ]
+    },
+    {
+      "id": 257,
+      "capa": "carreteras_puertos",
+      "nombre": "Sa Calobra",
+      "tipo": "Ruta",
+      "lugar": "Coll dels Reis",
+      "comunidad": "Illes Balears",
+      "lat": 39.835,
+      "lon": 2.84,
+      "descripcion": "La carretera más famosa de Mallorca: curvas de 270º y el Nus de sa Corbata. Muy concurrida en verano: mejor a primera hora.",
+      "km_aprox": 10,
+      "recorrido": [
+        {
+          "nombre": "Lluc",
+          "lat": 39.822,
+          "lon": 2.886
+        },
+        {
+          "nombre": "Coll dels Reis",
+          "lat": 39.835,
+          "lon": 2.84
+        },
+        {
+          "nombre": "Sa Calobra",
+          "lat": 39.85,
+          "lon": 2.8
+        }
+      ]
+    },
+    {
+      "id": 258,
+      "capa": "paisajes_naturales",
+      "nombre": "Hoces del Duratón",
+      "tipo": "Cañón",
+      "lugar": "Sepúlveda",
+      "comunidad": "Castilla y León",
+      "lat": 41.283,
+      "lon": -3.785,
+      "descripcion": "Cañón del río Duratón con buitres leonados y la ermita de San Frutos colgada sobre el meandro."
+    },
+    {
+      "id": 259,
+      "capa": "paisajes_naturales",
+      "nombre": "Laguna Negra de Urbión",
+      "tipo": "Lago",
+      "lugar": "Vinuesa",
+      "comunidad": "Castilla y León",
+      "lat": 41.995,
+      "lon": -2.848,
+      "descripcion": "Laguna glaciar rodeada de pinares y paredes de roca, ligada a la leyenda de Machado."
+    },
+    {
+      "id": 260,
+      "capa": "paisajes_naturales",
+      "nombre": "Lago de Sanabria",
+      "tipo": "Lago",
+      "lugar": "Galende",
+      "comunidad": "Castilla y León",
+      "lat": 42.12,
+      "lon": -6.72,
+      "descripcion": "El mayor lago glaciar de la Península, con playas de agua dulce."
+    },
+    {
+      "id": 261,
+      "capa": "paisajes_naturales",
+      "nombre": "Laguna Grande de Gredos",
+      "tipo": "Montaña",
+      "lugar": "Plataforma de Gredos",
+      "comunidad": "Castilla y León",
+      "lat": 40.255,
+      "lon": -5.275,
+      "descripcion": "Circo glaciar bajo el Almanzor. Se llega en moto hasta la Plataforma y sigue a pie."
+    },
+    {
+      "id": 262,
+      "capa": "paisajes_naturales",
+      "nombre": "Lagunas de Ruidera",
+      "tipo": "Lago",
+      "lugar": "Ruidera",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 38.95,
+      "lon": -2.85,
+      "descripcion": "Quince lagunas encadenadas de aguas turquesa unidas por cascadas."
+    },
+    {
+      "id": 263,
+      "capa": "paisajes_naturales",
+      "nombre": "Ciudad Encantada",
+      "tipo": "Formación rocosa",
+      "lugar": "Cuenca",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 40.205,
+      "lon": -1.99,
+      "descripcion": "Rocas calizas con formas caprichosas esculpidas por la erosión."
+    },
+    {
+      "id": 264,
+      "capa": "paisajes_naturales",
+      "nombre": "Nacimiento del Río Cuervo",
+      "tipo": "Cascada",
+      "lugar": "Vega del Codorno",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 40.432,
+      "lon": -1.88,
+      "descripcion": "Cascadas de toba entre musgo, en plena Serranía de Cuenca."
+    },
+    {
+      "id": 265,
+      "capa": "paisajes_naturales",
+      "nombre": "Hayedo de Tejera Negra",
+      "tipo": "Bosque",
+      "lugar": "Cantalojas",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 41.25,
+      "lon": -3.39,
+      "descripcion": "Uno de los hayedos más al sur de Europa. Espectacular en otoño."
+    },
+    {
+      "id": 266,
+      "capa": "paisajes_naturales",
+      "nombre": "Hoces del Cabriel",
+      "tipo": "Cañón",
+      "lugar": "Minglanilla",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 39.5,
+      "lon": -1.48,
+      "descripcion": "Cuchillos de roca y aguas limpias en la frontera entre Cuenca y Valencia."
+    },
+    {
+      "id": 267,
+      "capa": "paisajes_naturales",
+      "nombre": "Valle del Jerte en flor",
+      "tipo": "Valle",
+      "lugar": "Cabezuela del Valle",
+      "comunidad": "Extremadura",
+      "lat": 40.205,
+      "lon": -5.79,
+      "descripcion": "Un millón y medio de cerezos que florecen a finales de marzo o en abril."
+    },
+    {
+      "id": 268,
+      "capa": "paisajes_naturales",
+      "nombre": "Garganta de los Infiernos",
+      "tipo": "Cascada",
+      "lugar": "Jerte",
+      "comunidad": "Extremadura",
+      "lat": 40.195,
+      "lon": -5.745,
+      "descripcion": "Pozas y cascadas de agua cristalina en el Valle del Jerte."
+    },
+    {
+      "id": 269,
+      "capa": "paisajes_naturales",
+      "nombre": "Bardenas Reales",
+      "tipo": "Desierto",
+      "lugar": "Arguedas",
+      "comunidad": "Navarra",
+      "lat": 42.18,
+      "lon": -1.5,
+      "descripcion": "Paisaje semidesértico de cabezos de arcilla, como un western."
+    },
+    {
+      "id": 270,
+      "capa": "paisajes_naturales",
+      "nombre": "Selva de Irati",
+      "tipo": "Bosque",
+      "lugar": "Ochagavía",
+      "comunidad": "Navarra",
+      "lat": 42.98,
+      "lon": -1.13,
+      "descripcion": "Uno de los mayores hayedos-abetales de Europa."
+    },
+    {
+      "id": 271,
+      "capa": "paisajes_naturales",
+      "nombre": "Nacedero del Urederra",
+      "tipo": "Cascada",
+      "lugar": "Baquedano",
+      "comunidad": "Navarra",
+      "lat": 42.77,
+      "lon": -2.08,
+      "descripcion": "Pozas de un azul turquesa intenso. Requiere reserva previa."
+    },
+    {
+      "id": 272,
+      "capa": "paisajes_naturales",
+      "nombre": "Mallos de Riglos",
+      "tipo": "Formación rocosa",
+      "lugar": "Riglos",
+      "comunidad": "Aragón",
+      "lat": 42.35,
+      "lon": -0.73,
+      "descripcion": "Paredes rojizas de conglomerado de casi 300 metros."
+    },
+    {
+      "id": 273,
+      "capa": "paisajes_naturales",
+      "nombre": "Ruta del Cares",
+      "tipo": "Desfiladero",
+      "lugar": "Poncebos",
+      "comunidad": "Asturias",
+      "lat": 43.255,
+      "lon": -4.835,
+      "descripcion": "La garganta divina de los Picos de Europa. Se llega en moto a Poncebos y sigue a pie."
+    },
+    {
+      "id": 274,
+      "capa": "paisajes_naturales",
+      "nombre": "Fuente Dé",
+      "tipo": "Montaña",
+      "lugar": "Camaleño",
+      "comunidad": "Cantabria",
+      "lat": 43.145,
+      "lon": -4.81,
+      "descripcion": "Teleférico que sube 750 m en minutos hasta el mirador del Cable."
+    },
+    {
+      "id": 275,
+      "capa": "paisajes_naturales",
+      "nombre": "Costa Quebrada",
+      "tipo": "Costa",
+      "lugar": "Liencres",
+      "comunidad": "Cantabria",
+      "lat": 43.46,
+      "lon": -3.96,
+      "descripcion": "Acantilados, islotes y dunas modelados por el mar."
+    },
+    {
+      "id": 276,
+      "capa": "paisajes_naturales",
+      "nombre": "Flysch de Zumaia",
+      "tipo": "Costa",
+      "lugar": "Zumaia",
+      "comunidad": "País Vasco",
+      "lat": 43.3,
+      "lon": -2.26,
+      "descripcion": "Capas de roca verticales que cuentan millones de años de historia geológica."
+    },
+    {
+      "id": 277,
+      "capa": "paisajes_naturales",
+      "nombre": "Playa de las Catedrales",
+      "tipo": "Costa",
+      "lugar": "Ribadeo",
+      "comunidad": "Galicia",
+      "lat": 43.554,
+      "lon": -7.155,
+      "descripcion": "Arcos de roca de hasta 30 metros. Se visita con marea baja y con reserva en verano."
+    },
+    {
+      "id": 278,
+      "capa": "paisajes_naturales",
+      "nombre": "Cañón del Sil",
+      "tipo": "Cañón",
+      "lugar": "Ribeira Sacra",
+      "comunidad": "Galicia",
+      "lat": 42.4,
+      "lon": -7.6,
+      "descripcion": "Viñedos en terrazas imposibles sobre el río Sil y miradores de vértigo."
+    },
+    {
+      "id": 279,
+      "capa": "paisajes_naturales",
+      "nombre": "Cabo de Finisterre",
+      "tipo": "Costa",
+      "lugar": "Fisterra",
+      "comunidad": "Galicia",
+      "lat": 42.882,
+      "lon": -9.272,
+      "descripcion": "El antiguo fin del mundo, con faro y puestas de sol sobre el Atlántico."
+    },
+    {
+      "id": 280,
+      "capa": "paisajes_naturales",
+      "nombre": "Islas Cíes",
+      "tipo": "Costa",
+      "lugar": "Vigo",
+      "comunidad": "Galicia",
+      "lat": 42.22,
+      "lon": -8.91,
+      "descripcion": "Playas de arena blanca en el Parque Nacional de las Islas Atlánticas. Se llega en barco."
+    },
+    {
+      "id": 281,
+      "capa": "paisajes_naturales",
+      "nombre": "Cap de Creus",
+      "tipo": "Costa",
+      "lugar": "Cadaqués",
+      "comunidad": "Cataluña",
+      "lat": 42.319,
+      "lon": 3.316,
+      "descripcion": "El punto más oriental de la Península: rocas moldeadas por la tramontana."
+    },
+    {
+      "id": 282,
+      "capa": "paisajes_naturales",
+      "nombre": "Aigüestortes i Estany de Sant Maurici",
+      "tipo": "Montaña",
+      "lugar": "Espot",
+      "comunidad": "Cataluña",
+      "lat": 42.58,
+      "lon": 0.95,
+      "descripcion": "Parque nacional con cerca de 200 lagos de alta montaña."
+    },
+    {
+      "id": 283,
+      "capa": "paisajes_naturales",
+      "nombre": "Delta del Ebro",
+      "tipo": "Humedal",
+      "lugar": "Deltebre",
+      "comunidad": "Cataluña",
+      "lat": 40.72,
+      "lon": 0.8,
+      "descripcion": "Arrozales, playas vírgenes y miles de aves acuáticas."
+    },
+    {
+      "id": 284,
+      "capa": "paisajes_naturales",
+      "nombre": "Albufera de Valencia",
+      "tipo": "Humedal",
+      "lugar": "El Palmar",
+      "comunidad": "C. Valenciana",
+      "lat": 39.33,
+      "lon": -0.34,
+      "descripcion": "Lago y arrozales junto al mar. Famosa por sus atardeceres y la paella."
+    },
+    {
+      "id": 285,
+      "capa": "paisajes_naturales",
+      "nombre": "Cabo de Gata",
+      "tipo": "Costa",
+      "lugar": "Níjar",
+      "comunidad": "Andalucía",
+      "lat": 36.76,
+      "lon": -2.15,
+      "descripcion": "Calas vírgenes y paisaje volcánico junto al mar."
+    },
+    {
+      "id": 286,
+      "capa": "paisajes_naturales",
+      "nombre": "Desierto de Tabernas",
+      "tipo": "Desierto",
+      "lugar": "Tabernas",
+      "comunidad": "Andalucía",
+      "lat": 37.05,
+      "lon": -2.4,
+      "descripcion": "El único desierto de Europa, escenario de westerns."
+    },
+    {
+      "id": 287,
+      "capa": "paisajes_naturales",
+      "nombre": "El Torcal de Antequera",
+      "tipo": "Formación rocosa",
+      "lugar": "Antequera",
+      "comunidad": "Andalucía",
+      "lat": 36.955,
+      "lon": -4.54,
+      "descripcion": "Laberinto de rocas calizas apiladas como si fueran platos."
+    },
+    {
+      "id": 288,
+      "capa": "paisajes_naturales",
+      "nombre": "Caminito del Rey",
+      "tipo": "Desfiladero",
+      "lugar": "Ardales",
+      "comunidad": "Andalucía",
+      "lat": 36.93,
+      "lon": -4.77,
+      "descripcion": "Pasarelas colgadas sobre el Desfiladero de los Gaitanes. Con entrada."
+    },
+    {
+      "id": 289,
+      "capa": "paisajes_naturales",
+      "nombre": "Sierra de Cazorla",
+      "tipo": "Montaña",
+      "lugar": "Cazorla",
+      "comunidad": "Andalucía",
+      "lat": 37.85,
+      "lon": -2.95,
+      "descripcion": "El mayor espacio protegido de España y el nacimiento del Guadalquivir."
+    },
+    {
+      "id": 290,
+      "capa": "paisajes_naturales",
+      "nombre": "Calblanque",
+      "tipo": "Costa",
+      "lugar": "Cartagena",
+      "comunidad": "Murcia",
+      "lat": 37.6,
+      "lon": -0.75,
+      "descripcion": "Playas salvajes y dunas fósiles sin edificar."
+    },
+    {
+      "id": 291,
+      "capa": "paisajes_naturales",
+      "nombre": "Cap de Formentor",
+      "tipo": "Costa",
+      "lugar": "Pollença",
+      "comunidad": "Illes Balears",
+      "lat": 39.96,
+      "lon": 3.21,
+      "descripcion": "Carretera de curvas sobre acantilados hasta el faro. Muy motera."
+    },
+    {
+      "id": 292,
+      "capa": "paisajes_naturales",
+      "nombre": "Roque Nublo",
+      "tipo": "Montaña",
+      "lugar": "Tejeda",
+      "comunidad": "Canarias",
+      "lat": 27.97,
+      "lon": -15.612,
+      "descripcion": "Monolito volcánico de 80 m, símbolo de Gran Canaria."
+    },
+    {
+      "id": 293,
+      "capa": "paisajes_naturales",
+      "nombre": "Parque Nacional de Timanfaya",
+      "tipo": "Volcán",
+      "lugar": "Lanzarote",
+      "comunidad": "Canarias",
+      "lat": 29,
+      "lon": -13.75,
+      "descripcion": "Paisaje de lava y cráteres de las erupciones del siglo XVIII."
+    },
+    {
+      "id": 294,
+      "capa": "historia",
+      "nombre": "Molinos y castillo de Consuegra",
+      "tipo": "Molinos",
+      "lugar": "Consuegra",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 39.457,
+      "lon": -3.606,
+      "descripcion": "Doce molinos de viento en fila sobre el Cerro Calderico, junto al castillo de La Muela. La postal de La Mancha."
+    },
+    {
+      "id": 295,
+      "capa": "historia",
+      "nombre": "Molinos de Campo de Criptana",
+      "tipo": "Molinos",
+      "lugar": "Campo de Criptana",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 39.409,
+      "lon": -3.125,
+      "descripcion": "La Sierra de los Molinos, con varios de origen quijotesco que aún conservan su maquinaria."
+    },
+    {
+      "id": 296,
+      "capa": "historia",
+      "nombre": "Molinos de Mota del Cuervo",
+      "tipo": "Molinos",
+      "lugar": "Mota del Cuervo",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 39.504,
+      "lon": -2.869,
+      "descripcion": "El Balcón de La Mancha: molinos sobre una loma con vistas a la llanura."
+    },
+    {
+      "id": 297,
+      "capa": "historia",
+      "nombre": "Molinos de Alcázar de San Juan",
+      "tipo": "Molinos",
+      "lugar": "Alcázar de San Juan",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 39.39,
+      "lon": -3.208,
+      "descripcion": "Molinos en el cerro de San Antón, sobre la ciudad."
+    },
+    {
+      "id": 298,
+      "capa": "historia",
+      "nombre": "Molinos de Vejer",
+      "tipo": "Molinos",
+      "lugar": "Vejer de la Frontera",
+      "comunidad": "Andalucía",
+      "lat": 36.258,
+      "lon": -5.95,
+      "descripcion": "Molinos harineros junto a uno de los pueblos blancos más bonitos de Cádiz."
+    },
+    {
+      "id": 299,
+      "capa": "historia",
+      "nombre": "Molinos del Campo de Cartagena",
+      "tipo": "Molinos",
+      "lugar": "Torre-Pacheco",
+      "comunidad": "Murcia",
+      "lat": 37.7,
+      "lon": -0.95,
+      "descripcion": "Molinos de aspas de lona que sacaban agua y molían grano en la huerta."
+    },
+    {
+      "id": 300,
+      "capa": "historia",
+      "nombre": "Castillo de Almansa",
+      "tipo": "Castillo",
+      "lugar": "Almansa",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 38.87,
+      "lon": -1.097,
+      "descripcion": "Castillo encaramado sobre un peñasco en mitad de la ciudad."
+    },
+    {
+      "id": 301,
+      "capa": "historia",
+      "nombre": "Castillo de Calatrava la Nueva",
+      "tipo": "Castillo",
+      "lugar": "Aldea del Rey",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 38.677,
+      "lon": -3.825,
+      "descripcion": "Castillo-convento de la Orden de Calatrava en lo alto de un cerro."
+    },
+    {
+      "id": 302,
+      "capa": "historia",
+      "nombre": "Castillo de Molina de Aragón",
+      "tipo": "Castillo",
+      "lugar": "Molina de Aragón",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 40.844,
+      "lon": -1.889,
+      "descripcion": "Una de las fortalezas más grandes de España, con varias torres y murallas."
+    },
+    {
+      "id": 303,
+      "capa": "historia",
+      "nombre": "Castillo de Zafra",
+      "tipo": "Castillo",
+      "lugar": "Campillo de Dueñas",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 40.858,
+      "lon": -1.727,
+      "descripcion": "Castillo sobre una roca de arenisca. Salió en Juego de Tronos."
+    },
+    {
+      "id": 304,
+      "capa": "historia",
+      "nombre": "Castillo de Garcimuñoz",
+      "tipo": "Castillo",
+      "lugar": "Castillo de Garcimuñoz",
+      "comunidad": "Castilla-La Mancha",
+      "lat": 39.648,
+      "lon": -2.38,
+      "descripcion": "Castillo del siglo XV con una restauración contemporánea muy original."
+    },
+    {
+      "id": 305,
+      "capa": "historia",
+      "nombre": "Castillo de la Mota",
+      "tipo": "Castillo",
+      "lugar": "Medina del Campo",
+      "comunidad": "Castilla y León",
+      "lat": 41.312,
+      "lon": -4.906,
+      "descripcion": "Fortaleza de ladrillo ligada a Isabel la Católica."
+    },
+    {
+      "id": 306,
+      "capa": "historia",
+      "nombre": "Castillo de Cuéllar",
+      "tipo": "Castillo",
+      "lugar": "Cuéllar",
+      "comunidad": "Castilla y León",
+      "lat": 41.4,
+      "lon": -4.317,
+      "descripcion": "Castillo-palacio de los Duques de Alburquerque, con la muralla del pueblo."
+    },
+    {
+      "id": 307,
+      "capa": "historia",
+      "nombre": "Castillo de Turégano",
+      "tipo": "Castillo",
+      "lugar": "Turégano",
+      "comunidad": "Castilla y León",
+      "lat": 41.155,
+      "lon": -4.007,
+      "descripcion": "Curioso castillo con una iglesia románica en su interior."
+    },
+    {
+      "id": 308,
+      "capa": "historia",
+      "nombre": "Castillo de Peñaranda de Duero",
+      "tipo": "Castillo",
+      "lugar": "Peñaranda de Duero",
+      "comunidad": "Castilla y León",
+      "lat": 41.69,
+      "lon": -3.477,
+      "descripcion": "Castillo alargado sobre el pueblo y su plaza porticada."
+    },
+    {
+      "id": 309,
+      "capa": "historia",
+      "nombre": "Castillo de Montealegre",
+      "tipo": "Castillo",
+      "lugar": "Montealegre de Campos",
+      "comunidad": "Castilla y León",
+      "lat": 41.784,
+      "lon": -4.866,
+      "descripcion": "Mole cuadrada de piedra en plena Tierra de Campos."
+    },
+    {
+      "id": 310,
+      "capa": "historia",
+      "nombre": "Castillo de Monzón",
+      "tipo": "Castillo",
+      "lugar": "Monzón",
+      "comunidad": "Aragón",
+      "lat": 41.913,
+      "lon": 0.192,
+      "descripcion": "Castillo templario donde se educó Jaime I."
+    },
+    {
+      "id": 311,
+      "capa": "historia",
+      "nombre": "Castillo de Mesones de Isuela",
+      "tipo": "Castillo",
+      "lugar": "Mesones de Isuela",
+      "comunidad": "Aragón",
+      "lat": 41.553,
+      "lon": -1.536,
+      "descripcion": "Castillo gótico-mudéjar del siglo XIV en un valle escondido."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "nota": "Rutas de la primera versión de la app que no están en las listas recibidas.",
+  "lugares": [
+    {"id": 1001, "capa": "carreteras_puertos", "nombre": "Ronda – San Pedro (A-397)", "tipo": "Ruta", "lugar": "Ronda", "comunidad": "Andalucía", "lat": 36.62, "lon": -5.09,
+     "descripcion": "Carretera ancha y bien asfaltada de la Serranía de Ronda a la costa, con curvas enlazadas y vistas al mar. Muy concurrida los fines de semana.",
+     "recorrido": [{"nombre": "Ronda", "lat": 36.742, "lon": -5.166}, {"nombre": "San Pedro de Alcántara", "lat": 36.483, "lon": -4.99}]},
+    {"id": 1002, "capa": "carreteras_puertos", "nombre": "Cazorla – Tranco – Hornos", "tipo": "Ruta", "lugar": "Cazorla", "comunidad": "Andalucía", "lat": 38.044, "lon": -2.857,
+     "descripcion": "Cruza el parque natural junto al Guadalquivir, pasando por Arroyo Frío y el embalse del Tranco hasta Hornos. Ojo con los animales en la calzada.",
+     "recorrido": [{"nombre": "Cazorla", "lat": 37.914, "lon": -3.003}, {"nombre": "Coto Ríos", "lat": 38.044, "lon": -2.857}, {"nombre": "Hornos", "lat": 38.218, "lon": -2.719}]},
+    {"id": 1003, "capa": "carreteras_puertos", "nombre": "Guadalest y Puerto de Confrides (CV-70)", "tipo": "Ruta", "lugar": "Guadalest", "comunidad": "C. Valenciana", "lat": 38.684, "lon": -0.268,
+     "descripcion": "Clásico motero alicantino: del mar a la montaña por el valle de Guadalest hasta Alcoy.",
+     "recorrido": [{"nombre": "Callosa d'en Sarrià", "lat": 38.651, "lon": -0.124}, {"nombre": "Guadalest", "lat": 38.678, "lon": -0.199}, {"nombre": "Confrides", "lat": 38.684, "lon": -0.268}, {"nombre": "Alcoy", "lat": 38.698, "lon": -0.474}]},
+    {"id": 1004, "capa": "carreteras_puertos", "nombre": "Sierra de Albarracín", "tipo": "Ruta", "lugar": "Albarracín", "comunidad": "Aragón", "lat": 40.509, "lon": -1.588,
+     "descripcion": "De Teruel por el cañón del Guadalaviar hasta Albarracín y los pinares de la sierra.",
+     "recorrido": [{"nombre": "Teruel", "lat": 40.345, "lon": -1.106}, {"nombre": "Albarracín", "lat": 40.408, "lon": -1.444}, {"nombre": "Bronchales", "lat": 40.509, "lon": -1.588}, {"nombre": "Orihuela del Tremedal", "lat": 40.555, "lon": -1.652}]},
+    {"id": 1005, "capa": "carreteras_puertos", "nombre": "Ribeira Sacra", "tipo": "Ruta", "lugar": "Castro Caldelas", "comunidad": "Galicia", "lat": 42.383, "lon": -7.567,
+     "descripcion": "Cañones del Sil, viñedos en terrazas y miradores sobre el río.",
+     "recorrido": [{"nombre": "Monforte de Lemos", "lat": 42.522, "lon": -7.514}, {"nombre": "Castro Caldelas", "lat": 42.374, "lon": -7.416}, {"nombre": "Parada de Sil", "lat": 42.383, "lon": -7.567}, {"nombre": "Ourense", "lat": 42.336, "lon": -7.864}]},
+    {"id": 1006, "capa": "carreteras_puertos", "nombre": "Cañones del Ebro", "tipo": "Ruta", "lugar": "Orbaneja del Castillo", "comunidad": "Castilla y León", "lat": 42.814, "lon": -3.758,
+     "descripcion": "Carretera junto al Ebro entre cañones de roca y la cascada de Orbaneja del Castillo.",
+     "recorrido": [{"nombre": "Orbaneja del Castillo", "lat": 42.836, "lon": -3.794}, {"nombre": "Valdelateja", "lat": 42.814, "lon": -3.758}, {"nombre": "Pesquera de Ebro", "lat": 42.8013, "lon": -3.7206}]},
+    {"id": 1007, "capa": "carreteras_puertos", "nombre": "Costa vasca: Getaria – Lekeitio", "tipo": "Ruta", "lugar": "Mutriku", "comunidad": "País Vasco", "lat": 43.307, "lon": -2.385,
+     "descripcion": "Carretera costera con acantilados, el flysch de Zumaia y pueblos pesqueros como Deba y Mutriku.",
+     "recorrido": [{"nombre": "Getaria", "lat": 43.303, "lon": -2.204}, {"nombre": "Mutriku", "lat": 43.307, "lon": -2.385}, {"nombre": "Lekeitio", "lat": 43.363, "lon": -2.505}]},
+    {"id": 1008, "capa": "carreteras_puertos", "nombre": "Montseny", "tipo": "Ruta", "lugar": "Viladrau", "comunidad": "Cataluña", "lat": 41.775, "lon": 2.463,
+     "descripcion": "Bosque de hayas y curvas enlazadas a una hora de Barcelona. Muy concurrida el domingo por la mañana.",
+     "recorrido": [{"nombre": "Sant Celoni", "lat": 41.689, "lon": 2.494}, {"nombre": "Santa Fe del Montseny", "lat": 41.775, "lon": 2.463}, {"nombre": "Viladrau", "lat": 41.848, "lon": 2.39}, {"nombre": "Seva", "lat": 41.838, "lon": 2.281}]}
+  ]
+}
