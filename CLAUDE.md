@@ -30,7 +30,7 @@ Recomendados (los aporta el usuario): `tipo` (texto corto, p. ej. "Pueblo más b
 Rutas: un lugar con `recorrido` (lista ordenada de `{nombre, lat, lon}`, mínimo 2) se convierte en ruta navegable con barra de progreso y marcado automático al completar el 80 %. `lat`/`lon` del lugar es dónde se dibuja el pin (p. ej. el puerto). Opcionales: `km_aprox`, `altitud_m`.
 
 Investigados (los rellenan las herramientas; no inventarlos a mano):
-- `wiki`: título del artículo en es.wikipedia (foto y resumen de la tarjeta). `""` = buscado y sin artículo.
+- `wiki`: título del artículo en es.wikipedia (foto y resumen de la tarjeta). Si falta, la app lo busca sola por cercanía (la herramienta lo deja ausente cuando no encuentra nada).
 - `wikidata`, `habitantes` + `habitantes_anio`, `altitud_m` (si faltaba), `epoca` (p. ej. "s. XIII"), `estilo`, `proteccion` + `proteccion_anio`, `superficie_km2`.
 - `km_ruta`: km reales de la ruta en modo moto sin autovías.
 
@@ -40,10 +40,31 @@ La tarjeta muestra como mucho 4 datos (recorrido, altitud, habitantes, origen, s
 1. Guarda la lista en `datos/recibidos-N.json` con el formato `{ "lugares": [ ... ] }` y ids que no existan.
 2. `powershell -File tools\anadir-lugares.ps1 -Desde datos\recibidos-N.json` (valida campos obligatorios y no duplica ids).
 3. Si hay rutas: `powershell -File tools\comprobar-rutas.ps1` → coloca los puertos en el nodo del puerto de OpenStreetMap y los pueblos en su centro, y guarda `km_ruta`. Revisa los avisos (medias vueltas, puntos lejos de la carretera).
-4. `powershell -File tools\enriquecer.ps1` → busca el artículo de Wikipedia y los datos de Wikidata. Revisa `datos\informe-enriquecer.txt`; si un artículo es el equivocado, pon el título correcto en `wiki` y ejecuta `tools\enriquecer.ps1 -Ids N`.
+4. `powershell -File tools\enriquecer.ps1` → busca el artículo de Wikipedia y los datos de Wikidata. Revisa `datos\informe-enriquecer.txt`; si un artículo es el equivocado, pon el título correcto en `wiki`, **borra `wikidata`** (si no, se reutiliza el viejo) y ejecuta `tools\enriquecer.ps1 -Ids N`.
 5. Prueba en local y publica (`git push`): la tablet recibe los pins sola la próxima vez que abra la app con conexión.
 
 Aunque no se ejecute el paso 4, la app busca sola el artículo de Wikipedia por cercanía y nombre (menos preciso).
+
+## Viaje con varias paradas
+- Desde la tarjeta, «Añadir al viaje». La pestaña **Viaje** lista las paradas (subir, bajar, quitar), calcula km y tiempo desde tu posición y dibuja el camino.
+- Se guarda en `localStorage` dentro de `rutasMoto.v2`, como `plan` (lista de ids en orden).
+- «Mejor orden»: vecino más cercano + 2-opt con distancias en línea recta, en el propio navegador (sin peticiones). Las rutas se tratan como un bloque con su sentido.
+- Un lugar es un punto `break` (se puede dar la vuelta allí); una ruta aporta todo su `recorrido` como `break_through`.
+- **Valhalla de FOSSGIS admite 10 puntos por petición** (salida + 9). El resumen se calcula por tramos encadenados; la navegación calcula 9 puntos y, al llegar al último, pide el siguiente tramo.
+- Al llegar a cada parada: el lugar queda visitado; la ruta, hecha si se ha recorrido el 80 %.
+- Ganchos de prueba: `__app.plan([ids])`, `__app.startTrip()`.
+
+## Roadbook (pantalla de maniobras)
+- Se abre sola al pulsar Ir / Empezar ruta / Empezar viaje. La flecha de volver lleva al mapa (la navegación sigue); el botón «Roadbook» la reabre.
+- Aquí el usuario pidió **fondo negro, tarjetas grafito y amarillo lima** (excepción al blanco del resto de la app).
+- Cabecera: volver, estado (km y llegada, o «Recalculando…») y círculo de límite (rojo con número blanco si la velocidad GPS lo supera; «—» sin dato).
+- Tarjeta principal (~80 %): dibujo del cruce, distancia e instrucción. Tarjeta inferior (~20 %): «Después · 100 m — Gira a la izquierda».
+- Datos: maniobras de Valhalla + `trace_attributes` de la ruta (POST con `text/plain` para evitar la petición previa de CORS), por tramos de ≤2500 puntos/80 km, uno tras otro. De ahí salen ramales del cruce, calles intermedias («Toma la segunda a la derecha»), glorietas y límite.
+- Glorietas: al acercarse (≤2 km) se pide el resto del anillo (ruta de la salida a la entrada + `trace_attributes`) para dibujar todas las salidas.
+- Aviso: tres pulsos del borde (100 ms encendido, 90 ms pausa; 480 ms), una vez por maniobra. Autovía/salidas: a 200 m. Resto: lo que se recorre en 5 s (mín. 25 m), y solo cuando ya no quedan calles intermedias.
+- La tarjeta cambia cuando la posición sobre la ruta pasa 15 m del punto de maniobra (en glorietas, del punto de salida).
+- Con OSRM (reserva) no hay límite ni calles intermedias; los cruces salen de sus `intersections`.
+- Ganchos de prueba: `__app.rb.state.log` (avisos dados), `__app.rb.state.swaps`.
 
 ## Servicios externos (sin clave)
 - Mapa: Esri Light Gray Canvas (`server.arcgisonline.com`, máx. zoom nativo 16).
@@ -54,3 +75,5 @@ Aunque no se ejecute el paso 4, la app busca sola el artículo de Wikipedia por 
 
 ## Pendiente
 - Lugares 312–520 de la lista del usuario: el mensaje llegó cortado en el 312. Cuando los envíe, seguir "Cómo añadir pins nuevos".
+- Vuelta a casa por un camino distinto al de ida (se apoyará en el viaje: añadir la salida como última parada y evitar el trazado de ida).
+- «Dame una ruta»: según el tiempo que quiera conducir, proponer un viaje por lugares aún no hechos.
