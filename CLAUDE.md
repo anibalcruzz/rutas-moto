@@ -4,7 +4,7 @@ App web instalable (PWA) para usar en la moto: mapa de España con rutas, pueblo
 Publicada con GitHub Pages desde la rama `main`: https://anibalcruzz.github.io/rutas-moto/
 
 ## Lo que quiere el usuario (respetar siempre)
-- Diseño **blanco, elegante y minimalista**. Nada de datos que no hagan falta.
+- Diseño **alegre y limpio, estilo «cielo y montaña»** (cambiado a petición del usuario el 13/11/2026; antes era blanco y sobrio): tarjetas blancas muy redondeadas, azul `--blue` #2f6bff para actuar, naranja `--orange` #ff7a2f de acento (Improvisar, botón de ubicación), fondos azul claro, títulos en Poppins. Nada de datos que no hagan falta. El roadbook sigue en negro/grafito/lima.
 - **Solo la navegación de la app**: no añadir enlaces a Google Maps, exportar GPX ni compartir rutas con otras apps.
 - La usa en una **Galaxy Tab A (2016)** montada en la moto (Android antiguo, GPU modesta): todo debe ser ligero y fluido. Los pins se dibujan en canvas (`L.circleMarker` con `L.canvas`), nunca como iconos HTML.
 - Se escribe en español, en tono claro y directo.
@@ -54,6 +54,20 @@ Aunque no se ejecute el paso 4, la app busca sola el artículo de Wikipedia por 
 - Al llegar a cada parada: el lugar queda visitado; la ruta, hecha si se ha recorrido el 80 %.
 - Ganchos de prueba: `__app.plan([ids])`, `__app.startTrip()`.
 
+## Viaje improvisado («Improvisar», arriba en el panel)
+- Pregunta Media tarde (3,5 h), Día completo (8 h) o Dos días (15 h, durmiendo fuera). Tiempos con paradas incluidas (20 min por lugar).
+- Bucle al azar desde tu posición y **vuelta al punto de salida** (`S.planMeta.back`). En dos días, el punto más lejano es donde se duerme (mejor un pueblo bonito: `nightId`).
+- **Los sitios hechos nunca entran solos**: solo se va a ellos a mano (desde su tarjeta).
+- Se calibra con el servidor: primer intento con 30 km/h en línea recta, se pide el camino real una vez y se vuelve a elegir con la velocidad medida (Valhalla sin autovías da medias de ~27 km/h en sierra).
+- Llena el mismo viaje (`S.plan`), así que se ve y se navega desde la pestaña Viaje. «Otro viaje» prepara otro igual. Al retomarlo se saltan las paradas hechas desde que se preparó.
+
+## Casa y Trabajo
+- Botón «Casa» arriba en el panel. Direcciones en `S.home` / `S.work` (solo en el aparato; buscadas con Nominatim o «Usar mi posición actual»).
+- Ir a casa/trabajo usa `fast`: Valhalla con `use_highways` 1 (lo más directo, con autovía), sin importar el ajuste «Ir sin autovías».
+
+## Sitios hechos
+- En el mapa, el pin hecho es blanco con aro y un ✓ del color de su capa (dibujado en canvas, clase `Pin`); en las listas, un ✓ en lugar del punto.
+
 ## Roadbook (pantalla de maniobras)
 - Se abre sola al pulsar Ir / Empezar ruta / Empezar viaje. La flecha de volver lleva al mapa (la navegación sigue); el botón «Roadbook» la reabre.
 - Aquí el usuario pidió **fondo negro, tarjetas grafito y amarillo lima** (excepción al blanco del resto de la app).
@@ -67,7 +81,7 @@ Aunque no se ejecute el paso 4, la app busca sola el artículo de Wikipedia por 
 - Ganchos de prueba: `__app.rb.state.log` (avisos dados), `__app.rb.state.swaps`.
 
 ## Servicios externos (sin clave)
-- Mapa: Esri Light Gray Canvas (`server.arcgisonline.com`, máx. zoom nativo 16).
+- Mapa: Esri World Topo Map (`server.arcgisonline.com`, sin clave, en color y con nombres). CARTO Voyager ya pide clave: no usarlo.
 - Rutas: Valhalla de FOSSGIS (`valhalla1.openstreetmap.de`, modo `motorcycle`, `use_highways` 0 = sin autovías); OSRM público de reserva.
 - Servicios cercanos: Overpass (3 servidores en cadena; a veces saturados, la tarjeta oculta la sección si fallan).
 - Wikipedia REST (resumen y foto) y Wikidata (datos). Wikimedia solo sirve miniaturas de tamaños estándar (330, 500, 960 px…).
@@ -75,5 +89,4 @@ Aunque no se ejecute el paso 4, la app busca sola el artículo de Wikipedia por 
 
 ## Pendiente
 - Lugares 312–520 de la lista del usuario: el mensaje llegó cortado en el 312. Cuando los envíe, seguir "Cómo añadir pins nuevos".
-- Vuelta a casa por un camino distinto al de ida (se apoyará en el viaje: añadir la salida como última parada y evitar el trazado de ida).
-- «Dame una ruta»: según el tiempo que quiera conducir, proponer un viaje por lugares aún no hechos.
+- Vuelta por un camino distinto en viajes hechos a mano (el improvisado ya es un bucle). Se podría evitar el trazado de ida.

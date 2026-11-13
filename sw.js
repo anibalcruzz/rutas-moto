@@ -3,8 +3,8 @@
 // - Mapa, fotos y fuentes: primero la copia guardada (se van guardando los que ves).
 // - Resúmenes de Wikipedia: primero red; sin conexión, el último guardado.
 // - Rutas y servicios cercanos: siempre red.
-var APP = "rutas-app-v7";
-var TILES = "rutas-tiles-v1";
+var APP = "rutas-app-v9";
+var TILES = "rutas-tiles-v2";   // v2: mapa en color (Esri World Topo); se borran las teselas grises de antes
 var MEDIA = "rutas-media-v1";
 var LIMITES = {};
 LIMITES[TILES] = 4000;
